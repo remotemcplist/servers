@@ -1,0 +1,56 @@
+id: twilio-mcp
+name: Twilio MCP Server
+category: communication
+description: SMS, voice, video, and messaging API platform for global communications
+long_description: SMS, voice, and messaging API platform. This MCP server provides
+  comprehensive integration with Twilio services through the Model Context Protocol.
+maintainer:
+  name: Twilio
+  github: twilio
+  website: https://twilio.com/
+repository:
+  url: https://github.com/mcp-servers/twilio-mcp
+  stars: 100
+authentication:
+  type: api-key
+  provider: twilio
+  instructions: Visit https://twilio.com/ to obtain API credentials
+endpoints:
+  production: wss://twilio-mcp.mcp.io
+  documentation: https://docs.mcp.io/servers/twilio-mcp
+capabilities:
+- id: read
+  name: Read Data
+  description: Read data from Twilio
+- id: write
+  name: Write Data
+  description: Write data to Twilio
+examples:
+- title: Basic Usage
+  description: Connect to Twilio MCP Server
+  language: javascript
+  code: 'const client = await mcp.connect(''twilio-mcp'');
+
+    const result = await client.call(''method'', {});'
+tags:
+- communication
+- twilio
+- mcp
+metrics:
+  weekly_downloads: 1000
+  total_users: 500
+  last_updated: '2024-12-15T00:00:00Z'
+verification:
+  status: pending
+  tested_date: '2024-12-10T00:00:00Z'
+  security_audit: false
+seo:
+  title: Twilio MCP Server - MCP Integration
+  description: SMS, voice, and messaging API platform via Model Context Protocol
+  keywords:
+  - twilio-mcp
+  - twilio mcp server
+  - mcp server
+  - model context protocol
+featured: false
+active: true

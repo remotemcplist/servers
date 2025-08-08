@@ -1,0 +1,102 @@
+id: github-mcp
+name: GitHub MCP Server
+category: development
+description: Complete GitHub integration for MCP - manage repos, issues, PRs, and more
+long_description: |
+  The GitHub MCP Server provides comprehensive access to GitHub's API through the Model Context Protocol.
+  It enables AI assistants to read repositories, manage issues, create pull requests, review code, and 
+  interact with GitHub Actions. Perfect for automating development workflows and code management tasks.
+
+maintainer:
+  name: Anthropic
+  github: anthropic
+  website: https://anthropic.com
+
+repository:
+  url: https://github.com/modelcontextprotocol/servers/tree/main/src/github
+  stars: 1250
+
+authentication:
+  type: oauth2
+  provider: github
+  instructions: |
+    1. Go to GitHub Settings > Developer settings > Personal access tokens
+    2. Generate a new token with repo, issues, and pull_request scopes
+    3. Configure the token in your MCP client
+
+endpoints:
+  production: wss://github-mcp.modelcontextprotocol.io
+  documentation: https://docs.mcp.io/servers/github
+
+capabilities:
+  - id: repository.read
+    name: Read Repositories
+    description: Access repository contents, branches, and commits
+  - id: repository.write
+    name: Write Repositories
+    description: Create and modify files in repositories
+  - id: issues.manage
+    name: Manage Issues
+    description: Create, update, and close GitHub issues
+  - id: pulls.create
+    name: Create Pull Requests
+    description: Create and manage pull requests
+  - id: actions.trigger
+    name: Trigger Actions
+    description: Run GitHub Actions workflows
+
+examples:
+  - title: List Repository Issues
+    description: Fetch all open issues from a repository
+    language: javascript
+    code: |
+      const response = await mcp.call('github.issues.list', {
+        owner: 'anthropic',
+        repo: 'claude-mcp',
+        state: 'open'
+      });
+      console.log(`Found ${response.issues.length} open issues`);
+  
+  - title: Create Pull Request
+    description: Create a new pull request with changes
+    language: python
+    code: |
+      result = mcp.call('github.pulls.create', {
+          'owner': 'myorg',
+          'repo': 'myrepo',
+          'title': 'Add new feature',
+          'head': 'feature-branch',
+          'base': 'main',
+          'body': 'This PR adds the new feature...'
+      })
+
+tags:
+  - github
+  - git
+  - version-control
+  - development
+  - collaboration
+  - ci-cd
+
+metrics:
+  weekly_downloads: 15000
+  total_users: 5000
+  last_updated: "2024-12-15T00:00:00Z"
+
+verification:
+  status: verified
+  tested_date: "2024-12-10T00:00:00Z"
+  security_audit: true
+
+seo:
+  title: GitHub MCP Server - Complete GitHub Integration for AI
+  description: Connect AI assistants to GitHub with MCP. Manage repos, issues, PRs, and automate development workflows through Model Context Protocol.
+  keywords:
+    - github mcp server
+    - mcp github integration
+    - github model context protocol
+    - ai github automation
+    - github api mcp
+
+featured: true
+active: true

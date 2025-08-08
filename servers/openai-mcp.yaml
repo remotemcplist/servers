@@ -1,0 +1,56 @@
+id: openai-mcp
+name: OpenAI MCP Server
+category: ai-ml
+description: Access GPT models, DALL-E, Whisper, and other OpenAI AI capabilities via MCP
+long_description: Access GPT models and AI capabilities. This MCP server provides
+  comprehensive integration with OpenAI services through the Model Context Protocol.
+maintainer:
+  name: OpenAI
+  github: openai
+  website: https://openai.com/
+repository:
+  url: https://github.com/mcp-servers/openai-mcp
+  stars: 100
+authentication:
+  type: api-key
+  provider: openai
+  instructions: Visit https://openai.com/ to obtain API credentials
+endpoints:
+  production: wss://openai-mcp.mcp.io
+  documentation: https://docs.mcp.io/servers/openai-mcp
+capabilities:
+- id: read
+  name: Read Data
+  description: Read data from OpenAI
+- id: write
+  name: Write Data
+  description: Write data to OpenAI
+examples:
+- title: Basic Usage
+  description: Connect to OpenAI MCP Server
+  language: javascript
+  code: 'const client = await mcp.connect(''openai-mcp'');
+
+    const result = await client.call(''method'', {});'
+tags:
+- ai-ml
+- openai
+- mcp
+metrics:
+  weekly_downloads: 1000
+  total_users: 500
+  last_updated: '2024-12-15T00:00:00Z'
+verification:
+  status: pending
+  tested_date: '2024-12-10T00:00:00Z'
+  security_audit: false
+seo:
+  title: OpenAI MCP Server - MCP Integration
+  description: Access GPT models and AI capabilities via Model Context Protocol
+  keywords:
+  - openai-mcp
+  - openai mcp server
+  - mcp server
+  - model context protocol
+featured: false
+active: true

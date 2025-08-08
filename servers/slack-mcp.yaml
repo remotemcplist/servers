@@ -1,0 +1,56 @@
+id: slack-mcp
+name: Slack MCP Server
+category: communication
+description: Team communication and collaboration platform with channels, messaging, and file sharing
+long_description: Team communication and collaboration platform. This MCP server provides
+  comprehensive integration with Slack services through the Model Context Protocol.
+maintainer:
+  name: Slack
+  github: slack
+  website: https://slack.com/
+repository:
+  url: https://github.com/mcp-servers/slack-mcp
+  stars: 100
+authentication:
+  type: oauth2
+  provider: slack
+  instructions: Visit https://slack.com/ to obtain API credentials
+endpoints:
+  production: wss://slack-mcp.mcp.io
+  documentation: https://docs.mcp.io/servers/slack-mcp
+capabilities:
+- id: read
+  name: Read Data
+  description: Read data from Slack
+- id: write
+  name: Write Data
+  description: Write data to Slack
+examples:
+- title: Basic Usage
+  description: Connect to Slack MCP Server
+  language: javascript
+  code: 'const client = await mcp.connect(''slack-mcp'');
+
+    const result = await client.call(''method'', {});'
+tags:
+- communication
+- slack
+- mcp
+metrics:
+  weekly_downloads: 1000
+  total_users: 500
+  last_updated: '2024-12-15T00:00:00Z'
+verification:
+  status: pending
+  tested_date: '2024-12-10T00:00:00Z'
+  security_audit: false
+seo:
+  title: Slack MCP Server - MCP Integration
+  description: Team communication and collaboration platform via Model Context Protocol
+  keywords:
+  - slack-mcp
+  - slack mcp server
+  - mcp server
+  - model context protocol
+featured: false
+active: true

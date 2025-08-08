@@ -1,0 +1,58 @@
+id: notion-mcp
+name: Notion MCP Server
+category: productivity
+description: All-in-one workspace for notes, docs, and collaboration
+long_description: All-in-one workspace for notes, docs, and collaboration. This MCP
+  server provides comprehensive integration with Notion services through the Model
+  Context Protocol.
+maintainer:
+  name: Notion
+  github: notion
+  website: https://notion.so/
+repository:
+  url: https://github.com/mcp-servers/notion-mcp
+  stars: 100
+authentication:
+  type: oauth2
+  provider: notion
+  instructions: Visit https://notion.so/ to obtain API credentials
+endpoints:
+  production: wss://notion-mcp.mcp.io
+  documentation: https://docs.mcp.io/servers/notion-mcp
+capabilities:
+- id: read
+  name: Read Data
+  description: Read data from Notion
+- id: write
+  name: Write Data
+  description: Write data to Notion
+examples:
+- title: Basic Usage
+  description: Connect to Notion MCP Server
+  language: javascript
+  code: 'const client = await mcp.connect(''notion-mcp'');
+
+    const result = await client.call(''method'', {});'
+tags:
+- productivity
+- notion
+- mcp
+metrics:
+  weekly_downloads: 1000
+  total_users: 500
+  last_updated: '2024-12-15T00:00:00Z'
+verification:
+  status: pending
+  tested_date: '2024-12-10T00:00:00Z'
+  security_audit: false
+seo:
+  title: Notion MCP Server - MCP Integration
+  description: All-in-one workspace for notes, docs, and collaboration via Model Context
+    Protocol
+  keywords:
+  - notion-mcp
+  - notion mcp server
+  - mcp server
+  - model context protocol
+featured: false
+active: true

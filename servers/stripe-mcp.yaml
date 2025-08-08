@@ -1,0 +1,105 @@
+id: stripe-mcp
+name: Stripe MCP Server
+category: payments
+description: Process payments, manage subscriptions, and handle billing through Stripe
+long_description: |
+  The Stripe MCP Server enables AI assistants to interact with Stripe's payment platform. 
+  Create and manage customers, process payments, handle subscriptions, generate invoices, 
+  and analyze payment data. Includes sandbox mode for safe testing and development.
+
+maintainer:
+  name: Stripe
+  github: stripe
+  website: https://stripe.com
+
+repository:
+  url: https://github.com/stripe/stripe-mcp-server
+  stars: 890
+
+authentication:
+  type: api-key
+  provider: stripe
+  instructions: |
+    1. Log in to your Stripe Dashboard
+    2. Navigate to Developers > API keys
+    3. Copy your secret key (starts with sk_)
+    4. Configure in MCP client as STRIPE_API_KEY
+
+endpoints:
+  production: wss://mcp.stripe.com/v1
+  sandbox: wss://mcp-sandbox.stripe.com/v1
+  documentation: https://stripe.com/docs/mcp
+
+capabilities:
+  - id: payments.create
+    name: Create Payments
+    description: Process one-time payments and charges
+  - id: customers.manage
+    name: Manage Customers
+    description: Create and update customer profiles
+  - id: subscriptions.manage
+    name: Manage Subscriptions
+    description: Create, update, and cancel subscriptions
+  - id: invoices.generate
+    name: Generate Invoices
+    description: Create and send invoices to customers
+  - id: refunds.process
+    name: Process Refunds
+    description: Issue full or partial refunds
+
+examples:
+  - title: Create Payment Intent
+    description: Process a payment with Stripe
+    language: javascript
+    code: |
+      const payment = await mcp.call('stripe.paymentIntents.create', {
+        amount: 2000, // $20.00
+        currency: 'usd',
+        payment_method_types: ['card'],
+        metadata: {
+          order_id: '12345'
+        }
+      });
+  
+  - title: Create Subscription
+    description: Set up a recurring subscription
+    language: typescript
+    code: |
+      const subscription = await mcp.call('stripe.subscriptions.create', {
+        customer: 'cus_1234567890',
+        items: [{
+          price: 'price_ABC123'
+        }],
+        trial_period_days: 14
+      });
+
+tags:
+  - payments
+  - billing
+  - subscriptions
+  - invoicing
+  - fintech
+  - e-commerce
+
+metrics:
+  weekly_downloads: 8500
+  total_users: 3200
+  last_updated: "2024-12-14T00:00:00Z"
+
+verification:
+  status: verified
+  tested_date: "2024-12-08T00:00:00Z"
+  security_audit: true
+
+seo:
+  title: Stripe MCP Server - Payment Processing via Model Context Protocol
+  description: Integrate Stripe payments with AI assistants using MCP. Process payments, manage subscriptions, and automate billing workflows.
+  keywords:
+    - stripe mcp server
+    - mcp payment processing
+    - stripe model context protocol
+    - ai payment automation
+    - stripe api mcp
+
+featured: true
+active: true

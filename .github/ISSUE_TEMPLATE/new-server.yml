@@ -1,0 +1,160 @@
+name: Submit New MCP Server
+description: Submit a new remote MCP server to the directory
+title: "[NEW SERVER]: "
+labels: ["new-server", "needs-review"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Submit a New MCP Server
+        Thank you for contributing to RemoteMCPList! Please fill out the information below.
+        
+  - type: input
+    id: server_id
+    attributes:
+      label: Server ID
+      description: Unique identifier (lowercase, hyphens only)
+      placeholder: github-mcp
+    validations:
+      required: true
+      
+  - type: input
+    id: name
+    attributes:
+      label: Server Name
+      description: Display name for the server
+      placeholder: GitHub MCP Server
+    validations:
+      required: true
+      
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      description: Primary category for this server
+      options:
+        - development
+        - data-analysis
+        - communication
+        - payments
+        - cloud
+        - productivity
+        - security
+        - database
+        - ai-ml
+        - monitoring
+    validations:
+      required: true
+      
+  - type: textarea
+    id: description
+    attributes:
+      label: Short Description
+      description: Brief description (50-200 characters)
+      placeholder: What does this server do?
+    validations:
+      required: true
+      
+  - type: textarea
+    id: long_description
+    attributes:
+      label: Detailed Description
+      description: Comprehensive description with use cases
+      placeholder: Provide detailed information about the server's capabilities...
+    validations:
+      required: true
+      
+  - type: input
+    id: repository
+    attributes:
+      label: Repository URL
+      description: GitHub repository URL
+      placeholder: https://github.com/owner/repo
+    validations:
+      required: true
+      
+  - type: input
+    id: documentation
+    attributes:
+      label: Documentation URL
+      description: Link to documentation
+      placeholder: https://docs.example.com/mcp
+    validations:
+      required: false
+      
+  - type: dropdown
+    id: auth_type
+    attributes:
+      label: Authentication Type
+      options:
+        - OAuth2
+        - API Key
+        - None (Open Access)
+    validations:
+      required: true
+      
+  - type: input
+    id: endpoint
+    attributes:
+      label: WebSocket Endpoint
+      description: Production WebSocket URL
+      placeholder: wss://example.com/mcp
+    validations:
+      required: true
+      
+  - type: textarea
+    id: capabilities
+    attributes:
+      label: Main Capabilities
+      description: List the main capabilities (one per line)
+      placeholder: |
+        Read repositories
+        Create issues
+        Manage pull requests
+    validations:
+      required: true
+      
+  - type: textarea
+    id: example
+    attributes:
+      label: Code Example
+      description: Provide a simple usage example
+      render: javascript
+      placeholder: |
+        const result = await mcp.call('server.method', {
+          param: 'value'
+        });
+    validations:
+      required: false
+      
+  - type: input
+    id: maintainer_name
+    attributes:
+      label: Maintainer Name
+      description: Your name or organization
+    validations:
+      required: true
+      
+  - type: input
+    id: maintainer_github
+    attributes:
+      label: Maintainer GitHub
+      description: GitHub username
+      placeholder: username
+    validations:
+      required: true
+      
+  - type: checkboxes
+    id: verification
+    attributes:
+      label: Verification
+      description: Please confirm the following
+      options:
+        - label: I have tested this server and confirm it works
+          required: true
+        - label: This server is actively maintained
+          required: true
+        - label: The server follows MCP protocol standards
+          required: true
+        - label: I am the maintainer or have permission to submit
+          required: true

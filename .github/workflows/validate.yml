@@ -1,0 +1,50 @@
+name: Validate Server Submissions
+
+on:
+  pull_request:
+    paths:
+      - 'servers/*.yaml'
+  push:
+    branches: [main]
+    paths:
+      - 'servers/*.yaml'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+    
+    - name: Install dependencies
+      run: |
+        pip install pyyaml
+    
+    - name: Validate YAML files
+      run: |
+        python scripts/validate.py
+    
+    - name: Count servers
+      id: count
+      run: |
+        count=$(ls servers/*.yaml | wc -l)
+        echo "count=$count" >> $GITHUB_OUTPUT
+        echo "✅ Found $count MCP servers"
+    
+    - name: Comment on PR
+      if: github.event_name == 'pull_request'
+      uses: actions/github-script@v6
+      with:
+        script: |
+          const count = '${{ steps.count.outputs.count }}';
+          github.rest.issues.createComment({
+            issue_number: context.issue.number,
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            body: `✅ **Validation passed!**\n\nYour MCP server submission has been validated successfully.\n\nTotal servers in directory: ${count}\n\nThank you for contributing to RemoteMCPList! 🎉`
+          })

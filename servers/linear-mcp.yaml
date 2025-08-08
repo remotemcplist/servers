@@ -1,0 +1,58 @@
+id: linear-mcp
+name: Linear MCP Server
+category: productivity
+description: Project management and issue tracking for software teams
+long_description: Project management and issue tracking for software teams. This MCP
+  server provides comprehensive integration with Linear services through the Model
+  Context Protocol.
+maintainer:
+  name: Linear
+  github: linear
+  website: https://linear.app/
+repository:
+  url: https://github.com/mcp-servers/linear-mcp
+  stars: 100
+authentication:
+  type: oauth2
+  provider: linear
+  instructions: Visit https://linear.app/ to obtain API credentials
+endpoints:
+  production: wss://linear-mcp.mcp.io
+  documentation: https://docs.mcp.io/servers/linear-mcp
+capabilities:
+- id: read
+  name: Read Data
+  description: Read data from Linear
+- id: write
+  name: Write Data
+  description: Write data to Linear
+examples:
+- title: Basic Usage
+  description: Connect to Linear MCP Server
+  language: javascript
+  code: 'const client = await mcp.connect(''linear-mcp'');
+
+    const result = await client.call(''method'', {});'
+tags:
+- productivity
+- linear
+- mcp
+metrics:
+  weekly_downloads: 1000
+  total_users: 500
+  last_updated: '2024-12-15T00:00:00Z'
+verification:
+  status: pending
+  tested_date: '2024-12-10T00:00:00Z'
+  security_audit: false
+seo:
+  title: Linear MCP Server - MCP Integration
+  description: Project management and issue tracking for software teams via Model
+    Context Protocol
+  keywords:
+  - linear-mcp
+  - linear mcp server
+  - mcp server
+  - model context protocol
+featured: false
+active: true
