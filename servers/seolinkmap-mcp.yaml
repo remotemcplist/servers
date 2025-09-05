@@ -1,0 +1,69 @@
+id: seolinkmap-mcp
+name: SEOLinkMap MCP Server
+category: data-analysis
+
+description: Statistical SEO analysis via MCP - built on open source seolinkmap/waasup framework
+long_description: |
+  SEOLinkMap MCP Server provides comprehensive SEO analysis through statistical SERP intelligence.
+  The public MCP offers authless access for website evaluation and SEO knowledge base queries.
+  Private MCP URLs (OAuth2) enable conversational access to personal SEO data, competitor research,
+  PageRank analysis, and mathematical correlation studies. Features academic-level statistical rigor
+  with SERP-specific analysis that debunks generic SEO advice through contradictory findings across
+  different keywords. Transforms complex SEO data into actionable insights via natural language queries.
+
+maintainer:
+  name: SEOLinkMap
+  github: seolinkmap
+  website: https://seolinkmap.com
+
+authentication:
+  type: none
+  provider: none
+  instructions: |
+    Public MCP: No authentication required - use https://seolinkmap.com/mcp
+    Private MCP: 
+    1. Sign up for free account at https://seolinkmap.com/signup
+    2. Access your private MCP URL from account dashboard
+    3. OAuth2 authorization flow connects your AI assistant to personal SEO data
+    4. Configure project access permissions in account settings
+
+endpoints:
+  production: https://seolinkmap.com/mcp
+
+capabilities:
+  - id: website.analysis
+    name: Website Analysis
+    description: Complete site crawling with PageRank calculations and technical audits
+  - id: serp.correlation
+    name: SERP Correlation Analysis
+    description: Statistical analysis of ranking factors with academic rigor and significance testing
+  - id: competitor.research
+    name: Competitor Intelligence
+    description: SERP-specific competitor analysis with backlink profiles and statistical validation
+  - id: content.optimization
+    name: Content Analysis
+    description: Real-time SEO content measurement including keyword density and readability metrics
+  - id: performance.tracking
+    name: Performance Analytics
+    description: GSC/GA4 integration with conversational access to traffic and ranking data
+  - id: statistical.intelligence
+    name: Statistical SEO Intelligence
+    description: P-values, correlation coefficients, Cooks distance, coefficient of variation, regression analysis through natural language queries
+
+tags:
+  - seo
+  - analytics
+  - statistics
+  - serp-analysis
+  - competitor-research
+  - pagerank
+  - mcp
+  - conversational-ai
+  - data-analysis
+
+verification:
+  status: pending
+  tested_date: "2025-09-02T00:00:00Z"
+  security_audit: false
+
+featured: false
