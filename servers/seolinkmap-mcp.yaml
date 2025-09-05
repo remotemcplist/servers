@@ -1,10 +1,9 @@
-id: seolinkmap-mcp                    # Unique identifier (lowercase, hyphens)
-name: SEOLinkMap MCP Server           # Display name
-category: data-analysis               # One of: development, data-analysis, communication, 
-                                     # payments, cloud, productivity, security, database, 
-                                     # ai-ml, monitoring
-description: Statistical SEO analysis via MCP - built on open source seolinkmap/waasup framework  # 20-200 characters
-long_description: |                   # Detailed description (must be longer than description)
+id: seolinkmap-mcp
+name: SEOLinkMap MCP Server
+category: data-analysis
+
+description: Statistical SEO analysis via MCP - built on open source seolinkmap/waasup framework
+long_description: |
   SEOLinkMap MCP Server provides comprehensive SEO analysis through statistical SERP intelligence.
   The public MCP offers authless access for website evaluation and SEO knowledge base queries.
   Private MCP URLs (OAuth2) enable conversational access to personal SEO data, competitor research,
@@ -13,14 +12,14 @@ long_description: |                   # Detailed description (must be longer tha
   different keywords. Transforms complex SEO data into actionable insights via natural language queries.
 
 maintainer:
-  name: SEOLinkMap                    # Your name or organization
-  github: seolinkmap                  # GitHub username (assuming)
-  website: https://seolinkmap.com     # Optional (domain or full URL)
+  name: SEOLinkMap
+  github: seolinkmap
+  website: https://seolinkmap.com
 
 authentication:
-  type: none                          # One of: oauth2, api-key, none
-  provider: custom                    # e.g., github, google, custom
-  instructions: |                     # How to get credentials
+  type: none
+  provider: none
+  instructions: |
     Public MCP: No authentication required - use https://seolinkmap.com/mcp
     Private MCP: 
     1. Sign up for free account at https://seolinkmap.com/signup
@@ -29,10 +28,9 @@ authentication:
     4. Configure project access permissions in account settings
 
 endpoints:
-  production: https://seolinkmap.com/mcp              # Required (public endpoint)
-  #private: Available per user account after signup    # Private MCP URLs provided to users
+  production: https://seolinkmap.com/mcp
 
-capabilities:                         # List what the server can do
+capabilities:
   - id: website.analysis
     name: Website Analysis
     description: Complete site crawling with PageRank calculations and technical audits
@@ -52,7 +50,7 @@ capabilities:                         # List what the server can do
     name: Statistical SEO Intelligence
     description: P-values, correlation coefficients, Cooks distance, coefficient of variation, regression analysis through natural language queries
 
-tags:                                # For search/filtering
+tags:
   - seo
   - analytics
   - statistics
@@ -64,8 +62,8 @@ tags:                                # For search/filtering
   - data-analysis
 
 verification:
-  status: unverified                    # verified, pending, or unverified
+  status: pending
   tested_date: "2025-09-02T00:00:00Z"
   security_audit: false
 
-featured: false                      # Show on homepage (only one should be true)
+featured: false
