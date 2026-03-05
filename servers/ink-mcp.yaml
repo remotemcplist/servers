@@ -1,0 +1,49 @@
+id: ink-mcp
+name: Ink MCP Server
+category: cloud
+description: Deploy and manage applications, databases, domains, and git repos via MCP
+long_description: >
+  The Ink MCP Server provides full access to the Ink cloud platform through the
+  Model Context Protocol. Deploy applications from GitHub or built-in git repos,
+  provision PostgreSQL and Redis databases, configure custom domains with automatic
+  TLS, and manage your entire infrastructure conversationally. Built for developers
+  who want to ship fast without leaving their AI assistant.
+maintainer:
+  name: Ink
+  github: mldotink
+  website: https://ml.ink
+authentication:
+  type: oauth2
+  provider: ink
+  instructions: >
+    Authentication is handled automatically via OAuth. When connecting through
+    a supported MCP client, you will be redirected to Ink to authorize access.
+endpoints:
+  production: https://mcp.ml.ink/mcp
+capabilities:
+- id: deployments.manage
+  name: Manage Deployments
+  description: Deploy, redeploy, and manage application deployments
+- id: databases.manage
+  name: Manage Databases
+  description: Provision and manage PostgreSQL and Redis databases
+- id: domains.manage
+  name: Manage Domains
+  description: Configure custom domains with automatic TLS certificates
+- id: git.manage
+  name: Manage Git Repos
+  description: Create and manage built-in git repositories for deployment
+tags:
+- deployment
+- databases
+- domains
+- git
+- cloud
+- devops
+- mcp
+- remote
+verification:
+  status: pending
+  tested_date: '2025-03-04T00:00:00Z'
+  security_audit: false
+featured: false
