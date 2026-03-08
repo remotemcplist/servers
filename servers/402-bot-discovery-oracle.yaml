@@ -1,0 +1,39 @@
+id: 402-bot-discovery-oracle
+name: 402.bot Discovery Oracle
+category: ai-ml
+description: Remote MCP server for discovering live agent APIs, inspecting endpoint trust, and analyzing x402 payment telemetry
+long_description: |
+  402.bot Discovery Oracle is a public, read-only remote MCP server for agent API discovery and inspection.
+  It helps agents and developers search ranked endpoints by capability and network, inspect endpoint trust and routing telemetry,
+  and analyze wallet-level payment activity across the x402 ecosystem.
+maintainer:
+  name: 402.bot
+  github: sam00101011
+  website: 402.bot
+authentication:
+  type: none
+  provider: none
+  instructions: No API key is required for the read-only MCP surface in v1.
+endpoints:
+  production: https://api.402.bot/mcp
+capabilities:
+  - id: discover_endpoints
+    name: Discover Endpoints
+    description: Search ranked live endpoints by capability, network, strategy, and discovery source
+  - id: inspect_endpoint
+    name: Inspect Endpoint
+    description: Inspect endpoint trust, probe freshness, routing history, and payment telemetry
+  - id: inspect_agent
+    name: Inspect Agent
+    description: Inspect wallet-level routing and payment analytics
+tags:
+  - ai-ml
+  - api-discovery
+  - analytics
+  - remote
+  - x402
+verification:
+  status: pending
+  tested_date: "2026-03-08T00:00:00Z"
+  security_audit: false
+featured: false
