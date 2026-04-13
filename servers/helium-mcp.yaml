@@ -1,0 +1,71 @@
+id: helium-mcp
+name: Helium MCP
+category: data-analysis
+description: Real-time news with bias scoring across 5,000+ sources and 15+ dimensions, balanced news synthesis, live market data, AI options pricing, and meme search. 9 tools, no auth, 50 free queries.
+long_description: |
+  Helium MCP connects assistants to Helium Trades: real-time news with bias scoring across thousands
+  of sources and many bias dimensions, balanced multi-perspective synthesis, live market quotes,
+  AI-assisted options pricing, top trading strategy context, and meme search. The public endpoint
+  offers nine tools with no authentication and a free query allowance for experimentation and
+  lightweight workflows.
+
+maintainer:
+  name: Conner Lambden
+  github: connerlambden
+  website: heliumtrades.com
+
+authentication:
+  type: none
+  provider: none
+  instructions: |
+    No authentication required. Connect your MCP client to the production URL; usage is subject to
+    the service’s free tier and rate limits (50 free queries).
+
+endpoints:
+  production: https://heliumtrades.com/mcp
+
+capabilities:
+  - id: search_news
+    name: search_news
+    description: Search real-time news with bias metadata across thousands of sources
+  - id: search_balanced_news
+    name: search_balanced_news
+    description: Multi-perspective balanced news synthesis for a topic or query
+  - id: get_source_bias
+    name: get_source_bias
+    description: Look up bias profile for a named news source
+  - id: get_bias_from_url
+    name: get_bias_from_url
+    description: Infer bias signals from a specific article URL
+  - id: get_all_source_biases
+    name: get_all_source_biases
+    description: Enumerate bias scores across the full source catalog
+  - id: get_ticker
+    name: get_ticker
+    description: Live market data for a ticker symbol
+  - id: get_option_price
+    name: get_option_price
+    description: AI-assisted options pricing and related context
+  - id: get_top_trading_strategies
+    name: get_top_trading_strategies
+    description: Curated top trading strategies reference data
+  - id: search_memes
+    name: search_memes
+    description: Search meme content relevant to a query or theme
+
+tags:
+  - news
+  - media-bias
+  - trading
+  - options
+  - market-data
+  - mcp
+  - remote
+  - finance
+
+verification:
+  status: pending
+  tested_date: "2026-04-13T00:00:00Z"
+  security_audit: false
+
+featured: false
