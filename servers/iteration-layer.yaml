@@ -1,0 +1,45 @@
+id: iteration-layer
+name: Iteration Layer
+category: ai-ml
+description: "Composable content processing APIs for document extraction, image transformation, image generation, document generation, and sheet generation"
+long_description: "Iteration Layer provides composable APIs for content processing. Extract structured data from documents using AI, transform and generate images, create PDF/DOCX/EPUB/PPTX documents, convert documents to markdown, and generate spreadsheets. EU-hosted with GDPR compliance."
+maintainer:
+  name: Iteration Layer
+  github: iterationlayer
+  website: https://iterationlayer.com
+authentication:
+  type: oauth2
+  provider: Iteration Layer
+  instructions: "Sign up at platform.iterationlayer.com for an API key, or use OAuth 2.1 dynamic client registration"
+endpoints:
+  production: https://api.iterationlayer.com/mcp
+capabilities:
+  - id: document-extraction
+    name: Document Extraction
+    description: Extract structured data from documents and images using AI
+  - id: document-to-markdown
+    name: Document to Markdown
+    description: Convert documents to clean, structured markdown
+  - id: image-transformation
+    name: Image Transformation
+    description: Resize, crop, convert, and apply effects to images
+  - id: image-generation
+    name: Image Generation
+    description: Generate images from layer compositions
+  - id: document-generation
+    name: Document Generation
+    description: Generate PDF, DOCX, EPUB, or PPTX documents
+  - id: sheet-generation
+    name: Sheet Generation
+    description: Generate XLSX, CSV, or Markdown spreadsheets
+tags:
+  - document-processing
+  - image-processing
+  - pdf
+  - ai
+  - eu-hosted
+verification:
+  status: pending
+  tested_date: "2026-04-21"
+  security_audit: false
+featured: false
