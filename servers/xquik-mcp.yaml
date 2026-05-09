@@ -1,0 +1,50 @@
+id: xquik-mcp
+name: Xquik MCP Server
+category: communication
+description: Remote X and Twitter automation MCP server for tweet search, profile timelines, followers, media, webhooks, and posting workflows.
+long_description: |
+  Xquik MCP Server connects AI assistants to Xquik's X and Twitter automation platform through the Model Context Protocol. Agents can search tweets, fetch profile timelines, export followers, download media, manage monitors and webhooks, and run confirmation-gated tweet and reply workflows using a remote HTTP MCP endpoint.
+maintainer:
+  name: Xquik-dev
+  github: Xquik-dev
+  website: https://xquik.com
+authentication:
+  type: api-key
+  provider: xquik
+  instructions: |
+    1. Create or sign in to an Xquik account.
+    2. Open https://dashboard.xquik.com/account.
+    3. Create an API key.
+    4. Configure your MCP client to send the key as the x-api-key header.
+endpoints:
+  production: https://xquik.com/mcp
+capabilities:
+  - id: tweets.search
+    name: Search Tweets
+    description: Search X and Twitter posts using keywords and advanced query filters.
+  - id: profiles.read
+    name: Read Profiles and Timelines
+    description: Fetch user profiles, profile timelines, followers, and following data.
+  - id: media.download
+    name: Download Media
+    description: Retrieve tweet media metadata and downloadable media URLs.
+  - id: webhooks.manage
+    name: Manage Webhooks and Monitors
+    description: Create monitoring workflows and HMAC-signed webhook deliveries.
+  - id: tweets.write
+    name: Post Tweets and Replies
+    description: Run confirmation-gated tweet and reply workflows for connected accounts.
+tags:
+  - x
+  - twitter
+  - tweet-search
+  - social-media
+  - automation
+  - webhooks
+  - mcp
+  - remote
+verification:
+  status: pending
+  tested_date: "2026-05-09T00:00:00Z"
+  security_audit: false
+featured: false
