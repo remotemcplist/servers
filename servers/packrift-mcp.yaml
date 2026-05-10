@@ -1,0 +1,51 @@
+id: packrift-mcp
+name: Packrift MCP Server
+category: payments
+description: Packaging catalog search, pricing, inventory context, and cart URL creation for ecommerce teams
+long_description: |
+  Packrift MCP Server exposes Packrift's packaging-supplies catalog through a remote MCP endpoint.
+  AI agents can search packaging products, retrieve pricing and inventory context, and create cart
+  URLs for ecommerce packaging workflows. It is designed for packaging supply discovery, carton and
+  mailer selection, and agent-assisted purchasing workflows.
+
+maintainer:
+  name: Packrift
+  github: Packrift
+  website: https://packrift.com
+
+authentication:
+  type: none
+  provider: none
+  instructions: |
+    No authentication is required for the public catalog endpoint.
+    Use the remote MCP endpoint at https://mcp.packrift.com/mcp.
+    Documentation is available at https://packrift.com/pages/agents.
+
+endpoints:
+  production: https://mcp.packrift.com/mcp
+
+capabilities:
+  - id: catalog.search
+    name: Packaging Catalog Search
+    description: Search Packrift packaging supplies by product, use case, or packaging need
+  - id: pricing.inventory
+    name: Pricing and Inventory Context
+    description: Retrieve packaging product pricing and inventory context for agent workflows
+  - id: cart.url
+    name: Cart URL Creation
+    description: Create Packrift cart URLs for selected packaging supplies
+
+tags:
+  - ecommerce
+  - packaging
+  - inventory
+  - catalog
+  - remote
+  - mcp
+
+verification:
+  status: pending
+  tested_date: "2026-05-10T00:00:00Z"
+  security_audit: false
+
+featured: false
