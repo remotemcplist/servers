@@ -13,7 +13,7 @@ authentication:
   provider: xquik
   instructions: |
     1. Create or sign in to an Xquik account.
-    2. Open https://dashboard.xquik.com/account.
+    2. Open https://dashboard.xquik.com/en/account.
     3. Create an API key.
     4. Configure your MCP client to send the key as the x-api-key header.
 endpoints:
