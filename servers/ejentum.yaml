@@ -1,0 +1,58 @@
+id: ejentum
+name: Ejentum Reasoning Harness
+
+category: ai-ml
+
+description: "MCP server injecting cognitive scaffolds (failure pattern, procedure, suppression vectors, falsification test) before LLM generation. Four modes: reasoning, code, anti-deception, memory."
+
+long_description: |
+  Ejentum is an MCP server exposing four cognitive-harness tools
+  (harness_reasoning, harness_code, harness_anti_deception, harness_memory)
+  that an agent calls before generating. Each call returns a structured
+  scaffold (named failure pattern, executable procedure, suppression vectors,
+  falsification test) the agent absorbs internally to harden its next
+  response against named failure modes.
+
+maintainer:
+  name: Ejentum
+  github: ejentum
+  website: ejentum.com
+
+authentication:
+  type: api-key
+  provider: ejentum
+  instructions: |
+    1. Sign up at https://ejentum.com/auth/register
+    2. Copy your EJENTUM_API_KEY
+    3. Pass as: Authorization: Bearer <key>
+
+endpoints:
+  production: https://api.ejentum.com/mcp
+
+capabilities:
+  - id: harness.reasoning
+    name: Reasoning Harness
+    description: Retrieve a reasoning scaffold for analytical, planning, or multi-step decision tasks.
+  - id: harness.code
+    name: Code Harness
+    description: Retrieve an engineering scaffold for code generation, refactoring, or architecture tasks.
+  - id: harness.anti_deception
+    name: Anti-Deception Harness
+    description: Retrieve an integrity scaffold for validation requests, ethical reasoning, or adversarial framings.
+  - id: harness.memory
+    name: Memory Harness
+    description: Retrieve a perception scaffold for memory decisions and multi-turn context tracking.
+
+tags:
+  - reasoning
+  - anti-deception
+  - cognitive-harness
+  - mcp
+  - remote
+
+verification:
+  status: pending
+  tested_date: "2026-05-22T00:00:00Z"
+  security_audit: false
+
+featured: false
