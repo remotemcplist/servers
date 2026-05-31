@@ -1,0 +1,43 @@
+id: unifapi-mcp
+name: UnifAPI MCP Server
+category: data-analysis
+description: Hosted public-data MCP server for social, search, scrape, news, creator research, and KOL pricing workflows
+long_description: |
+  UnifAPI MCP Server is a hosted remote MCP endpoint for live public-data workflows.
+  It helps AI agents access social, search, scraping, news, creator research, and
+  KOL pricing data through the Model Context Protocol.
+maintainer:
+  name: UnifAPI
+  github: unifapi-agent
+  website: unifapi.com
+authentication:
+  type: oauth2
+  provider: unifapi
+  instructions: |
+    Connect an OAuth-capable MCP client to https://mcp.unifapi.com.
+    The endpoint exposes OAuth protected-resource metadata for MCP clients.
+endpoints:
+  production: https://mcp.unifapi.com
+capabilities:
+  - id: public-data.search
+    name: Public Data Search
+    description: Search live public data sources for agent workflows
+  - id: public-data.scrape
+    name: Web Scraping
+    description: Retrieve and process public web content
+  - id: creator-research
+    name: Creator Research
+    description: Support creator and KOL pricing research with public social data
+tags:
+  - data-analysis
+  - public-data
+  - search
+  - web-scraping
+  - news
+  - creator-research
+  - remote
+verification:
+  status: pending
+  tested_date: "2026-05-31T00:00:00Z"
+  security_audit: false
+featured: false
