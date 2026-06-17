@@ -1,0 +1,55 @@
+id: sequenzy-mcp
+name: Sequenzy MCP Server
+category: communication
+description: Authorized email automation for AI agents via remote MCP
+long_description: |
+  Sequenzy MCP gives AI agents authorized access to email automation workflows:
+  subscribers, segments, templates, campaigns, transactional messages, and
+  analytics. It is designed for lifecycle, campaign, and transactional email
+  operations with explicit permission boundaries, not spam or unsolicited cold
+  outreach.
+maintainer:
+  name: Sequenzy
+  github: Sequenzy
+  website: sequenzy.com
+authentication:
+  type: oauth2
+  provider: sequenzy
+  instructions: |
+    Connect through the Sequenzy remote MCP endpoint using an authorized
+    Sequenzy account. Local stdio usage can also use a Sequenzy API key from
+    the Sequenzy dashboard.
+endpoints:
+  production: https://api.sequenzy.com/v1/mcp
+capabilities:
+  - id: subscribers.manage
+    name: Manage Subscribers
+    description: Create, inspect, and update subscriber records and attributes
+  - id: segments.manage
+    name: Manage Segments
+    description: Work with subscriber segments for targeted lifecycle workflows
+  - id: campaigns.manage
+    name: Manage Campaigns
+    description: Create, inspect, and coordinate email campaigns
+  - id: templates.manage
+    name: Manage Templates
+    description: Create and manage reusable email templates
+  - id: transactional.send
+    name: Transactional Email
+    description: Send authorized transactional messages through Sequenzy
+  - id: analytics.read
+    name: Read Analytics
+    description: Inspect campaign, subscriber, and email performance analytics
+tags:
+  - email
+  - automation
+  - communication
+  - marketing
+  - transactional-email
+  - mcp
+  - remote
+verification:
+  status: pending
+  tested_date: '2026-06-17T00:00:00Z'
+  security_audit: false
+featured: false
