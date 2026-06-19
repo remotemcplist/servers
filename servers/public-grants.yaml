@@ -1,0 +1,59 @@
+id: public-grants
+name: Public Grants
+category: productivity
+
+description: French public grants advisor - find, check eligibility, and draft applications across 49 programmes.
+
+long_description: |
+  Grants advisor for French startups and AI agents. Traditional grant consultants
+  charge EUR 2,000-5,000 + success fees. Public Grants: free discovery, EUR 49/dossier.
+  
+  21 MCP tools covering the full workflow: company onboarding (profile pre-fill
+  from SIRENE registry, profile enrichment with auto-enrichment + customisable input),
+  grant discovery (search 49 programmes, per-rule eligibility check with pass/fail/unknown
+  from official legal texts), application drafting (preview, draft, validate, export
+  as .md or .docx), and a free strategic briefing with downloadable PDF. Covers CIR,
+  JEI, BPI, CNC, ADEME, EIC Accelerator, and regional aids.
+
+maintainer:
+  name: PyratzLabs
+  github: Peiyaooooo
+  website: pyratzlabs.com
+
+authentication:
+  type: none
+  instructions: |
+    No authentication required for discovery. Simply connect to the endpoint.
+    Paid features (drafting) are EUR 49/dossier.
+
+endpoints:
+  production: https://grants.mrchief.ai/mcp/
+
+capabilities:
+  - id: profile.onboarding
+    name: Profile Onboarding
+    description: Pre-fill company profiles from SIRENE registry, auto-enrich from web, and customise with your own inputs
+  - id: grants.discovery
+    name: Grant Discovery
+    description: Search 49 programmes and check eligibility with per-rule pass/fail from official legal texts
+  - id: application.drafting
+    name: Application Drafting
+    description: Preview, draft, validate, and export grant applications as .md or .docx
+  - id: strategic.briefing
+    name: Strategic Briefing
+    description: Free consultant briefing with funding potential, calendar, and action plan as downloadable PDF
+
+tags:
+  - grants
+  - france
+  - startup
+  - finance
+  - government
+  - remote
+
+verification:
+  status: pending
+  tested_date: "2026-06-19T00:00:00Z"
+  security_audit: false
+
+featured: false
