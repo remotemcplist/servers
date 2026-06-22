@@ -1,0 +1,50 @@
+id: xquik-mcp
+name: Xquik MCP Server
+category: data-analysis
+description: Remote MCP server for Xquik X data workflows, exports, webhooks, and agent-safe actions.
+long_description: |
+  Xquik MCP Server exposes Xquik's X data and automation workflows through the
+  Model Context Protocol. It helps AI agents search and inspect X posts, users,
+  replies, quotes, followers, lists, communities, articles, and trends; run
+  supported bulk extractions; configure approved monitors and webhooks; and
+  prepare confirmation-gated X account actions.
+maintainer:
+  name: Xquik
+  github: Xquik-dev
+  website: https://docs.xquik.com/mcp/overview
+authentication:
+  type: api-key
+  provider: xquik
+  instructions: |
+    1. Create an Xquik API key from https://dashboard.xquik.com/en/account
+    2. Configure your MCP client to send Authorization: Bearer {XQUIK_API_KEY}
+    3. Keep the API key secret and do not store it in prompts or logs
+endpoints:
+  production: https://xquik.com/mcp
+capabilities:
+  - id: x.data.read
+    name: Read X Data
+    description: Search and inspect X posts, users, replies, quotes, followers, lists, communities, articles, and trends.
+  - id: x.extractions.run
+    name: Run Extractions
+    description: Run supported bulk exports and return structured X datasets through Xquik workflows.
+  - id: x.monitoring.manage
+    name: Manage Monitors
+    description: Configure approved account or keyword monitors and route updates through webhooks.
+  - id: x.actions.prepare
+    name: Prepare Actions
+    description: Prepare confirmation-gated X account actions such as posts, replies, likes, DMs, profile updates, and media uploads.
+tags:
+  - xquik
+  - x
+  - twitter
+  - social-data
+  - mcp
+  - remote
+  - webhooks
+  - automation
+verification:
+  status: pending
+  tested_date: "2026-06-22T00:00:00Z"
+  security_audit: false
+featured: false
