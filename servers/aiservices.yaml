@@ -1,0 +1,67 @@
+id: aiservices
+name: AgentServices
+category: data-analysis
+
+description: Remote MCP server for AI agents to access market, crypto, on-chain, search, marketing, and dispute-resolution APIs.
+
+long_description: |
+  AgentServices is a production remote MCP server for autonomous AI agents.
+  It exposes structured tools for crypto prices, DeFi yields, market indicators,
+  search and URL metadata, marketing intelligence, on-chain analytics, and
+  policy-driven dispute resolution. The same platform also publishes x402 paid
+  API endpoints so agent wallets can pay per call for premium data and governance
+  workflows.
+
+maintainer:
+  name: AgentServices
+  github: vbkotecha
+  website: agentservices.to
+
+authentication:
+  type: none
+  provider: aiservices
+  instructions: |
+    No credentials are required to connect to the public remote MCP endpoint.
+    Premium REST API endpoints advertise x402 payment requirements through the
+    discovery manifest at https://agentservices.to/.well-known/x402.
+
+endpoints:
+  production: https://agentservices.to/mcp
+
+capabilities:
+  - id: market.crypto-prices
+    name: Crypto Prices
+    description: Retrieve live cryptocurrency price and market data for agent workflows.
+  - id: market.defi-yields
+    name: DeFi Yields
+    description: Access DeFi yield and market indicator data for autonomous research.
+  - id: search.url-metadata
+    name: Search and URL Metadata
+    description: Analyze URLs and retrieve web/search metadata for agent context.
+  - id: marketing.intelligence
+    name: Marketing Intelligence
+    description: Generate sentiment, trend, competitor, content-gap, and ad-copy intelligence.
+  - id: onchain.analytics
+    name: On-chain Analytics
+    description: Query whale activity, exchange flows, DeFi TVL, stablecoin flows, and related signals.
+  - id: governance.disputes
+    name: Dispute Resolution
+    description: Resolve agent-commerce disputes with policy-driven templates and auditable rulings.
+
+tags:
+  - remote-mcp
+  - x402
+  - ai-agents
+  - crypto
+  - defi
+  - market-data
+  - onchain
+  - search
+  - dispute-resolution
+
+verification:
+  status: pending
+  tested_date: "2026-07-04T19:05:00Z"
+  security_audit: false
+
+featured: false
