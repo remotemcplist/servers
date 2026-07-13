@@ -1,11 +1,11 @@
 id: aiservices
-name: AIServices
+name: AgentServices
 category: data-analysis
 
 description: Remote MCP server for AI agents to access market, crypto, on-chain, search, marketing, and dispute-resolution APIs.
 
 long_description: |
-  AIServices is a production remote MCP server for autonomous AI agents.
+  AgentServices is a production remote MCP server for autonomous AI agents.
   It exposes structured tools for crypto prices, DeFi yields, market indicators,
   search and URL metadata, marketing intelligence, on-chain analytics, and
   policy-driven dispute resolution. The same platform also publishes x402 paid
@@ -13,9 +13,9 @@ long_description: |
   workflows.
 
 maintainer:
-  name: AIServices
+  name: AgentServices
   github: vbkotecha
-  website: api.aiservices.to
+  website: agentservices.to
 
 authentication:
   type: none
@@ -23,10 +23,10 @@ authentication:
   instructions: |
     No credentials are required to connect to the public remote MCP endpoint.
     Premium REST API endpoints advertise x402 payment requirements through the
-    discovery manifest at https://api.aiservices.to/.well-known/x402.
+    discovery manifest at https://agentservices.to/.well-known/x402.
 
 endpoints:
-  production: https://api.aiservices.to/mcp
+  production: https://agentservices.to/mcp
 
 capabilities:
   - id: market.crypto-prices
