@@ -1,21 +1,21 @@
 id: xquik-mcp
 name: Xquik MCP Server
-category: communication
-description: Remote X and Twitter automation MCP server for tweet search, profile timelines, followers, media, webhooks, and posting workflows.
+category: data-analysis
+description: Hosted X data workflows through 118 MCP operations exposed by 2 tools, with OAuth 2.1 and API key access.
 long_description: |
-  Xquik MCP Server connects AI assistants to Xquik's X and Twitter automation platform through the Model Context Protocol. Agents can search tweets, fetch profile timelines, export followers, download media, manage monitors and webhooks, and run confirmation-gated tweet and reply workflows using a remote HTTP MCP endpoint.
+  Xquik MCP Server connects AI assistants to 118 operations through 2 tools at a remote Streamable HTTP endpoint. Agents can discover operation schemas, search posts, fetch profiles and timelines, inspect followers, retrieve media metadata, manage monitors and webhooks, and run supported account workflows. OAuth 2.1 is the primary authentication method, with API key fallback. Xquik is an independent third-party service. Not affiliated with X Corp. "Twitter" and "X" are trademarks of X Corp.
 maintainer:
-  name: Xquik-dev
+  name: Xquik
   github: Xquik-dev
   website: https://xquik.com
 authentication:
-  type: api-key
+  type: oauth2
   provider: xquik
   instructions: |
     1. Create or sign in to an Xquik account.
-    2. Open https://dashboard.xquik.com/en/account.
-    3. Create an API key.
-    4. Configure your MCP client to send the key as the x-api-key header.
+    2. Connect through OAuth 2.1 with the mcp:tools scope.
+    3. For API key fallback, create a key at https://dashboard.xquik.com/en/account.
+    4. Send the fallback key through x-api-key or Bearer authentication.
 endpoints:
   production: https://xquik.com/mcp
 capabilities:
@@ -45,6 +45,6 @@ tags:
   - remote
 verification:
   status: pending
-  tested_date: "2026-05-09T00:00:00Z"
+  tested_date: "2026-07-16T00:00:00Z"
   security_audit: false
 featured: false
