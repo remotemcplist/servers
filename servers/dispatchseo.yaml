@@ -1,0 +1,60 @@
+id: dispatchseo
+name: DispatchSEO
+category: development
+
+description: Self-hostable AGPL SEO manager backend with an MCP server for keyword research, content queue, and SERP tracking.
+
+long_description: |
+  DispatchSEO turns Claude Code into your SEO manager. Its MCP server (~40
+  tools) lets an agent research keywords from Google Search Console and
+  Autocomplete data, queue and reorder content ideas, check live SERP
+  positions, read rank/GSC history, manage backlink prospects, and drive
+  a content-approval workflow that ships pull requests to the user's site
+  repo. Self-hosting is one Docker Compose command and is fully
+  feature-complete; there is also a hosted version.
+
+maintainer:
+  name: Neo Zino
+  github: NeoZi12
+  website: dispatchseo.com
+
+authentication:
+  type: api-key
+  provider: custom
+  instructions: |
+    1. Self-host with `git clone https://github.com/NeoZi12/dispatchseo && cd dispatchseo && sh start.sh`,
+       or use the hosted version at https://dispatchseo.com
+    2. Open the dashboard the setup wizard gives you and create a project
+    3. Copy the per-project MCP bearer token from the project's settings
+    4. Configure your MCP client with the endpoint below and the token as a Bearer header
+
+endpoints:
+  production: https://dispatchseo.com/api/mcp
+
+capabilities:
+  - id: keyword-research
+    name: Keyword Research
+    description: Mine keyword ideas from Google Search Console data and Google Autocomplete
+  - id: content-queue
+    name: Content Queue
+    description: Queue, reorder, and approve content ideas with reasoning attached
+  - id: serp-tracking
+    name: SERP & Rank Tracking
+    description: Daily rank checks, hourly Search Console snapshots, and live SERP position checks
+  - id: backlink-prospects
+    name: Backlink Prospects
+    description: Track a prefilled backlink prospect list per submission
+
+tags:
+  - seo
+  - content
+  - self-hosted
+  - agpl
+  - claude-code
+
+verification:
+  status: pending
+  tested_date: "2026-07-27T00:00:00Z"
+  security_audit: false
+
+featured: false
