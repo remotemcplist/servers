@@ -1,0 +1,63 @@
+id: dialmcp
+name: DialMCP
+category: communication
+description: Let AI agents place real phone calls from your SMS-verified number, with transcripts and recordings.
+long_description: |
+  DialMCP is a hosted remote MCP server that gives AI agents a phone. Point any MCP client at
+  https://mcp.dialmcp.com/mcp, sign in with OAuth (phone SMS verification), and your agent can place
+  real outbound calls on your behalf from your own verified caller ID.
+
+  Tools: place_call, get_call, end_call, list_calls (async — poll get_call). Returns a turn-by-turn
+  transcript, a signed recording link, and a structured outcome. Handles phone trees and hold music;
+  detects voicemail and hangs up rather than leaving a message.
+
+  Safety is server-side: mandatory AI disclosure verified against each transcript, rate limits
+  (1 concurrent / 3 per hour / 10 per day), calling hours 8:00–21:00 local, US & Canada only,
+  permanent platform-wide opt-outs. Free during pilot.
+
+maintainer:
+  name: DialMCP / Datawizz
+  github: SkillfulAgents
+  website: https://dialmcp.com
+
+authentication:
+  type: oauth2
+  provider: dialmcp
+  instructions: |
+    1. Point your MCP client at https://mcp.dialmcp.com/mcp (Streamable HTTP).
+    2. Complete the OAuth browser flow and verify your phone number via SMS.
+    3. That number becomes your caller ID. No API keys required.
+    RFC 7591 dynamic client registration is supported.
+
+endpoints:
+  production: https://mcp.dialmcp.com/mcp
+
+capabilities:
+  - id: place_call
+    name: Place Call
+    description: Start an outbound call with a phone number and objective; returns a call ID immediately.
+  - id: get_call
+    name: Get Call
+    description: Poll call status, transcript, recording link, and structured outcome.
+  - id: end_call
+    name: End Call
+    description: Hang up an in-progress call.
+  - id: list_calls
+    name: List Calls
+    description: List recent calls for the authenticated user.
+
+tags:
+  - communication
+  - telephony
+  - phone-calls
+  - voice
+  - oauth
+  - remote
+  - mcp
+
+verification:
+  status: pending
+  tested_date: "2026-07-27T00:00:00Z"
+  security_audit: false
+
+featured: false
