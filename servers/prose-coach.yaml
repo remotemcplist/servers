@@ -16,8 +16,8 @@ long_description: |
 
   The free endpoint exposes the scan_draft tool with no authentication. It allows
   three drafts a day at up to 12,000 characters. A paid tier adds a coaching brief
-  that tells the model which revision passes to run and what to leave alone, and
-  lifts the daily limit and the character cap.
+  that tells the model what to revise and what to leave alone, and lifts the daily
+  limit and the character cap.
 
   It doesn't detect AI and it doesn't rewrite. It marks the evidence and explains
   the repair.
