@@ -1,0 +1,56 @@
+id: prose-coach
+name: Prose Coach
+category: productivity
+
+description: Deterministic writing filter. Marks 43 AI patterns with the line and the fix.
+
+long_description: |
+  Prose Coach is a deterministic writing filter. A fixed rule set runs over a draft
+  and returns 43 AI patterns, each quoting the sentence that triggered it and
+  attaching the fix. Two runs on the same text return the same findings. No other
+  language model reads what was written.
+
+  It connects as a remote MCP server, so the scan happens inside the tool where the
+  writing already lives. Claude and Cursor both work; Codex does too. Setup is one
+  URL. A browser scanner at prose.coach runs the same engine, no account needed.
+
+  The free endpoint exposes the scan_draft tool with no authentication. It allows
+  three drafts a day at up to 12,000 characters. A paid tier adds a coaching brief
+  that tells the model what to revise and what to leave alone, and lifts the daily
+  limit and the character cap.
+
+  It doesn't detect AI and it doesn't rewrite. It marks the evidence and explains
+  the repair.
+
+maintainer:
+  name: Prose Coach
+  website: prose.coach
+
+authentication:
+  type: none
+  instructions: |
+    The listed endpoint requires no authentication. The free scan_draft tool works
+    out of the box. A paid tier at prose.coach adds a coaching brief tool served
+    from a per-license URL.
+
+endpoints:
+  production: https://www.prose.coach/mcp
+
+capabilities:
+  - id: scan_draft
+    name: Scan Draft
+    description: Run a deterministic rule set over a draft and return the AI patterns found, each with the triggering line and the fix.
+
+tags:
+  - writing
+  - ai-text
+  - editing
+  - mcp
+  - remote
+
+verification:
+  status: verified
+  tested_date: "2026-08-04T00:00:00Z"
+  security_audit: false
+
+featured: false
