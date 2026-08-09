@@ -1,0 +1,51 @@
+id: runapi
+name: RunAPI
+category: ai-ml
+
+description: Hosted MCP server for RunAPI model discovery, pricing lookup, and authenticated media task creation
+long_description: |
+  RunAPI's hosted MCP server lets MCP-compatible clients browse the RunAPI model
+  catalog, inspect model inputs, check current runtime pricing, search prompt
+  examples, create authenticated image, video, music/audio, and model API tasks,
+  poll task status, and check account balance.
+
+maintainer:
+  name: RunAPI
+  github: runapi-ai
+  website: runapi.ai
+
+authentication:
+  type: oauth2
+  provider: runapi
+  instructions: |
+    1. Connect your MCP client to https://mcp.runapi.ai/mcp.
+    2. Use OAuth when your client supports remote MCP authorization.
+    3. For headless clients, configure a RunAPI API key as the bearer credential.
+
+endpoints:
+  production: https://mcp.runapi.ai/mcp
+
+capabilities:
+  - id: models.discover
+    name: Discover Models
+    description: List RunAPI models and inspect service, action, modality, and input metadata
+  - id: pricing.lookup
+    name: Check Pricing
+    description: Check current runtime pricing for supported RunAPI model actions
+  - id: tasks.manage
+    name: Manage Tasks
+    description: Create authenticated media tasks and poll task status
+
+tags:
+  - ai-ml
+  - model-api
+  - media-generation
+  - mcp
+  - remote
+
+verification:
+  status: pending
+  tested_date: "2026-08-09T00:00:00Z"
+  security_audit: false
+
+featured: false
