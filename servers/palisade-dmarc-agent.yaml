@@ -1,0 +1,63 @@
+id: palisade-dmarc-agent
+name: Palisade DMARC Agent
+category: security
+
+description: AI-powered DMARC and email authentication management for AI agents.
+
+long_description: |
+  Palisade helps AI agents manage email-authentication posture across domains.
+  It provides remote MCP tools for DMARC, SPF, DKIM, BIMI, MTA-STS, DNS records,
+  remediation tasks, domain groups, account information, subscriptions, and webhooks.
+
+maintainer:
+  name: Palisade
+  github: palisadeemail
+  website: https://www.palisade.email/mcp
+
+authentication:
+  type: oauth2
+  provider: palisade
+  instructions: |
+    Connect with Palisade OAuth, or create a Palisade API key and send it in the
+    Authorization header as a Bearer token. See https://developer.palisade.email/docs/guide.
+
+endpoints:
+  production: https://api.palisade.email/mcp
+
+capabilities:
+  - id: domains.manage
+    name: Manage domains
+    description: List, add, inspect, verify, and remove managed domains.
+  - id: dns.inspect
+    name: Inspect DNS records
+    description: Retrieve DNS records needed for email-authentication setup.
+  - id: email-authentication.manage
+    name: Manage email authentication
+    description: Configure and inspect DMARC, SPF, DKIM, BIMI, and MTA-STS posture.
+  - id: remediation.tasks
+    name: Manage remediation tasks
+    description: List and inspect email-authentication remediation tasks.
+  - id: domain-groups.manage
+    name: Manage domain groups
+    description: List and create groups for organizing managed domains.
+  - id: webhooks.manage
+    name: Manage webhooks
+    description: List, create, and delete webhook endpoints and inspect events.
+
+tags:
+  - dmarc
+  - email-security
+  - email-authentication
+  - dns
+  - spf
+  - dkim
+  - mta-sts
+  - remote
+  - mcp
+
+verification:
+  status: pending
+  tested_date: "2026-08-16T00:00:00Z"
+  security_audit: false
+
+featured: false
