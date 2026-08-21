@@ -1,0 +1,71 @@
+id: pocket-drives
+name: Pocket Drives
+category: productivity
+description: Search and quote luxury, exotic, and EV rentals from independent hosts. Booking finishes in the iOS app.
+long_description: |
+  Public, read-only Model Context Protocol server for Pocket Drives, a peer-to-peer
+  marketplace for luxury, exotic, and EV rentals. Independent hosts list vehicles;
+  PocketList Inc builds the platform. Search inventory by city and dates, get quotes,
+  check availability, and browse host showrooms. This server does not book. Booking
+  finishes in the Pocket Drives iOS app. Live markets include Salt Lake City, Scottsdale,
+  Orange County, Palm Springs, and Las Vegas.
+
+maintainer:
+  name: PocketList Inc
+  github: RevList
+  website: pocketdrives.ai
+
+authentication:
+  type: none
+  provider: open
+  instructions: |
+    No authentication required. This is an open, read-only MCP server.
+    Configure the production endpoint URL in your MCP client.
+
+endpoints:
+  production: https://pocketdrives.ai/mcp
+
+capabilities:
+  - id: search-vehicles
+    name: Search Vehicles
+    description: Search marketplace inventory by location, dates, category, and filters
+  - id: location-suggest
+    name: Location Suggest
+    description: Autocomplete cities, airports, and venues
+  - id: vehicle-detail
+    name: Vehicle Detail
+    description: Rates, host info, and organization policies
+  - id: get-quote
+    name: Get Quote
+    description: Quote with daily breakdown, taxes, and deposit
+  - id: vehicle-availability
+    name: Vehicle Availability
+    description: Monthly availability calendar
+  - id: airport-search
+    name: Airport Search
+    description: Airport delivery pickup options
+  - id: venue-search
+    name: Venue Search
+    description: Venue delivery pickup options
+  - id: host-showroom
+    name: Host Showroom
+    description: Host profile by username
+
+tags:
+  - travel
+  - car-rental
+  - luxury
+  - exotic
+  - ev
+  - booking
+  - pocket-drives
+  - mcp
+  - remote
+  - productivity
+
+verification:
+  status: pending
+  tested_date: "2026-08-21T00:00:00Z"
+  security_audit: false
+
+featured: false
