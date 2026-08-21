@@ -12,7 +12,7 @@ long_description: |
 maintainer:
   name: Palisade
   github: palisadeemail
-  website: https://palisade.email
+  website: https://www.palisade.email/mcp
 
 authentication:
   type: oauth2
