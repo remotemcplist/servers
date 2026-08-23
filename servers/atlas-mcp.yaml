@@ -1,0 +1,48 @@
+id: atlas-mcp
+name: Atlas Verified
+category: productivity
+description: AI-powered organic supply chain verification — certification, OFAC, and FDA import checks.
+long_description: |
+  Remote Model Context Protocol server for Atlas Verified. Helps agents and operators
+  verify organic supply chains with certification checks, OFAC screening, and FDA
+  import checks. Streamable HTTP endpoint requires an Authorization header.
+  Official registry namespace: ai.atlasverified/atlas-mcp.
+
+maintainer:
+  name: Atlas Verified
+  github: lifeofjer
+  website: atlasverified.ai
+
+authentication:
+  type: api_key
+  provider: atlasverified
+  instructions: |
+    Requires Authorization header (Bearer API key). Configure the production
+    endpoint URL and auth header in your MCP client.
+
+endpoints:
+  production: https://api.atlasverified.ai/mcp
+
+capabilities:
+  - id: supply-chain-verification
+    name: Supply Chain Verification
+    description: Certification, OFAC, and FDA import verification for organic supply chains
+
+tags:
+  - supply-chain
+  - compliance
+  - verification
+  - ofac
+  - fda
+  - organic
+  - atlas-verified
+  - mcp
+  - remote
+  - business
+
+verification:
+  status: pending
+  tested_date: "2026-08-23T00:00:00Z"
+  security_audit: false
+
+featured: false
