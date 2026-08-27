@@ -1,0 +1,55 @@
+id: pzero
+name: PZERO
+category: ai-ml
+description: Prepaid inference for agents over hosted MCP. Chat, image, and video.
+long_description: |
+  Hosted PZERO MCP at https://mcp.pzero.studio/mcp. Prepaid inference for
+  agents (chat, image, video) over Model Context Protocol. Bearer pzero_ key.
+  MCP spends prepaid USDC; it does not run x402 itself. Call agent_me first
+  after connect. Docs: https://docs.pzero.studio/agents/mcp
+maintainer:
+  name: PZERO Listings
+  github: pzero-listing
+  website: https://pzero.studio
+authentication:
+  type: api-key
+  provider: custom
+  instructions: |
+    1. Sign in at https://pzero.studio and top up USDC (Studio x402) or use agent HTTP signup/refill.
+    2. Wait until confirmedUsdc covers the first call (GET /v1/agent/me).
+    3. Copy a pzero_ API key.
+    4. In your MCP client, set Authorization: Bearer pzero_… on https://mcp.pzero.studio/mcp
+    Machine copy: https://api.pzero.studio/MCP.md
+endpoints:
+  production: https://mcp.pzero.studio/mcp
+capabilities:
+  - id: funding.instructions
+    name: Funding instructions
+    description: How to fund a PZERO account and authenticate MCP
+  - id: agent.me
+    name: Account
+    description: Balances, key prefix, and max price
+  - id: models.list
+    name: Models
+    description: Resolve a live model id before inference
+  - id: inference.chat
+    name: Chat
+    description: Prepaid chat completions over hosted MCP
+  - id: inference.image
+    name: Image
+    description: Prepaid image generation over hosted MCP
+  - id: inference.video
+    name: Video
+    description: Prepaid video generation over hosted MCP
+tags:
+  - mcp
+  - inference
+  - agents
+  - cursor
+  - ai
+  - remote
+verification:
+  status: pending
+  tested_date: "2026-08-27T00:00:00Z"
+  security_audit: false
+featured: false
