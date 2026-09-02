@@ -1,0 +1,40 @@
+id: mcpfinder-mcp
+name: MCP Finder
+category: development
+description: Find an MCP server for any task by searching the official registry, Smithery and npm
+long_description: |
+  MCP Finder answers "is there an MCP server for X?" in one call. It
+  federates the official MCP Registry (registry.modelcontextprotocol.io),
+  the Smithery registry (with live use counts) and npm, dedupes the hits,
+  ranks remote Streamable HTTP servers first, and returns the install
+  snippet for the caller's own client. A second tool returns one server's
+  tool list and connection details so an agent can decide before installing.
+  Free, keyless, no account.
+maintainer:
+  name: agie
+  github: ux-xd
+  website: findanmcp.com
+authentication:
+  type: none
+  provider: none
+  instructions: No authentication required. Add the endpoint as a Streamable HTTP MCP server.
+endpoints:
+  production: https://findanmcp.com/mcp
+capabilities:
+- id: find_mcp
+  name: Find MCP servers
+  description: Search the official registry, Smithery and npm for servers matching a capability
+- id: mcp_details
+  name: MCP details
+  description: Get one server's tool list, transports and install details by name
+tags:
+- mcp
+- discovery
+- registry
+- search
+- remote
+verification:
+  status: pending
+  tested_date: "2026-09-02T00:00:00Z"
+  security_audit: false
+featured: false

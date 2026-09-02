@@ -1,0 +1,41 @@
+id: rss-feed-mcp
+name: RSS Feed MCP
+category: communication
+description: Find a site's RSS/Atom/JSON feed, read items as JSON, keyless news search
+long_description: |
+  RSS, Atom and JSON Feed for agents: find the covering feed for any site
+  (auto-discovery from page markup and common paths), read items as plain
+  JSON with text extracted, and search news keylessly through public news
+  RSS engines. Turns any publisher's feed into structured agent input.
+  Free, keyless, no account.
+maintainer:
+  name: agie
+  github: ux-xd
+  website: rssfeedmcp.dev
+authentication:
+  type: none
+  provider: none
+  instructions: No authentication required. Add the endpoint as a Streamable HTTP MCP server.
+endpoints:
+  production: https://rssfeedmcp.dev/mcp
+capabilities:
+- id: feed_find
+  name: Find feed
+  description: Locate the RSS/Atom/JSON feed covering a URL or site
+- id: feed_read
+  name: Read feed
+  description: Read feed items as JSON with dates and text
+- id: news_search
+  name: News search
+  description: Keyless news search across public news RSS engines
+tags:
+- rss
+- atom
+- feed
+- news
+- remote
+verification:
+  status: pending
+  tested_date: "2026-09-02T00:00:00Z"
+  security_audit: false
+featured: false
