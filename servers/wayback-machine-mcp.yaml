@@ -1,0 +1,39 @@
+id: wayback-machine-mcp
+name: Wayback Machine MCP
+category: development
+description: Closest archived copy of a URL with its text, plus full capture history for agents
+long_description: |
+  Wayback Machine for agents: the closest archived copy of any URL (with the
+  captured text extracted) and full capture history through the CDX index.
+  Every URL the Wayback Machine has ever frozen becomes readable content for
+  an agent: dead pages resolve to their last live copy, and one query
+  returns every capture of a URL or domain over time. Keyless; anonymous
+  Save Page Now is held back (rate limits), so reads only.
+maintainer:
+  name: agie
+  github: ux-xd
+  website: waybackmcp.com
+authentication:
+  type: none
+  provider: none
+  instructions: No authentication required. Add the endpoint as a Streamable HTTP MCP server.
+endpoints:
+  production: https://waybackmcp.com/mcp
+capabilities:
+- id: wayback
+  name: Wayback lookup
+  description: Closest archived copy of a URL with extracted text
+- id: cdx
+  name: Capture history
+  description: Full CDX capture history for a URL or domain pattern
+tags:
+- wayback-machine
+- web-archive
+- archive
+- url
+- remote
+verification:
+  status: pending
+  tested_date: "2026-09-02T00:00:00Z"
+  security_audit: false
+featured: false

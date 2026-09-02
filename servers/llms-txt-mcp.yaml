@@ -1,0 +1,38 @@
+id: llms-txt-mcp
+name: LLMs.txt MCP
+category: development
+description: Any site's llms.txt as a parsed index, any linked page as markdown, section search
+long_description: |
+  LLMs.txt MCP makes the llms.txt convention usable over MCP: find the
+  covering index for any site (checking /llms.txt, /llms-full.txt and
+  fallbacks), read its linked documentation as markdown, and search sections
+  across a site's docs. Agents get a site's own LLM-ready surface without a
+  browser. Free, keyless, no account.
+maintainer:
+  name: agie
+  github: ux-xd
+  website: llmstxtmcp.dev
+authentication:
+  type: none
+  provider: none
+  instructions: No authentication required. Add the endpoint as a Streamable HTTP MCP server.
+endpoints:
+  production: https://llmstxtmcp.dev/mcp
+capabilities:
+- id: llms_index
+  name: LLMs.txt index
+  description: Find and parse a site's llms.txt into a link index
+- id: page
+  name: Page as markdown
+  description: Read any linked page as markdown text
+tags:
+- llms-txt
+- docs
+- markdown
+- web
+- remote
+verification:
+  status: pending
+  tested_date: "2026-09-02T00:00:00Z"
+  security_audit: false
+featured: false

@@ -1,0 +1,46 @@
+id: dephealth-mcp
+name: Dependency Health MCP
+category: security
+description: Is this package alive? Verdict with evidence across eight registries, plus runtime EOL
+long_description: |
+  One call answers whether a package is still alive: a verdict (deprecated,
+  archived, stale, active or unknown) with the evidence behind it. Registry
+  deprecation (per-version on npm, go.mod Deprecated/retract for Go, NuGet,
+  Packagist abandoned), yanked releases, repository archived and last-push
+  dates, maintainer and dependent counts, known advisories for the exact
+  version, and what replaced it. Covers npm, PyPI, crates.io, RubyGems, Go
+  modules, Maven, NuGet and Packagist through ecosyste.ms, the native
+  registries and deps.dev, all keyless. deps_audit takes a whole
+  package.json or requirements.txt (up to 25 packages); runtime_eol reports
+  endoflife.date support and EOL dates for runtimes and OSes.
+maintainer:
+  name: agie
+  github: ux-xd
+  website: dephealth.dsh.sh
+authentication:
+  type: none
+  provider: none
+  instructions: No authentication required. Add the endpoint as a Streamable HTTP MCP server.
+endpoints:
+  production: https://dephealth.dsh.sh/mcp
+capabilities:
+- id: package_health
+  name: Package health
+  description: Verdict with evidence on whether a package is deprecated, archived, stale or active
+- id: deps_audit
+  name: Manifest audit
+  description: Health verdicts for every package in a package.json or requirements.txt
+- id: runtime_eol
+  name: Runtime EOL
+  description: Support and end-of-life dates for runtimes and OSes from endoflife.date
+tags:
+- dependencies
+- supply-chain
+- deprecation
+- advisories
+- endoflife
+verification:
+  status: pending
+  tested_date: "2026-09-02T00:00:00Z"
+  security_audit: false
+featured: false
