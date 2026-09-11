@@ -1,0 +1,33 @@
+id: zambo
+name: Zambo
+category: development
+description: Give your AI hands. One URL. Type a job. Get a receipt.
+long_description: |
+  Zambo is a remote MCP. Paste one URL into your AI. Type a job. Get a receipt.
+maintainer:
+  name: Brennan Zambo
+  github: zambodotdev
+  website: zambo.dev
+authentication:
+  type: none
+  provider: none
+  instructions: No account or API key for the basic connection.
+endpoints:
+  production: https://zambo.dev/api/mcp
+capabilities:
+  - id: job-routing
+    name: Job routing
+    description: Type a job and Zambo runs it through live tools.
+  - id: receipts
+    name: Receipts
+    description: Calls come back with a receipt.
+tags:
+  - mcp
+  - remote
+  - development
+  - zambo
+verification:
+  status: pending
+  tested_date: "2026-09-11T00:00:00Z"
+  security_audit: false
+featured: false
