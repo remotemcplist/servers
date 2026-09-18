@@ -1,0 +1,47 @@
+id: statsnet
+name: Statsnet
+category: data-analysis
+
+description: Background check any company in the world — registration, executives, courts and finances.
+
+long_description: |
+  World background check for any company — registration details, executives,
+  government contracts, courts, and finances via a remote MCP endpoint.
+  Official Registry id: io.github.usenetstate/statsnet.
+
+maintainer:
+  name: Statsnet / usenetstate
+  github: usenetstate
+  website: statsnet.co
+
+authentication:
+  type: none
+  instructions: |
+    No authentication required for public company cards.
+    Connect your MCP client to the remote endpoint below.
+
+endpoints:
+  production: https://statsnet.co/mcp
+
+capabilities:
+  - id: company.lookup
+    name: Company lookup
+    description: Look up company registration, executives, courts, and finances worldwide.
+  - id: company.background-check
+    name: Background check
+    description: Background-check any company using public registration and court data.
+
+tags:
+  - company
+  - background-check
+  - osint
+  - finance
+  - remote
+  - mcp
+
+verification:
+  status: pending
+  tested_date: "2026-09-18T00:00:00Z"
+  security_audit: false
+
+featured: false
