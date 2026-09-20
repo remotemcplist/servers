@@ -1,0 +1,44 @@
+id: unlockflow-mcp
+name: UnlockFlow MCP
+category: data-analysis
+description: Read-only crypto unlock and capital-flow research tools with illustrative seeds and explicit NFA disclosures.
+long_description: |
+  UnlockFlow MCP exposes read-only UnlockFlowEvent v1 research tools for AI agents: list unlock events, retrieve an event by ID, and inspect the schema. The public implementation uses local illustrative ENA and ZRO seeds only, labels estimates, and includes NFA disclosures; it is not an authenticated live trading feed.
+
+maintainer:
+  name: Capital Flow Desk
+  github: mhr2027r-dotcom
+  website: https://t.me/CapitalFlowDeskHQ
+
+authentication:
+  type: none
+  instructions: No credentials are required for the illustrative public surface.
+
+endpoints:
+  production: https://underwear-computing-perth-assessments.trycloudflare.com/mcp
+
+capabilities:
+  - id: unlock-events.list
+    name: List Unlock Events
+    description: List illustrative UnlockFlowEvent v1 samples with optional asset and horizon filters.
+  - id: unlock-events.get
+    name: Get Unlock Event
+    description: Retrieve one illustrative unlock event by stable event ID.
+  - id: unlock-events.schema
+    name: Get Event Schema
+    description: Return the UnlockFlowEvent v1 JSON Schema and NFA disclosure.
+
+tags:
+  - crypto
+  - unlocks
+  - capital-flow
+  - research
+  - nfa
+  - mcp
+
+verification:
+  status: pending
+  tested_date: "2026-09-20T06:08:00+04:00"
+  security_audit: false
+
+featured: false
