@@ -1,0 +1,35 @@
+id: nova-civai-support-agent-admin
+name: Support Agent Admin by Nova (CIVAI)
+category: productivity
+description: I manage your Support Agent CRM — pipeline analytics, follow-ups, Leads
+  Discovery, and workspace output (Sheets, Docs, Calendar, research)
+long_description: 'Support Agent Admin by Nova (CIVAI) — I manage your Support Agent
+  CRM — pipeline analytics, follow-ups, Leads Discovery, and workspace output (Sheets,
+  Docs, Calendar, research) Connect at https://nova.civai.co/mcp/agents/support-agent-admin
+  with a Nova API key. Registry co.civai.nova/support-agent-admin. Listing: https://github.com/civai-technologies/support-agent-admin-mcp-by-nova-civai.'
+maintainer:
+  name: Nova by CIVAI
+  github: civai-technologies
+  website: nova.civai.co
+authentication:
+  type: api-key
+  provider: nova-civai
+  instructions: 'Create a Nova API key at https://nova.civai.co/api-keys and pass
+    Authorization: Bearer <key> to the Streamable HTTP MCP endpoint.'
+endpoints:
+  production: https://nova.civai.co/mcp/agents/support-agent-admin
+capabilities:
+- id: mcp.tools
+  name: MCP tools
+  description: Catalog agent tools for support-agent-admin via Streamable HTTP MCP.
+tags:
+- nova
+- civai
+- mcp
+- remote
+- support_agent_admin
+verification:
+  status: pending
+  tested_date: '2026-09-21T08:54:02Z'
+  security_audit: false
+featured: false

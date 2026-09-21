@@ -1,0 +1,33 @@
+id: nova-civai-interviewer-agent
+name: Interviewer Agent by Nova (CIVAI)
+category: productivity
+description: I do everything related to interviews and structured Q&A
+long_description: 'Interviewer Agent by Nova (CIVAI) — I do everything related to
+  interviews and structured Q&A Connect at https://nova.civai.co/mcp/agents/interviewer-agent
+  with a Nova API key. Registry co.civai.nova/interviewer-agent. Listing: https://github.com/civai-technologies/interviewer-agent-mcp-by-nova-civai.'
+maintainer:
+  name: Nova by CIVAI
+  github: civai-technologies
+  website: nova.civai.co
+authentication:
+  type: api-key
+  provider: nova-civai
+  instructions: 'Create a Nova API key at https://nova.civai.co/api-keys and pass
+    Authorization: Bearer <key> to the Streamable HTTP MCP endpoint.'
+endpoints:
+  production: https://nova.civai.co/mcp/agents/interviewer-agent
+capabilities:
+- id: mcp.tools
+  name: MCP tools
+  description: Catalog agent tools for interviewer-agent via Streamable HTTP MCP.
+tags:
+- nova
+- civai
+- mcp
+- remote
+- interviewer_agent
+verification:
+  status: pending
+  tested_date: '2026-09-21T08:54:02Z'
+  security_audit: false
+featured: false

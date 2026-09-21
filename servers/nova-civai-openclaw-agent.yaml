@@ -1,0 +1,36 @@
+id: nova-civai-openclaw-agent
+name: OpenClaw Agent by Nova (CIVAI)
+category: development
+description: I execute requests through OpenClaw as a personal AI agent with persistent
+  context, browser and shell tools, web access, messaging, sessions, and plugin/skill
+  extensions
+long_description: 'OpenClaw Agent by Nova (CIVAI) — I execute requests through OpenClaw
+  as a personal AI agent with persistent context, browser and shell tools, web access,
+  messaging, sessions, and plugin/skill extensions Connect at https://nova.civai.co/mcp/agents/openclaw-agent
+  with a Nova API key. Registry co.civai.nova/openclaw-agent. Listing: https://github.com/civai-technologies/openclaw-agent-mcp-by-nova-civai.'
+maintainer:
+  name: Nova by CIVAI
+  github: civai-technologies
+  website: nova.civai.co
+authentication:
+  type: api-key
+  provider: nova-civai
+  instructions: 'Create a Nova API key at https://nova.civai.co/api-keys and pass
+    Authorization: Bearer <key> to the Streamable HTTP MCP endpoint.'
+endpoints:
+  production: https://nova.civai.co/mcp/agents/openclaw-agent
+capabilities:
+- id: mcp.tools
+  name: MCP tools
+  description: Catalog agent tools for openclaw-agent via Streamable HTTP MCP.
+tags:
+- nova
+- civai
+- mcp
+- remote
+- openclaw_agent
+verification:
+  status: pending
+  tested_date: '2026-09-21T08:54:02Z'
+  security_audit: false
+featured: false

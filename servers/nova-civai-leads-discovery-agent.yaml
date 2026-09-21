@@ -1,0 +1,35 @@
+id: nova-civai-leads-discovery-agent
+name: Leads Discovery Agent by Nova (CIVAI)
+category: data-analysis
+description: I discover new leads from WhatsApp/Telegram groups, Instagram post commenters,
+  and X thread repliers — then import them into your Support Agent CRM
+long_description: 'Leads Discovery Agent by Nova (CIVAI) — I discover new leads from
+  WhatsApp/Telegram groups, Instagram post commenters, and X thread repliers — then
+  import them into your Support Agent CRM Connect at https://nova.civai.co/mcp/agents/leads-discovery-agent
+  with a Nova API key. Registry co.civai.nova/leads-discovery-agent. Listing: https://github.com/civai-technologies/leads-discovery-agent-mcp-by-nova-civai.'
+maintainer:
+  name: Nova by CIVAI
+  github: civai-technologies
+  website: nova.civai.co
+authentication:
+  type: api-key
+  provider: nova-civai
+  instructions: 'Create a Nova API key at https://nova.civai.co/api-keys and pass
+    Authorization: Bearer <key> to the Streamable HTTP MCP endpoint.'
+endpoints:
+  production: https://nova.civai.co/mcp/agents/leads-discovery-agent
+capabilities:
+- id: mcp.tools
+  name: MCP tools
+  description: Catalog agent tools for leads-discovery-agent via Streamable HTTP MCP.
+tags:
+- nova
+- civai
+- mcp
+- remote
+- leads_discovery_agent
+verification:
+  status: pending
+  tested_date: '2026-09-21T08:54:02Z'
+  security_audit: false
+featured: false

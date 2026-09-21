@@ -1,0 +1,34 @@
+id: nova-civai-code-interpreter-agent
+name: Code Interpreter Agent by Nova (CIVAI)
+category: development
+description: I do everything related to coding and execution tasks
+long_description: 'Code Interpreter Agent by Nova (CIVAI) — I do everything related
+  to coding and execution tasks Connect at https://nova.civai.co/mcp/agents/code-interpreter-agent
+  with a Nova API key. Registry co.civai.nova/code-interpreter-agent. Listing: https://github.com/civai-technologies/code-interpreter-agent-mcp-by-nova-civai.'
+maintainer:
+  name: Nova by CIVAI
+  github: civai-technologies
+  website: nova.civai.co
+authentication:
+  type: api-key
+  provider: nova-civai
+  instructions: 'Create a Nova API key at https://nova.civai.co/api-keys and pass
+    Authorization: Bearer <key> to the Streamable HTTP MCP endpoint.'
+endpoints:
+  production: https://nova.civai.co/mcp/agents/code-interpreter-agent
+capabilities:
+- id: mcp.tools
+  name: MCP tools
+  description: Catalog agent tools for code-interpreter-agent via Streamable HTTP
+    MCP.
+tags:
+- nova
+- civai
+- mcp
+- remote
+- code_interpreter_agent
+verification:
+  status: pending
+  tested_date: '2026-09-21T08:54:02Z'
+  security_audit: false
+featured: false

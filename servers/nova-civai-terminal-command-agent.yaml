@@ -1,0 +1,34 @@
+id: nova-civai-terminal-command-agent
+name: Terminal Command Agent by Nova (CIVAI)
+category: development
+description: I run shell commands on your private cloud environment (bash, sh, zsh)
+long_description: 'Terminal Command Agent by Nova (CIVAI) — I run shell commands on
+  your private cloud environment (bash, sh, zsh) Connect at https://nova.civai.co/mcp/agents/terminal-command-agent
+  with a Nova API key. Registry co.civai.nova/terminal-command-agent. Listing: https://github.com/civai-technologies/terminal-command-agent-mcp-by-nova-civai.'
+maintainer:
+  name: Nova by CIVAI
+  github: civai-technologies
+  website: nova.civai.co
+authentication:
+  type: api-key
+  provider: nova-civai
+  instructions: 'Create a Nova API key at https://nova.civai.co/api-keys and pass
+    Authorization: Bearer <key> to the Streamable HTTP MCP endpoint.'
+endpoints:
+  production: https://nova.civai.co/mcp/agents/terminal-command-agent
+capabilities:
+- id: mcp.tools
+  name: MCP tools
+  description: Catalog agent tools for terminal-command-agent via Streamable HTTP
+    MCP.
+tags:
+- nova
+- civai
+- mcp
+- remote
+- terminal_command_agent
+verification:
+  status: pending
+  tested_date: '2026-09-21T08:54:02Z'
+  security_audit: false
+featured: false

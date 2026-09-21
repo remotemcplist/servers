@@ -1,0 +1,33 @@
+id: nova-civai-browsergpt-agent
+name: Browser Automation Agent by Nova (CIVAI)
+category: development
+description: I do everything related to Browser Automation & Management
+long_description: 'Browser Automation Agent by Nova (CIVAI) — I do everything related
+  to Browser Automation & Management Connect at https://nova.civai.co/mcp/agents/browsergpt-agent
+  with a Nova API key. Registry co.civai.nova/browsergpt-agent. Listing: https://github.com/civai-technologies/browsergpt-agent-mcp-by-nova-civai.'
+maintainer:
+  name: Nova by CIVAI
+  github: civai-technologies
+  website: nova.civai.co
+authentication:
+  type: api-key
+  provider: nova-civai
+  instructions: 'Create a Nova API key at https://nova.civai.co/api-keys and pass
+    Authorization: Bearer <key> to the Streamable HTTP MCP endpoint.'
+endpoints:
+  production: https://nova.civai.co/mcp/agents/browsergpt-agent
+capabilities:
+- id: mcp.tools
+  name: MCP tools
+  description: Catalog agent tools for browsergpt-agent via Streamable HTTP MCP.
+tags:
+- nova
+- civai
+- mcp
+- remote
+- browsergpt_agent
+verification:
+  status: pending
+  tested_date: '2026-09-21T08:54:02Z'
+  security_audit: false
+featured: false
