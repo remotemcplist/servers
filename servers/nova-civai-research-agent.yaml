@@ -1,0 +1,33 @@
+id: nova-civai-research-agent
+name: Research Agent by Nova (CIVAI)
+category: data-analysis
+description: I do everything related to research and reports
+long_description: 'Research Agent by Nova (CIVAI) — I do everything related to research
+  and reports Connect at https://nova.civai.co/mcp/agents/research-agent with a Nova
+  API key. Registry co.civai.nova/research-agent. Listing: https://github.com/civai-technologies/research-agent-mcp-by-nova-civai.'
+maintainer:
+  name: Nova by CIVAI
+  github: civai-technologies
+  website: nova.civai.co
+authentication:
+  type: api-key
+  provider: nova-civai
+  instructions: 'Create a Nova API key at https://nova.civai.co/api-keys and pass
+    Authorization: Bearer <key> to the Streamable HTTP MCP endpoint.'
+endpoints:
+  production: https://nova.civai.co/mcp/agents/research-agent
+capabilities:
+- id: mcp.tools
+  name: MCP tools
+  description: Catalog agent tools for research-agent via Streamable HTTP MCP.
+tags:
+- nova
+- civai
+- mcp
+- remote
+- research_agent
+verification:
+  status: pending
+  tested_date: '2026-09-21T08:54:02Z'
+  security_audit: false
+featured: false
