@@ -1,0 +1,45 @@
+id: og-stamp
+name: OG Stamp
+category: development
+description: Pay-as-you-go Open Graph image API. Renders social-card PNGs from a title or a page URL.
+long_description: |
+  OG Stamp is a remote MCP server and HTTP API that renders Open Graph and
+  social-card PNGs. Tools can render from a title and subtitle, or from a page
+  URL, reading the page title, description, and favicon. Layouts, fonts, sizes,
+  a logo URL, and hex brand colors are supported. A free daily tier needs no
+  API key. Higher volume uses PayPal credit packs that do not expire.
+  Endpoint: https://ogstamp.com/mcp
+maintainer:
+  name: OG Stamp
+  github: BenceBakos
+  website: ogstamp.com
+authentication:
+  type: none
+  instructions: |
+    Connect to https://ogstamp.com/mcp (Streamable HTTP). The free daily tier
+    needs no key. For higher volume, buy a credit pack at
+    https://ogstamp.com/pricing/ and send the key as a Bearer token.
+    Docs: https://ogstamp.com/docs/
+endpoints:
+  production: https://ogstamp.com/mcp
+capabilities:
+  - id: render_og_image
+    name: Render OG image
+    description: Render a PNG from title, subtitle, theme, layout, font, and size
+  - id: og_image_from_url
+    name: OG image from URL
+    description: Read a page and render a social card from its title and description
+  - id: og_pricing
+    name: OG pricing
+    description: Return current credit pack prices
+tags:
+  - open-graph
+  - images
+  - social-cards
+  - mcp
+  - remote
+verification:
+  status: pending
+  tested_date: "2026-09-21T00:00:00Z"
+  security_audit: false
+featured: false
