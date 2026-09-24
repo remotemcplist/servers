@@ -1,0 +1,62 @@
+id: vlada-health
+name: Vlada Health
+category: data-analysis
+description: Measured US healthcare data on one endpoint - hospital and payer prices, Medicare Advantage, Medicaid, providers, drugs - with the source and a replay hash on every answer
+long_description: |
+  Vlada serves the public record of US healthcare as typed, read-only tools: hospital and payer
+  negotiated prices from price-transparency files, Medicare fee-for-service payment, Medicare
+  Advantage benefits, Star ratings and county enrollment, Part D, the ACA Marketplace, Medicaid
+  managed-care enrollment, provider and facility identity, quality measures, and drug pricing.
+  Every answer names its source file, vintage, method and coverage, and carries a hash you can
+  replay. A number the data cannot support comes back as "not in the data", never as zero.
+  No patient records. Free account with $5 of starting queries.
+maintainer:
+  name: Vlada Health
+  github: btenner84
+  website: vladahealth.com
+authentication:
+  type: oauth2
+  provider: vlada
+  instructions: |
+    1. Add https://mcp-secure.vladahealth.com/mcp as a connector in Claude or ChatGPT (developer mode),
+       or click Connect at https://www.vladahealth.com/data-access
+    2. Sign in or create a free account in the window that opens (OAuth 2.1)
+    3. Ask in plain English; the agent picks the tool
+    API-key clients (Claude Code, Cursor, VS Code) use https://mcp.vladahealth.com/mcp with a bearer key from the same account.
+endpoints:
+  production: https://mcp-secure.vladahealth.com/mcp
+capabilities:
+  - id: find_data_sources
+    name: Find data sources
+    description: Discover which of 300+ US healthcare sources answers a question, with coverage and caveats
+  - id: get_pbp_benefit
+    name: Medicare Advantage plan benefits
+    description: Filed benefit detail for a plan and year (dental, OTC, MOOP, inpatient and 15 more categories) with the CMS source row
+  - id: get_stars
+    name: Medicare Advantage Star ratings
+    description: Contract-level Star ratings by rating year, as published by CMS
+  - id: get_enrollment
+    name: Medicare Advantage enrollment
+    description: Monthly enrollment by contract, plan, parent organization and county
+  - id: get_negotiated_rate
+    name: Payer negotiated rates
+    description: A payer's published negotiated rate for a provider NPI, billing code and state
+  - id: compare_hospital_rates
+    name: Compare hospital prices
+    description: What each payer pays a hospital for a code, one payment basis at a time
+  - id: query_substrate
+    name: Read-only SQL
+    description: Guarded read-only SQL over the whole estate, with async jobs for heavy work
+tags:
+  - healthcare
+  - medicare-advantage
+  - medicaid
+  - price-transparency
+  - cms
+  - data-analysis
+  - remote
+verification:
+  status: pending
+  tested_date: "2026-09-24T00:00:00Z"
+  security_audit: false
+featured: false
