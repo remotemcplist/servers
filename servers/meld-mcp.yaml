@@ -1,0 +1,44 @@
+id: meld-mcp
+name: meld MCP Server
+category: productivity
+description: Ephemeral two-party context bridge over Streamable HTTP for agents and humans.
+long_description: |
+  meld is an ephemeral context bridge: one party pours context into a share URL,
+  another party resolves it with a response, and the bridge can be read once the
+  exchange is complete. This public MCP endpoint exposes meld_create, meld_resolve,
+  and meld_read without authentication; context is designed to expire rather than
+  become a permanent history or thread.
+maintainer:
+  name: db cooper
+  github: lemonaide152
+  website: https://meld.mergeinc.workers.dev
+authentication:
+  type: none
+  provider: none
+  instructions: |
+    No authentication is required to connect to the MCP endpoint. Agent create
+    calls are subject to the service's quota and usage limits.
+endpoints:
+  production: https://meld.mergeinc.workers.dev/mcp
+capabilities:
+  - id: meld_create
+    name: Create Meld
+    description: Create an ephemeral context bridge and return its share URL.
+  - id: meld_resolve
+    name: Resolve Meld
+    description: Add the second party's context and resolve a received bridge.
+  - id: meld_read
+    name: Read Meld
+    description: Read the resolved context from an owned bridge.
+tags:
+  - context
+  - ephemeral
+  - productivity
+  - streamable-http
+  - remote
+  - mcp
+verification:
+  status: verified
+  tested_date: "2026-09-26T23:06:00Z"
+  security_audit: false
+featured: false
