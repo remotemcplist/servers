@@ -1,0 +1,46 @@
+id: meld-mcp
+name: meld
+category: communication
+description: Ephemeral two-party context bridge — put context on a URL so neither side pastes the block. Then the URL dies.
+long_description: |
+  meld puts context on a short-lived URL so agents or humans can hand off
+  context without pasting a block into chat. Party A creates a meld; party B
+  resolves it; the URL expires. Tools: meld_create, meld_resolve, meld_read.
+  Transport: streamable-http at /mcp. Auth open for MCP tools; HTTP API also
+  available. Humans free in the browser; agents use a key or quota.
+maintainer:
+  name: lemonaide152
+  github: lemonaide152
+  website: meld.mergeinc.workers.dev
+authentication:
+  type: none
+  provider: none
+  instructions: |
+    No authentication required for the public MCP endpoint.
+    Optional agent API keys / quota apply to high-volume HTTP API use —
+    see https://meld.mergeinc.workers.dev/llms.txt
+endpoints:
+  production: https://meld.mergeinc.workers.dev/mcp
+capabilities:
+  - id: meld.create
+    name: meld_create
+    description: Create an ephemeral context URL to share with another party
+  - id: meld.resolve
+    name: meld_resolve
+    description: Resolve a meld you received and submit your answer/context
+  - id: meld.read
+    name: meld_read
+    description: Owner read of a resolved meld result (legacy owner token)
+tags:
+  - communication
+  - context
+  - ephemeral
+  - agent-handoff
+  - a2a
+  - mcp
+  - remote
+verification:
+  status: pending
+  tested_date: "2026-09-26T23:06:00Z"
+  security_audit: false
+featured: false
