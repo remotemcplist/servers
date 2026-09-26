@@ -1,0 +1,44 @@
+id: openmapp
+name: OpenMapp
+category: productivity
+description: Find US BJJ gyms with weekly schedules, open mats, and visitor drop-in prices.
+long_description: |
+  OpenMapp is a remote Model Context Protocol server for US Brazilian Jiu-Jitsu gyms.
+  It exposes find_gyms, get_gym, list_cities, and map_url so an AI client can look up
+  weekly class grids, open mats, and visitor drop-in prices. The endpoint is public
+  streamable HTTP at https://www.openmapp.com/mcp with no authentication.
+maintainer:
+  name: Harry Burman
+  github: burmanharry
+  website: https://www.openmapp.com
+authentication:
+  type: none
+  instructions: |
+    No credentials. Add the public URL to your MCP client:
+    https://www.openmapp.com/mcp
+endpoints:
+  production: https://www.openmapp.com/mcp
+capabilities:
+  - id: gyms.find
+    name: Find gyms
+    description: Search US BJJ gyms by city or region
+  - id: gyms.get
+    name: Get gym
+    description: Return a gym profile, week grid, and visitor drop-in price
+  - id: cities.list
+    name: List cities
+    description: List cities covered on the map
+  - id: map.url
+    name: Map URL
+    description: Return a shareable OpenMapp map link
+tags:
+  - maps
+  - sports
+  - search
+  - remote
+  - bjj
+verification:
+  status: pending
+  tested_date: "2026-09-26T00:00:00Z"
+  security_audit: false
+featured: false
