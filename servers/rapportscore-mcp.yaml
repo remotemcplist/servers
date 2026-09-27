@@ -1,0 +1,42 @@
+id: rapportscore-mcp
+name: RapportScore MCP
+category: communication
+description: Permissioned access to conversation coaching and team dynamics data through a hosted MCP server.
+long_description: |
+  RapportScore's hosted MCP server lets authorized users work with their own
+  conversation sessions, transcripts, measurements, and coaching through an
+  MCP client. It also supports permissioned team reports for Team Dynamics,
+  which is currently a limited U.S. pilot. Available tools and data depend on
+  account permissions and plan access; the server requires sign-in.
+maintainer:
+  name: Rapport Score LLC
+  github: Rapport-Score-LLC
+  website: https://app.rapportscore.ai
+authentication:
+  type: oauth2
+  provider: rapportscore
+  instructions: |
+    Configure an OAuth-capable, Streamable HTTP MCP client with
+    https://mcp.rapportscore.ai/mcp, then sign in to RapportScore and approve
+    the requested access. The server uses OAuth 2.1 with PKCE. Available
+    features depend on your account permissions and plan.
+endpoints:
+  production: https://mcp.rapportscore.ai/mcp
+capabilities:
+  - id: conversation-coaching
+    name: Conversational AI Coaching
+    description: Access authorized sessions, transcripts, measurements, and coaching.
+  - id: team-dynamics
+    name: Team Dynamics
+    description: Access permissioned team reports during the limited U.S. pilot.
+tags:
+  - communication
+  - coaching
+  - team-dynamics
+  - remote
+  - mcp
+verification:
+  status: pending
+  tested_date: '2026-09-26T00:00:00Z'
+  security_audit: false
+featured: false
