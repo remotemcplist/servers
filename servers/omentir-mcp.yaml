@@ -1,0 +1,62 @@
+id: omentir-mcp
+name: Omentir
+category: productivity
+
+description: Find and score LinkedIn prospects, draft outreach, run human-paced campaigns, and answer replies from your AI agent.
+
+long_description: |
+  Hosted MCP server for Omentir, an open-source AI sales workspace for LinkedIn.
+  Agents can read the workspace context and send allowance, create lead finders or
+  Steal Customers agents, list and export scored prospects with the evidence behind
+  each score, inspect the planned send queue, stop outreach to one lead, and read and
+  answer replies. Sends run on human pacing with daily limits. The agent never gets the
+  user's LinkedIn password and cannot change billing or connect LinkedIn.
+
+maintainer:
+  name: Omentir
+  github: vanshyadav1408
+  website: omentir.com
+
+authentication:
+  type: oauth2
+  provider: custom
+  instructions: |
+    1. Create an Omentir workspace at https://omentir.com, connect LinkedIn, and fill in Workspace.
+    2. Add https://omentir.com/api/agent/v1/mcp as a remote MCP server in your client.
+    3. The client registers itself (OAuth 2.1 dynamic client registration with PKCE) and opens the Omentir sign-in.
+    4. Approve "Connect workspace". There is no API key or client ID to configure.
+
+endpoints:
+  production: https://omentir.com/api/agent/v1/mcp
+
+capabilities:
+  - id: workspace.context
+    name: Workspace context
+    description: Read setup status, send allowance, and the product profile
+  - id: agents.manage
+    name: Lead finder agents
+    description: Draft, create, pause, resume, or delete lead finders and Steal Customers agents
+  - id: leads.list
+    name: Scored leads
+    description: List, inspect, and export scored prospects, or import a LinkedIn CSV
+  - id: outreach.queue
+    name: Outreach queue
+    description: Inspect planned sends, send a due action now, or stop outreach to one lead
+  - id: replies.manage
+    name: Replies
+    description: List conversations and the live inbox, and reply with text or attachments
+
+tags:
+  - linkedin
+  - sales
+  - outreach
+  - lead-generation
+  - crm
+  - remote
+
+verification:
+  status: pending
+  tested_date: "2026-09-28T00:00:00Z"
+  security_audit: false
+
+featured: false
