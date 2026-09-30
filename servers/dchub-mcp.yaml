@@ -1,0 +1,59 @@
+id: dchub-mcp
+name: DC Hub
+category: data-analysis
+
+description: Data-center, power-grid, fiber & site-selection intelligence — a global data-center facility map (corroborated count pending), 92 MCP tools.
+long_description: |
+  DC Hub is a hosted Streamable HTTP MCP server for data-center and energy
+  infrastructure intelligence. Agents can search a global data-center facility map (corroborated count pending), query
+  power/grid/gas/fiber layers, score sites, and pull market/M&A context across
+  92 tools. Free tier works keyless; optional X-API-Key unlocks full data
+  (claim via the claim_free_key tool or https://dchub.cloud/connect). Paid plans:
+  dchub.cloud/pricing. Source: https://github.com/azmartone67/dchub-mcp-server. Official
+  registry name: cloud.dchub/mcp-server.
+
+maintainer:
+  name: DC Hub
+  github: azmartone67
+  website: https://dchub.cloud
+
+authentication:
+  type: none
+  provider: none
+  instructions: |
+    Free tier: connect with no auth to https://dchub.cloud/mcp
+    Optional full data: set header X-API-Key from https://dchub.cloud/connect
+    or by calling the claim_free_key tool.
+
+endpoints:
+  production: https://dchub.cloud/mcp
+
+capabilities:
+  - id: search.facilities
+    name: Search facilities
+    description: Search the global data-center facility map by location, provider, power, and fiber
+  - id: site.selection
+    name: Site selection and scoring
+    description: Score sites on power, grid, fiber, water, risk, and workforce
+  - id: grid.energy
+    name: Grid and energy intelligence
+    description: ISO/grid context, energy prices, interconnection queue, and gas economics
+  - id: market.intel
+    name: Market and M&A intelligence
+    description: Market stats, deals, news, and capacity pipeline
+
+tags:
+  - data-center
+  - energy
+  - power-grid
+  - fiber
+  - site-selection
+  - remote
+  - mcp
+
+verification:
+  status: pending
+  tested_date: "2026-09-24T00:00:00Z"
+  security_audit: false
+
+featured: false
