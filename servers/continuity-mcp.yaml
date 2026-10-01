@@ -1,0 +1,53 @@
+id: continuity-mcp
+name: Continuity
+category: productivity
+description: Private story bible for fiction writers that keeps canon consistent across ChatGPT, Claude, Gemini, Grok, and Cursor
+long_description: |
+  Continuity is a private story bible for fiction writers. It stores characters,
+  relationships, world rules, timelines, and approved scenes, then connects to
+  ChatGPT, Claude, Gemini, Grok, Cursor, and other MCP clients so assistants can
+  retrieve locked canon before drafting. Story tools require a Continuity account
+  with Pro or an active trial. Authentication uses OAuth; do not paste API keys.
+maintainer:
+  name: Lawrence Hutchins
+  github: LAHutchins91
+  website: continuitywriter.com
+authentication:
+  type: oauth2
+  provider: custom
+  instructions: |
+    1. Create a Continuity account at https://continuitywriter.com
+    2. Open or create a story project in the workspace
+    3. Add https://continuitywriter.com/mcp in your MCP client
+    4. Choose OAuth / dynamic registration and approve Continuity sign-in
+    5. Ask the assistant to retrieve canon and the latest checkpoint before drafting
+    Setup details: https://continuitywriter.com/connect
+endpoints:
+  production: https://continuitywriter.com/mcp
+capabilities:
+  - id: canon.read
+    name: Retrieve Canon
+    description: Pull locked characters, relationships, world rules, and timelines for a story project
+  - id: scenes.read
+    name: Approved Scenes
+    description: Retrieve short-range continuity anchors from approved scene summaries
+  - id: checkpoints.manage
+    name: Story Checkpoints
+    description: Save and resume provisional story state separate from locked canon
+  - id: canon.audit
+    name: Continuity Audit
+    description: Check new writing against established canon before drift happens
+tags:
+  - writing
+  - story-bible
+  - fiction
+  - productivity
+  - creativity
+  - mcp
+  - remote
+  - oauth
+verification:
+  status: pending
+  tested_date: "2026-10-01T00:00:00Z"
+  security_audit: false
+featured: false
