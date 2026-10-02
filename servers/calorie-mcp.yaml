@@ -1,0 +1,60 @@
+id: calorie-mcp
+name: Calorie MCP
+category: productivity
+description: A calorie MCP that looks up calories and macros for Claude Code and Cursor from a catalog of 4M+ foods.
+long_description: |
+  Calorie MCP is a hosted Model Context Protocol server for Claude Code and Cursor. Ask for a food and a weight. The assistant calls the tools and returns calories and macros from a catalog of 4M+ foods, instead of guessing.
+
+  Tools cover food search, food details, autocomplete, barcode lookup, portion calculation, recipe macros, daily calorie targets, and food-photo estimates. Connect with the server URL and an X-API-Key header. The server does not store a food diary, and this plan does not include the REST API.
+
+  Product page: https://calorieapi.com/mcp
+maintainer:
+  name: Calorie API
+  github: Busybody1
+  website: calorieapi.com
+authentication:
+  type: api-key
+  provider: calorie-api
+  instructions: |
+    1. Create an API key in the Calorie API dashboard.
+    2. Add the server URL to Claude Code or Cursor.
+    3. Send the key in the X-API-Key header. Do not paste the key into a public file.
+endpoints:
+  production: https://calorieapiadmin.com/mcp
+capabilities:
+  - id: search_foods
+    name: Search foods
+    description: Search the catalog by name and return calories and macros per 100 g, plus a food_id.
+  - id: get_food_nutrition
+    name: Food details
+    description: Full nutrient list for one food_id from search_foods.
+  - id: suggest_foods
+    name: Autocomplete
+    description: Short autocomplete suggestions for a partial food name.
+  - id: lookup_barcode
+    name: Barcode lookup
+    description: UPC or EAN digits to macros per 100 g.
+  - id: calculate_portion
+    name: Portion calculator
+    description: Scale one food_id to a gram weight.
+  - id: calculate_recipe
+    name: Recipe macros
+    description: Totals and per-serving macros for up to 40 ingredients.
+  - id: calculate_macro_targets
+    name: Daily calorie target
+    description: Daily calorie and macro targets from age, sex, weight, height, activity, and goal.
+  - id: analyze_food_photo
+    name: Food photo calories
+    description: Estimate foods in a JPEG, PNG, or WebP sent as image_base64.
+tags:
+  - calorie-mcp
+  - nutrition
+  - calories
+  - claude
+  - cursor
+  - remote
+verification:
+  status: pending
+  tested_date: "2026-10-02T00:00:00Z"
+  security_audit: false
+featured: false
