@@ -1,0 +1,47 @@
+id: communicate-docs-mcp
+name: Communicate Developer Docs MCP
+category: development
+description: Public read-only Communicate developer documentation, OpenAPI discovery,
+  and official support contact through a hosted MCP server.
+long_description: Communicate Developer Docs MCP exposes three no-auth, read-only
+  tools for the canonical developer guide, published OpenAPI summary, and official
+  support contact. It does not access customer data or workspaces, execute product
+  Actions, or call the authenticated REST API. Communicate is a paid customer-support
+  product; this public documentation endpoint is accessible without a product account.
+maintainer:
+  name: Udit Goenka
+  github: uditgoenka
+  website: https://communicate.so
+authentication:
+  type: none
+  instructions: Connect an MCP client to https://communicate.so/mcp using Streamable
+    HTTP. No credentials are required for these public documentation tools. Product
+    API authentication is separate.
+endpoints:
+  production: https://communicate.so/mcp
+capabilities:
+- id: communicate_get_developer_guide
+  name: Get Communicate developer guide
+  description: Return the canonical Communicate API URLs, authentication boundary,
+    and support contact. This tool is public, read-only, and never accesses workspace
+    or customer data.
+- id: communicate_get_openapi_summary
+  name: Get Communicate OpenAPI summary
+  description: Return the canonical OpenAPI URL, API base URL, authentication boundary,
+    and currently published REST operations without calling the authenticated API.
+- id: communicate_get_support_contact
+  name: Get Communicate support contact
+  description: Return the official Communicate support email, contact page, support
+    policy, and supported inquiry categories without sending a message.
+tags:
+- documentation
+- openapi
+- developer-tools
+- customer-support
+- mcp
+- remote
+verification:
+  status: pending
+  tested_date: '2026-10-03T00:31:55.603145Z'
+  security_audit: false
+featured: false
