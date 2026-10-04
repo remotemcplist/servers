@@ -1,0 +1,37 @@
+id: aident-loadout
+name: Aident Loadout
+category: development
+description: Connect Codex, Claude Code, Cursor, ChatGPT and other MCP clients to 1,000+ apps and 400+ Skills through one reusable setup
+long_description: Aident Loadout is a remote MCP server (streamable HTTP, OAuth) that connects Codex, Claude Code, Cursor, ChatGPT and other MCP clients to 1,000+ apps and 400+ expert-built Skills through one setup. You connect accounts once and reuse them across agents. Credentials stay in Aident Vault, every action is logged in Audit, and built-in services run on one balance.
+maintainer:
+  name: Aident AI
+  github: Aident-AI
+  website: aident.ai
+authentication:
+  type: oauth2
+  provider: aident
+  instructions: Sign in with OAuth when connecting https://loadout.aident.ai/mcp in your MCP client (Codex, Claude Code, Cursor, ChatGPT, Claude Desktop, or any MCP-compatible client).
+endpoints:
+  production: https://loadout.aident.ai/mcp
+capabilities:
+- id: search
+  name: Search capabilities
+  description: Search 1,000+ apps and actions by intent
+- id: execute
+  name: Execute actions
+  description: Run approved app actions with cost preflight and audit logging
+- id: skills
+  name: Expert Skills
+  description: Start from 400+ expert-built Skills for research, outreach, content and operations
+tags:
+- development
+- aident
+- mcp
+- remote
+- oauth
+- integrations
+verification:
+  status: pending
+  tested_date: '2026-10-04T00:00:00Z'
+  security_audit: false
+featured: false
