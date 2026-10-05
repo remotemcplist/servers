@@ -1,0 +1,48 @@
+id: truthifi-mcp
+name: Truthifi
+category: data-analysis
+description: "One verified household record for your AI: accounts, activity, holdings, fees, performance, cash flow and your Truthifi Score. Can't move money."
+long_description: |
+  Truthifi is the financial hub for families, advisors and AI agents. This server brings one verified household record into your AI assistant, from 18,000+ supported institutions: holdings on any date, allocation by asset class, sector and market cap, performance against a benchmark, fees by type, cash flow, the advisors on your accounts, and the Truthifi Score with the findings behind it.
+  Nothing your AI assistant does through Truthifi can move money, place trades or change anything at your bank or brokerage. Three of the 30 tools change data inside Truthifi only: create_asset_liability (after a preview), delete_asset_liability, and run_scan (refreshes a connection; 3 credits). connect_account only returns a link.
+maintainer:
+  name: Truthifi
+  github: truthifi
+  website: truthifi.com
+authentication:
+  type: oauth2
+  provider: custom
+  instructions: Sign in to Truthifi in the browser window your client opens. The server supports OAuth Dynamic Client Registration, so no client ID or API key is needed.
+endpoints:
+  production: https://api.truthifi.com/mcp
+capabilities:
+  - id: holdings
+    name: Holdings and allocation
+    description: Positions on any date; allocation by asset class, sector, country and market cap
+  - id: performance
+    name: Performance
+    description: Returns, income and gain/loss over a date range against a similar benchmark
+  - id: fees
+    name: Fees
+    description: Advisory, fund, margin, commission and maintenance fees per account
+  - id: cash-flow
+    name: Cash flow and transactions
+    description: Transactions, spending and income by category, investment activity summaries
+  - id: score
+    name: Truthifi Score
+    description: Financial-health findings and score history
+  - id: manual-assets
+    name: Manual assets (write)
+    description: Add or delete assets and liabilities you track by hand inside Truthifi
+tags:
+  - finance
+  - portfolio
+  - investing
+  - wealth
+  - mcp
+  - remote
+verification:
+  status: pending
+  tested_date: "2026-10-05"
+  security_audit: false
+featured: false
