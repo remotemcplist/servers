@@ -1,0 +1,36 @@
+id: uk-places-mcp
+name: UK Places MCP
+category: data-analysis
+description: Nearby amenities and local context for UK postcodes via OpenStreetMap. Free sample; full pack £0.49.
+long_description: |
+  Remote MCP server for UK local amenities and context around a postcode,
+  backed by OpenStreetMap. Agents get a free sample, then a one-time £0.49
+  Stripe pack for the full structured result. Part of the UK MCP data fleet.
+maintainer:
+  name: Donnie Morrison
+  github: donniertf-hub
+  website: https://github.com/donniertf-hub/uk-mcp-fleet
+authentication:
+  type: none
+  provider: none
+  instructions: |
+    No authentication required to connect. Connecting is free.
+    A pack that needs payment returns a Stripe checkout link.
+endpoints:
+  production: https://uk-places-mcp.donniertf.workers.dev/mcp
+capabilities:
+  - id: places.nearby
+    name: Nearby amenities
+    description: List nearby shops, cafes, pubs and local context for a UK postcode
+tags:
+  - uk
+  - places
+  - openstreetmap
+  - location
+  - open-data
+  - remote
+verification:
+  status: pending
+  tested_date: "2026-10-06T22:00:00Z"
+  security_audit: false
+featured: false
