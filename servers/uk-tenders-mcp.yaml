@@ -1,0 +1,34 @@
+id: uk-tenders-mcp
+name: UK Tenders MCP
+category: data-analysis
+description: Live UK public-sector notices from Contracts Finder. Free sample; full pack £0.49.
+long_description: |
+  Remote MCP for live UK public-sector tender notices from Contracts Finder. Free sample; one-time £0.49 Stripe pack. Confirm deadlines on the official site.
+  Part of the UK MCP data fleet: https://github.com/donniertf-hub/uk-mcp-fleet
+maintainer:
+  name: Donnie Morrison
+  github: donniertf-hub
+  website: github.com/donniertf-hub/uk-mcp-fleet
+authentication:
+  type: none
+  provider: none
+  instructions: |
+    No authentication required to connect. Connecting is free.
+    A pack that needs payment returns a Stripe checkout link.
+endpoints:
+  production: https://uk-tenders-mcp.donniertf.workers.dev/mcp
+capabilities:
+  - id: tenders.search
+    name: Tender search
+    description: Find public-sector notices by keyword with buyer and deadline
+tags:
+- uk
+- tenders
+- procurement
+- open-data
+- remote
+verification:
+  status: pending
+  tested_date: "2026-10-06T23:00:00Z"
+  security_audit: false
+featured: false

@@ -1,0 +1,34 @@
+id: uk-cqc-mcp
+name: UK CQC MCP
+category: data-analysis
+description: Care Quality Commission care provider ratings for agents. Free sample; full pack £0.49.
+long_description: |
+  Remote MCP for Care Quality Commission care provider ratings. Free sample; one-time £0.49 Stripe pack. Not the official register — check CQC.
+  Part of the UK MCP data fleet: https://github.com/donniertf-hub/uk-mcp-fleet
+maintainer:
+  name: Donnie Morrison
+  github: donniertf-hub
+  website: github.com/donniertf-hub/uk-mcp-fleet
+authentication:
+  type: none
+  provider: none
+  instructions: |
+    No authentication required to connect. Connecting is free.
+    A pack that needs payment returns a Stripe checkout link.
+endpoints:
+  production: https://uk-cqc-mcp.donniertf.workers.dev/mcp
+capabilities:
+  - id: cqc.ratings
+    name: CQC ratings
+    description: Look up care provider ratings
+tags:
+- uk
+- cqc
+- care
+- open-data
+- remote
+verification:
+  status: pending
+  tested_date: "2026-10-06T23:00:00Z"
+  security_audit: false
+featured: false

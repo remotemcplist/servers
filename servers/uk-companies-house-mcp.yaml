@@ -1,0 +1,34 @@
+id: uk-companies-house-mcp
+name: UK Companies House MCP
+category: data-analysis
+description: Companies House company profile, officers and filings for agents. Free sample; full pack £0.49.
+long_description: |
+  Remote MCP for UK Companies House public records: company profile, officers and filings. Free sample; one-time £0.49 Stripe pack for the full structured result. Not the official register — check companieshouse.gov.uk for important facts.
+  Part of the UK MCP data fleet: https://github.com/donniertf-hub/uk-mcp-fleet
+maintainer:
+  name: Donnie Morrison
+  github: donniertf-hub
+  website: github.com/donniertf-hub/uk-mcp-fleet
+authentication:
+  type: none
+  provider: none
+  instructions: |
+    No authentication required to connect. Connecting is free.
+    A pack that needs payment returns a Stripe checkout link.
+endpoints:
+  production: https://uk-ch-mcp.donniertf.workers.dev/mcp
+capabilities:
+  - id: company.profile
+    name: Company profile
+    description: Fetch company profile, officers and filings by company number
+tags:
+- uk
+- companies-house
+- business
+- open-data
+- remote
+verification:
+  status: pending
+  tested_date: "2026-10-06T23:00:00Z"
+  security_audit: false
+featured: false

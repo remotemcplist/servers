@@ -1,0 +1,33 @@
+id: uk-crime-mcp
+name: UK Crime MCP
+category: data-analysis
+description: Local UK crime figures from data.police.uk. Free sample; full pack £0.49.
+long_description: |
+  Remote MCP for local UK crime figures from data.police.uk. Free sample; one-time £0.49 Stripe pack. Not a safety assessment.
+  Part of the UK MCP data fleet: https://github.com/donniertf-hub/uk-mcp-fleet
+maintainer:
+  name: Donnie Morrison
+  github: donniertf-hub
+  website: github.com/donniertf-hub/uk-mcp-fleet
+authentication:
+  type: none
+  provider: none
+  instructions: |
+    No authentication required to connect. Connecting is free.
+    A pack that needs payment returns a Stripe checkout link.
+endpoints:
+  production: https://uk-crime-mcp.donniertf.workers.dev/mcp
+capabilities:
+  - id: crime.local
+    name: Local crime
+    description: Look up local crime figures for a postcode or area
+tags:
+- uk
+- crime
+- open-data
+- remote
+verification:
+  status: pending
+  tested_date: "2026-10-06T23:00:00Z"
+  security_audit: false
+featured: false
