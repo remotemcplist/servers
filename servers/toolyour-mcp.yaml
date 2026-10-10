@@ -1,0 +1,68 @@
+id: toolyour-mcp
+name: ToolYour MCP Server
+category: development
+
+description: Remote MCP for AI agents — plan, run, and verify SEO, security, and ship-gate checks on one API key.
+long_description: |
+  ToolYour is a remote MCP server for AI agents: plan work, run playbooks or solve goals,
+  then verify until checks pass. Primary jobs are ship-gate, SEO audits, and security audits.
+  The same API key and monthly credit quota are shared with the ToolYour REST API.
+  Free tier includes 500 credits per month (tools cost 1–10 credits). MCP exposes API-backed
+  catalog tools only — not every browser-only utility. Works with Cursor, Claude, and other
+  MCP clients over HTTPS (Streamable HTTP / SSE). Docs: https://www.toolyour.com/developers/mcp
+
+maintainer:
+  name: ToolYour
+  github: AbdulWahabRaza123
+  website: https://www.toolyour.com
+
+authentication:
+  type: api-key
+  provider: toolyour
+  instructions: |
+    1. Create a free account at https://www.toolyour.com/signup
+    2. Open Dashboard → API Keys and create a key (prefix ty_)
+    3. In your MCP client, set the server URL to https://api.toolyour.com/mcp
+    4. Send header X-Api-Key: ty_YOUR_KEY (same key as REST)
+    Setup guide: https://www.toolyour.com/developers/mcp
+
+endpoints:
+  production: https://api.toolyour.com/mcp
+
+capabilities:
+  - id: plan.task
+    name: Plan Task
+    description: Free planning step that routes a goal to a playbook or workflow with credit estimates
+  - id: run.playbook
+    name: Run Playbook / Solve Task
+    description: Execute SEO, security, ship-gate, or other API-backed jobs and return evidence plus ranked next actions
+  - id: verify.task
+    name: Verify Task
+    description: Re-check against a prior job report until the gate passes or the loop honestly stops
+  - id: seo.audit
+    name: SEO Audits
+    description: Technical and on-page SEO playbooks on live HTTPS URLs
+  - id: ship.gate
+    name: Ship Gate
+    description: Pre-launch readiness checks before shipping
+  - id: security.audit
+    name: Security Audits
+    description: Practical security smoke-checks (not a full penetration test)
+
+tags:
+  - mcp
+  - remote
+  - development
+  - seo
+  - security
+  - ship-gate
+  - cursor
+  - claude
+  - api-key
+
+verification:
+  status: pending
+  tested_date: "2026-10-10T00:00:00Z"
+  security_audit: false
+
+featured: false
