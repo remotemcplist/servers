@@ -1,0 +1,66 @@
+id: vend-api-merchant
+name: Vend API Merchant
+category: payments
+description: "Pay-per-call APIs settled in Nano (XNO): extract web content, search, check links, domain intel, geoip."
+long_description: |
+  Vend is a pay-per-call MCP server that settles each call in Nano (XNO) via x402 —
+  instant, feeless, green, with no issuer that can freeze funds. No signup, no API
+  keys: connect to the remote streamable-HTTP endpoint and pay per call in Nano.
+  Tools: extract clean readable text/markdown from any URL (extract_url), web search,
+  link/status checks with TLS-expiry and content-drift (check_link, check_url_status),
+  full domain intelligence DNS/WHOIS/SSL/headers (domain_info), IP geolocation
+  (geoip_lookup), Nano account info (nano_account_info) and YouTube transcript
+  extraction (youtube_transcript). Cheapest call 0.0001 XNO. Docs at paypercall.dev.
+maintainer:
+  name: Vend
+  github: dhyabi2
+  website: paypercall.dev
+authentication:
+  type: none
+  provider: x402-nano
+  instructions: |
+    Vend needs no API key. Each call returns an HTTP 402 with an x402 payment
+    challenge; your client settles per call in Nano (XNO) on nano:mainnet at the
+    declared account. No signup, no key rotation.
+endpoints:
+  production: https://extract.paypercall.dev/mcp
+capabilities:
+- id: extract_url
+  name: Extract URL content
+  description: Return the readable title, text and markdown for a web page
+- id: web_search
+  name: Web search
+  description: Search the web and return clean results
+- id: check_link
+  name: Check link
+  description: Check HTTP status, redirects and TLS expiry for a URL
+- id: check_url_status
+  name: Check URL status
+  description: Monitor a URL for HTTP status, TLS expiry and content drift
+- id: domain_info
+  name: Domain intelligence
+  description: Full WHOIS, DNS, RDAP, SSL and header intelligence for a domain
+- id: geoip_lookup
+  name: IP geolocation
+  description: Geolocate an IPv4/IPv6 address
+- id: nano_account_info
+  name: Nano account info
+  description: Look up Nano account balance, frontier and representative
+- id: youtube_transcript
+  name: YouTube transcript
+  description: Fetch a YouTube video's transcript as clean text
+tags:
+- payments
+- x402
+- nano
+- web-scraping
+- extraction
+- search
+- web
+- domain
+- geoip
+verification:
+  status: pending
+  tested_date: '2026-09-24T00:00:00Z'
+  security_audit: false
+featured: false
