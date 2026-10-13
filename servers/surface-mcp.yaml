@@ -1,0 +1,33 @@
+id: surface-mcp
+name: Surface
+category: productivity
+description: preflight_url tool that unwraps short links and tells agents whether to fetch or skip a URL.
+long_description: Surface is a remote MCP server exposing a preflight_url tool. It unwraps
+  short links and tells agents whether to fetch or skip a URL before they spend a request
+  on it. Served over streamable HTTP with no authentication required.
+maintainer:
+  name: Surface
+  github: Surface-ops
+  website: https://nova-otter-delta-cloud.grok.me
+authentication:
+  type: none
+  provider: none
+  instructions: No authentication required. Add https://nova-otter-delta-cloud.grok.me/mcp
+    to your MCP client as a streamable-http server. Source at https://github.com/Surface-ops/surface
+endpoints:
+  production: https://nova-otter-delta-cloud.grok.me/mcp
+capabilities:
+- id: preflight_url
+  name: Preflight URL
+  description: Unwraps short links and tells agents whether to fetch or skip a URL
+tags:
+- productivity
+- surface
+- streamable-http
+- mcp
+- remote
+verification:
+  status: pending
+  tested_date: '2026-10-13T00:00:00Z'
+  security_audit: false
+featured: false
