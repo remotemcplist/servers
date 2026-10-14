@@ -1,0 +1,27 @@
+id: ca-economic-indicators-mcp
+name: Canada Economic Indicators MCP
+category: data-analysis
+description: Official Statistics Canada indicators
+long_description: |
+  Official Statistics Canada indicators. Free indicator (no key); Pro C$15/mo.
+  Part of the UK MCP data fleet: https://github.com/donniertf-hub/uk-mcp-fleet
+maintainer:
+  name: Donnie Morrison
+  github: donniertf-hub
+  website: https://github.com/donniertf-hub/uk-mcp-fleet
+authentication:
+  type: none
+  provider: none
+  instructions: |
+    No authentication required for the free tool. Pro tools need a bearer token
+    from a Stripe subscription (see https://ca-economic-indicators-mcp.donniertf.workers.dev/pricing.json).
+endpoints:
+  production: https://ca-economic-indicators-mcp.donniertf.workers.dev/mcp
+capabilities:
+  - id: ca-economic-indicators.free
+    name: Free check
+    description: Official Statistics Canada indicators
+tags:
+  - canada
+  - open-data
+  - remote
