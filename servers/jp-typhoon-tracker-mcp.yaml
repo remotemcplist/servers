@@ -1,0 +1,27 @@
+id: jp-typhoon-tracker-mcp
+name: Japan Typhoon Tracker MCP
+category: data-analysis
+description: Active typhoons and tropical cyclones from JMA
+long_description: |
+  Active typhoons and tropical cyclones from JMA. Free active_typhoons (no key); Pro ¥1,500/mo; x402 USDC.
+  Part of the UK MCP data fleet: https://github.com/donniertf-hub/uk-mcp-fleet
+maintainer:
+  name: Donnie Morrison
+  github: donniertf-hub
+  website: https://github.com/donniertf-hub/uk-mcp-fleet
+authentication:
+  type: none
+  provider: none
+  instructions: |
+    No authentication required for the free tool. Pro tools need a bearer token
+    from a Stripe subscription (see https://jp-typhoon-tracker-mcp.donniertf.workers.dev/pricing.json).
+endpoints:
+  production: https://jp-typhoon-tracker-mcp.donniertf.workers.dev/mcp
+capabilities:
+  - id: jp-typhoon-tracker.free
+    name: Free check
+    description: Active typhoons and tropical cyclones from JMA
+tags:
+  - japan
+  - open-data
+  - remote
