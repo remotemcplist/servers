@@ -1,0 +1,27 @@
+id: ca-health-product-recalls-mcp
+name: Canada Health Product Recalls MCP
+category: data-analysis
+description: Health Canada recalls for drugs, natural health products and medical devices
+long_description: |
+  Health Canada recalls for drugs, natural health products and medical devices. Free latest_recalls (no key); Pro C$12/mo.
+  Part of the UK MCP data fleet: https://github.com/donniertf-hub/uk-mcp-fleet
+maintainer:
+  name: Donnie Morrison
+  github: donniertf-hub
+  website: https://github.com/donniertf-hub/uk-mcp-fleet
+authentication:
+  type: none
+  provider: none
+  instructions: |
+    No authentication required for the free tool. Pro tools need a bearer token
+    from a Stripe subscription (see https://ca-health-product-recalls-mcp.donniertf.workers.dev/pricing.json).
+endpoints:
+  production: https://ca-health-product-recalls-mcp.donniertf.workers.dev/mcp
+capabilities:
+  - id: ca-health-product-recalls.free
+    name: Free check
+    description: Health Canada recalls for drugs, natural health products and medical devices
+tags:
+  - canada
+  - open-data
+  - remote
