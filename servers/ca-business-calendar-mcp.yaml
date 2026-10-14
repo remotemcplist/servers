@@ -1,0 +1,27 @@
+id: ca-business-calendar-mcp
+name: Canada Business Calendar MCP
+category: data-analysis
+description: Canadian federal and provincial public holidays, business-day maths and invoice due dates for every province and territory
+long_description: |
+  Canadian federal and provincial public holidays, business-day maths and invoice due dates for every province and territory. Free next_holidays (no key); Pro C$12/mo.
+  Part of the UK MCP data fleet: https://github.com/donniertf-hub/uk-mcp-fleet
+maintainer:
+  name: Donnie Morrison
+  github: donniertf-hub
+  website: https://github.com/donniertf-hub/uk-mcp-fleet
+authentication:
+  type: none
+  provider: none
+  instructions: |
+    No authentication required for the free tool. Pro tools need a bearer token
+    from a Stripe subscription (see https://ca-business-calendar-mcp.donniertf.workers.dev/pricing.json).
+endpoints:
+  production: https://ca-business-calendar-mcp.donniertf.workers.dev/mcp
+capabilities:
+  - id: ca-business-calendar.free
+    name: Free check
+    description: Canadian federal and provincial public holidays, business-day maths and invoice due dates for every province and territory
+tags:
+  - canada
+  - open-data
+  - remote
