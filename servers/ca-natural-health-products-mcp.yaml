@@ -1,0 +1,27 @@
+id: ca-natural-health-products-mcp
+name: Canada Natural Health Product Check MCP
+category: data-analysis
+description: Verify supplements and natural health products are licensed in Canada (NPN)
+long_description: |
+  Verify supplements and natural health products are licensed in Canada (NPN). Free npn_check (no key); Pro C$12/mo.
+  Part of the UK MCP data fleet: https://github.com/donniertf-hub/uk-mcp-fleet
+maintainer:
+  name: Donnie Morrison
+  github: donniertf-hub
+  website: https://github.com/donniertf-hub/uk-mcp-fleet
+authentication:
+  type: none
+  provider: none
+  instructions: |
+    No authentication required for the free tool. Pro tools need a bearer token
+    from a Stripe subscription (see https://ca-natural-health-products-mcp.donniertf.workers.dev/pricing.json).
+endpoints:
+  production: https://ca-natural-health-products-mcp.donniertf.workers.dev/mcp
+capabilities:
+  - id: ca-natural-health-products.free
+    name: Free check
+    description: Verify supplements and natural health products are licensed in Canada (NPN)
+tags:
+  - canada
+  - open-data
+  - remote
