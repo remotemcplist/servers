@@ -1,0 +1,27 @@
+id: au-nem-prices-mcp
+name: Australia NEM Electricity Prices MCP
+category: data-analysis
+description: AEMO National Electricity Market regional prices
+long_description: |
+  AEMO National Electricity Market regional prices. Free nem_prices (no key); Pro A$15/mo; x402 USDC.
+  Part of the UK MCP data fleet: https://github.com/donniertf-hub/uk-mcp-fleet
+maintainer:
+  name: Donnie Morrison
+  github: donniertf-hub
+  website: https://github.com/donniertf-hub/uk-mcp-fleet
+authentication:
+  type: none
+  provider: none
+  instructions: |
+    No authentication required for the free tool. Pro tools need a bearer token
+    from a Stripe subscription (see https://au-nem-prices-mcp.donniertf.workers.dev/pricing.json).
+endpoints:
+  production: https://au-nem-prices-mcp.donniertf.workers.dev/mcp
+capabilities:
+  - id: au-nem-prices.free
+    name: Free check
+    description: AEMO National Electricity Market regional prices
+tags:
+  - australia
+  - open-data
+  - remote
