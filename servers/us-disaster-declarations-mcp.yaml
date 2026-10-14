@@ -1,0 +1,27 @@
+id: us-disaster-declarations-mcp
+name: US Disaster Declarations (FEMA) MCP
+category: data-analysis
+description: FEMA disaster declarations by state and county
+long_description: |
+  FEMA disaster declarations by state and county. Free recent_disasters (no key); Pro $12/mo.
+  Part of the UK MCP data fleet: https://github.com/donniertf-hub/uk-mcp-fleet
+maintainer:
+  name: Donnie Morrison
+  github: donniertf-hub
+  website: https://github.com/donniertf-hub/uk-mcp-fleet
+authentication:
+  type: none
+  provider: none
+  instructions: |
+    No authentication required for the free tool. Pro tools need a bearer token
+    from a Stripe subscription (see https://us-disaster-declarations-mcp.donniertf.workers.dev/pricing.json).
+endpoints:
+  production: https://us-disaster-declarations-mcp.donniertf.workers.dev/mcp
+capabilities:
+  - id: us-disaster-declarations.free
+    name: Free check
+    description: FEMA disaster declarations by state and county
+tags:
+  - us
+  - open-data
+  - remote
