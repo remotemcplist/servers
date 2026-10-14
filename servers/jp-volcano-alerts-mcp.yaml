@@ -1,0 +1,27 @@
+id: jp-volcano-alerts-mcp
+name: Japan Volcano Alerts MCP
+category: data-analysis
+description: JMA volcano warnings and eruption forecasts
+long_description: |
+  JMA volcano warnings and eruption forecasts. Free latest_volcano (no key); Pro ¥1,200/mo; x402 USDC.
+  Part of the UK MCP data fleet: https://github.com/donniertf-hub/uk-mcp-fleet
+maintainer:
+  name: Donnie Morrison
+  github: donniertf-hub
+  website: https://github.com/donniertf-hub/uk-mcp-fleet
+authentication:
+  type: none
+  provider: none
+  instructions: |
+    No authentication required for the free tool. Pro tools need a bearer token
+    from a Stripe subscription (see https://jp-volcano-alerts-mcp.donniertf.workers.dev/pricing.json).
+endpoints:
+  production: https://jp-volcano-alerts-mcp.donniertf.workers.dev/mcp
+capabilities:
+  - id: jp-volcano-alerts.free
+    name: Free check
+    description: JMA volcano warnings and eruption forecasts
+tags:
+  - japan
+  - open-data
+  - remote
