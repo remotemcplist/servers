@@ -1,0 +1,27 @@
+id: ca-sanctions-screen-mcp
+name: Canada Sanctions Screening MCP
+category: data-analysis
+description: Screen customers, suppliers and vessels against Canada's consolidated autonomous sanctions list (SEMA) from your AI agent
+long_description: |
+  Screen customers, suppliers and vessels against Canada's consolidated autonomous sanctions list (SEMA) from your AI agent. Free sanctions_check (no key); Pro C$25/mo.
+  Part of the UK MCP data fleet: https://github.com/donniertf-hub/uk-mcp-fleet
+maintainer:
+  name: Donnie Morrison
+  github: donniertf-hub
+  website: https://github.com/donniertf-hub/uk-mcp-fleet
+authentication:
+  type: none
+  provider: none
+  instructions: |
+    No authentication required for the free tool. Pro tools need a bearer token
+    from a Stripe subscription (see https://ca-sanctions-screen-mcp.donniertf.workers.dev/pricing.json).
+endpoints:
+  production: https://ca-sanctions-screen-mcp.donniertf.workers.dev/mcp
+capabilities:
+  - id: ca-sanctions-screen.free
+    name: Free check
+    description: Screen customers, suppliers and vessels against Canada's consolidated autonomous sanctions list (SEMA) from your AI agent
+tags:
+  - canada
+  - open-data
+  - remote
