@@ -1,0 +1,27 @@
+id: uk-business-calendar-mcp
+name: UK Business Calendar MCP
+category: productivity
+description: UK bank holidays (GOV.UK), working-day maths, invoice due dates and HMRC / Companies House deadlines
+long_description: |
+  UK bank holidays (GOV.UK), working-day maths, invoice due dates and HMRC / Companies House deadlines. Free next_bank_holidays (no key); Pro £9/month for the full toolset.
+  Part of the UK MCP data fleet: https://github.com/donniertf-hub/uk-mcp-fleet
+maintainer:
+  name: Donnie Morrison
+  github: donniertf-hub
+  website: https://github.com/donniertf-hub/uk-mcp-fleet
+authentication:
+  type: none
+  provider: none
+  instructions: |
+    No authentication required for the free tool. Pro tools need a bearer token
+    from a Stripe subscription (see https://uk-business-calendar-mcp.donniertf.workers.dev/pricing.json).
+endpoints:
+  production: https://uk-business-calendar-mcp.donniertf.workers.dev/mcp
+capabilities:
+  - id: uk-business-calendar.free
+    name: Free check
+    description: UK bank holidays (GOV.UK), working-day maths, invoice due dates and HMRC / Companies House deadlines
+tags:
+  - uk
+  - open-data
+  - remote
