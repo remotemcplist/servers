@@ -1,0 +1,27 @@
+id: au-air-quality-nsw-mcp
+name: Australia Air Quality Sites (NSW) MCP
+category: data-analysis
+description: NSW air quality monitoring sites
+long_description: |
+  NSW air quality monitoring sites. Free sites (no key); Pro A$12/mo; x402 USDC.
+  Part of the UK MCP data fleet: https://github.com/donniertf-hub/uk-mcp-fleet
+maintainer:
+  name: Donnie Morrison
+  github: donniertf-hub
+  website: https://github.com/donniertf-hub/uk-mcp-fleet
+authentication:
+  type: none
+  provider: none
+  instructions: |
+    No authentication required for the free tool. Pro tools need a bearer token
+    from a Stripe subscription (see https://au-air-quality-nsw-mcp.donniertf.workers.dev/pricing.json).
+endpoints:
+  production: https://au-air-quality-nsw-mcp.donniertf.workers.dev/mcp
+capabilities:
+  - id: au-air-quality-nsw.free
+    name: Free check
+    description: NSW air quality monitoring sites
+tags:
+  - australia
+  - open-data
+  - remote
