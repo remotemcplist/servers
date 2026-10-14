@@ -1,0 +1,27 @@
+id: ca-medical-devices-mcp
+name: Canada Medical Device Licences MCP
+category: data-analysis
+description: Is this medical device licensed for sale in Canada? Search Health Canada's MDALL by trade name and verify licences in bulk from your AI agent
+long_description: |
+  Is this medical device licensed for sale in Canada? Search Health Canada's MDALL by trade name and verify licences in bulk from your AI agent. Free device_search (no key); Pro C$15/mo.
+  Part of the UK MCP data fleet: https://github.com/donniertf-hub/uk-mcp-fleet
+maintainer:
+  name: Donnie Morrison
+  github: donniertf-hub
+  website: https://github.com/donniertf-hub/uk-mcp-fleet
+authentication:
+  type: none
+  provider: none
+  instructions: |
+    No authentication required for the free tool. Pro tools need a bearer token
+    from a Stripe subscription (see https://ca-medical-devices-mcp.donniertf.workers.dev/pricing.json).
+endpoints:
+  production: https://ca-medical-devices-mcp.donniertf.workers.dev/mcp
+capabilities:
+  - id: ca-medical-devices.free
+    name: Free check
+    description: Is this medical device licensed for sale in Canada? Search Health Canada's MDALL by trade name and verify licences in bulk from your AI agent
+tags:
+  - canada
+  - open-data
+  - remote
