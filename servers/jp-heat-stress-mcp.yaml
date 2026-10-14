@@ -1,0 +1,27 @@
+id: jp-heat-stress-mcp
+name: Japan Heat Stress (WBGT) MCP
+category: data-analysis
+description: Ministry of the Environment WBGT heat-stress forecasts for Japan
+long_description: |
+  Ministry of the Environment WBGT heat-stress forecasts for Japan. Free wbgt_sample (no key); Pro ¥1,200/mo; x402 USDC.
+  Part of the UK MCP data fleet: https://github.com/donniertf-hub/uk-mcp-fleet
+maintainer:
+  name: Donnie Morrison
+  github: donniertf-hub
+  website: https://github.com/donniertf-hub/uk-mcp-fleet
+authentication:
+  type: none
+  provider: none
+  instructions: |
+    No authentication required for the free tool. Pro tools need a bearer token
+    from a Stripe subscription (see https://jp-heat-stress-mcp.donniertf.workers.dev/pricing.json).
+endpoints:
+  production: https://jp-heat-stress-mcp.donniertf.workers.dev/mcp
+capabilities:
+  - id: jp-heat-stress.free
+    name: Free check
+    description: Ministry of the Environment WBGT heat-stress forecasts for Japan
+tags:
+  - japan
+  - open-data
+  - remote
