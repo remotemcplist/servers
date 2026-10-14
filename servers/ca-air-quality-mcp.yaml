@@ -1,0 +1,27 @@
+id: ca-air-quality-mcp
+name: Canada Air Quality (AQHI) MCP
+category: data-analysis
+description: Canada's Air Quality Health Index for any postal code
+long_description: |
+  Canada's Air Quality Health Index for any postal code. Free air_quality (no key); Pro C$12/mo.
+  Part of the UK MCP data fleet: https://github.com/donniertf-hub/uk-mcp-fleet
+maintainer:
+  name: Donnie Morrison
+  github: donniertf-hub
+  website: https://github.com/donniertf-hub/uk-mcp-fleet
+authentication:
+  type: none
+  provider: none
+  instructions: |
+    No authentication required for the free tool. Pro tools need a bearer token
+    from a Stripe subscription (see https://ca-air-quality-mcp.donniertf.workers.dev/pricing.json).
+endpoints:
+  production: https://ca-air-quality-mcp.donniertf.workers.dev/mcp
+capabilities:
+  - id: ca-air-quality.free
+    name: Free check
+    description: Canada's Air Quality Health Index for any postal code
+tags:
+  - canada
+  - open-data
+  - remote
