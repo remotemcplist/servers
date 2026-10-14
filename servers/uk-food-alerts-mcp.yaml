@@ -1,0 +1,27 @@
+id: uk-food-alerts-mcp
+name: UK Food Recall Alerts MCP
+category: monitoring
+description: Food Standards Agency recalls and allergy alerts (OGL)
+long_description: |
+  Food Standards Agency recalls and allergy alerts (OGL). Free latest_alerts (no key); Pro £9/month adds batch codes, stock watchlists and daily new-alert checks.
+  Part of the UK MCP data fleet: https://github.com/donniertf-hub/uk-mcp-fleet
+maintainer:
+  name: Donnie Morrison
+  github: donniertf-hub
+  website: https://github.com/donniertf-hub/uk-mcp-fleet
+authentication:
+  type: none
+  provider: none
+  instructions: |
+    No authentication required for the free tool. Pro tools need a bearer token
+    from a Stripe subscription (see https://uk-food-alerts-mcp.donniertf.workers.dev/pricing.json).
+endpoints:
+  production: https://uk-food-alerts-mcp.donniertf.workers.dev/mcp
+capabilities:
+  - id: uk-food-alerts.free
+    name: Free check
+    description: Food Standards Agency recalls and allergy alerts (OGL)
+tags:
+  - uk
+  - open-data
+  - remote
