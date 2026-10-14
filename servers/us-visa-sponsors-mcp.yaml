@@ -1,0 +1,27 @@
+id: us-visa-sponsors-mcp
+name: US H-1B Visa Sponsors MCP
+category: data-analysis
+description: Which US employers actually sponsor H-1B visas? Approvals, denials and sponsor lead lists by city, state and industry
+long_description: |
+  Which US employers actually sponsor H-1B visas? Approvals, denials and sponsor lead lists by city, state and industry. Free h1b_check (no key); Pro $15/mo.
+  Part of the UK MCP data fleet: https://github.com/donniertf-hub/uk-mcp-fleet
+maintainer:
+  name: Donnie Morrison
+  github: donniertf-hub
+  website: https://github.com/donniertf-hub/uk-mcp-fleet
+authentication:
+  type: none
+  provider: none
+  instructions: |
+    No authentication required for the free tool. Pro tools need a bearer token
+    from a Stripe subscription (see https://us-visa-sponsors-mcp.donniertf.workers.dev/pricing.json).
+endpoints:
+  production: https://us-visa-sponsors-mcp.donniertf.workers.dev/mcp
+capabilities:
+  - id: us-visa-sponsors.free
+    name: Free check
+    description: Which US employers actually sponsor H-1B visas? Approvals, denials and sponsor lead lists by city, state and industry
+tags:
+  - us
+  - open-data
+  - remote
