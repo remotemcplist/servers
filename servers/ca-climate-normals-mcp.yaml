@@ -1,0 +1,27 @@
+id: ca-climate-normals-mcp
+name: Canada Climate Observations MCP
+category: data-analysis
+description: Official Environment Canada climate station observations near any postal code
+long_description: |
+  Official Environment Canada climate station observations near any postal code. Free nearest_station (no key); Pro C$12/mo.
+  Part of the UK MCP data fleet: https://github.com/donniertf-hub/uk-mcp-fleet
+maintainer:
+  name: Donnie Morrison
+  github: donniertf-hub
+  website: https://github.com/donniertf-hub/uk-mcp-fleet
+authentication:
+  type: none
+  provider: none
+  instructions: |
+    No authentication required for the free tool. Pro tools need a bearer token
+    from a Stripe subscription (see https://ca-climate-normals-mcp.donniertf.workers.dev/pricing.json).
+endpoints:
+  production: https://ca-climate-normals-mcp.donniertf.workers.dev/mcp
+capabilities:
+  - id: ca-climate-normals.free
+    name: Free check
+    description: Official Environment Canada climate station observations near any postal code
+tags:
+  - canada
+  - open-data
+  - remote
