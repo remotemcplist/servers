@@ -1,0 +1,27 @@
+id: uk-salary-benchmarks-mcp
+name: UK Salary Benchmarks MCP
+category: data-analysis
+description: Official ONS ASHE pay percentiles by UK postcode (OGL)
+long_description: |
+  Official ONS ASHE pay percentiles by UK postcode (OGL). Free area_salary (no key); Pro £9/month adds 10th–90th percentiles, area comparisons and offer checks.
+  Part of the UK MCP data fleet: https://github.com/donniertf-hub/uk-mcp-fleet
+maintainer:
+  name: Donnie Morrison
+  github: donniertf-hub
+  website: https://github.com/donniertf-hub/uk-mcp-fleet
+authentication:
+  type: none
+  provider: none
+  instructions: |
+    No authentication required for the free tool. Pro tools need a bearer token
+    from a Stripe subscription (see https://uk-salary-benchmarks-mcp.donniertf.workers.dev/pricing.json).
+endpoints:
+  production: https://uk-salary-benchmarks-mcp.donniertf.workers.dev/mcp
+capabilities:
+  - id: uk-salary-benchmarks.free
+    name: Free check
+    description: Official ONS ASHE pay percentiles by UK postcode (OGL)
+tags:
+  - uk
+  - open-data
+  - remote
