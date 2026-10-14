@@ -1,0 +1,27 @@
+id: au-fx-rates-mcp
+name: Australia FX Rates (RBA) MCP
+category: data-analysis
+description: Reserve Bank of Australia AUD exchange rates
+long_description: |
+  Reserve Bank of Australia AUD exchange rates. Free fx_rate (no key); Pro A$12/mo; x402 USDC.
+  Part of the UK MCP data fleet: https://github.com/donniertf-hub/uk-mcp-fleet
+maintainer:
+  name: Donnie Morrison
+  github: donniertf-hub
+  website: https://github.com/donniertf-hub/uk-mcp-fleet
+authentication:
+  type: none
+  provider: none
+  instructions: |
+    No authentication required for the free tool. Pro tools need a bearer token
+    from a Stripe subscription (see https://au-fx-rates-mcp.donniertf.workers.dev/pricing.json).
+endpoints:
+  production: https://au-fx-rates-mcp.donniertf.workers.dev/mcp
+capabilities:
+  - id: au-fx-rates.free
+    name: Free check
+    description: Reserve Bank of Australia AUD exchange rates
+tags:
+  - australia
+  - open-data
+  - remote
