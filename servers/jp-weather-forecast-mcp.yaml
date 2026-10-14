@@ -1,0 +1,27 @@
+id: jp-weather-forecast-mcp
+name: Japan Weather Forecast MCP
+category: data-analysis
+description: Official JMA short-term forecasts by prefecture
+long_description: |
+  Official JMA short-term forecasts by prefecture. Free forecast (no key); Pro ¥1,200/mo; x402 USDC.
+  Part of the UK MCP data fleet: https://github.com/donniertf-hub/uk-mcp-fleet
+maintainer:
+  name: Donnie Morrison
+  github: donniertf-hub
+  website: https://github.com/donniertf-hub/uk-mcp-fleet
+authentication:
+  type: none
+  provider: none
+  instructions: |
+    No authentication required for the free tool. Pro tools need a bearer token
+    from a Stripe subscription (see https://jp-weather-forecast-mcp.donniertf.workers.dev/pricing.json).
+endpoints:
+  production: https://jp-weather-forecast-mcp.donniertf.workers.dev/mcp
+capabilities:
+  - id: jp-weather-forecast.free
+    name: Free check
+    description: Official JMA short-term forecasts by prefecture
+tags:
+  - japan
+  - open-data
+  - remote
