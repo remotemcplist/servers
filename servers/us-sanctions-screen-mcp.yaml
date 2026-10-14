@@ -1,0 +1,27 @@
+id: us-sanctions-screen-mcp
+name: US OFAC Sanctions Screening MCP
+category: data-analysis
+description: Screen customers, vendors and counterparties against the OFAC SDN list from your AI agent
+long_description: |
+  Screen customers, vendors and counterparties against the OFAC SDN list from your AI agent. Free ofac_check (no key); Pro $19/mo.
+  Part of the UK MCP data fleet: https://github.com/donniertf-hub/uk-mcp-fleet
+maintainer:
+  name: Donnie Morrison
+  github: donniertf-hub
+  website: https://github.com/donniertf-hub/uk-mcp-fleet
+authentication:
+  type: none
+  provider: none
+  instructions: |
+    No authentication required for the free tool. Pro tools need a bearer token
+    from a Stripe subscription (see https://us-sanctions-screen-mcp.donniertf.workers.dev/pricing.json).
+endpoints:
+  production: https://us-sanctions-screen-mcp.donniertf.workers.dev/mcp
+capabilities:
+  - id: us-sanctions-screen.free
+    name: Free check
+    description: Screen customers, vendors and counterparties against the OFAC SDN list from your AI agent
+tags:
+  - us
+  - open-data
+  - remote
