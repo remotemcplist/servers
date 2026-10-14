@@ -1,0 +1,27 @@
+id: jp-business-calendar-mcp
+name: Japan Business Calendar MCP
+category: data-analysis
+description: Japanese business days, holiday checks and invoice due dates for your AI agent
+long_description: |
+  Japanese business days, holiday checks and invoice due dates for your AI agent. Free next_holidays (no key); Pro ¥1,200/mo; x402 USDC.
+  Part of the UK MCP data fleet: https://github.com/donniertf-hub/uk-mcp-fleet
+maintainer:
+  name: Donnie Morrison
+  github: donniertf-hub
+  website: https://github.com/donniertf-hub/uk-mcp-fleet
+authentication:
+  type: none
+  provider: none
+  instructions: |
+    No authentication required for the free tool. Pro tools need a bearer token
+    from a Stripe subscription (see https://jp-business-calendar-mcp.donniertf.workers.dev/pricing.json).
+endpoints:
+  production: https://jp-business-calendar-mcp.donniertf.workers.dev/mcp
+capabilities:
+  - id: jp-business-calendar.free
+    name: Free check
+    description: Japanese business days, holiday checks and invoice due dates for your AI agent
+tags:
+  - japan
+  - open-data
+  - remote
