@@ -1,0 +1,27 @@
+id: au-earthquake-alerts-mcp
+name: Australia Earthquake Alerts MCP
+category: data-analysis
+description: Geoscience Australia and USGS earthquakes for the Australian region
+long_description: |
+  Geoscience Australia and USGS earthquakes for the Australian region. Free recent_quakes (no key); Pro A$12/mo; x402 USDC.
+  Part of the UK MCP data fleet: https://github.com/donniertf-hub/uk-mcp-fleet
+maintainer:
+  name: Donnie Morrison
+  github: donniertf-hub
+  website: https://github.com/donniertf-hub/uk-mcp-fleet
+authentication:
+  type: none
+  provider: none
+  instructions: |
+    No authentication required for the free tool. Pro tools need a bearer token
+    from a Stripe subscription (see https://au-earthquake-alerts-mcp.donniertf.workers.dev/pricing.json).
+endpoints:
+  production: https://au-earthquake-alerts-mcp.donniertf.workers.dev/mcp
+capabilities:
+  - id: au-earthquake-alerts.free
+    name: Free check
+    description: Geoscience Australia and USGS earthquakes for the Australian region
+tags:
+  - australia
+  - open-data
+  - remote
