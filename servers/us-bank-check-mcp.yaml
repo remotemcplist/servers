@@ -1,0 +1,27 @@
+id: us-bank-check-mcp
+name: US Bank Check (FDIC) MCP
+category: data-analysis
+description: Is this bank FDIC-insured, healthy and still open? Bank profiles, ROA/ROE, failures feed and state screens from FDIC BankFind
+long_description: |
+  Is this bank FDIC-insured, healthy and still open? Bank profiles, ROA/ROE, failures feed and state screens from FDIC BankFind. Free bank_check (no key); Pro $12/mo.
+  Part of the UK MCP data fleet: https://github.com/donniertf-hub/uk-mcp-fleet
+maintainer:
+  name: Donnie Morrison
+  github: donniertf-hub
+  website: https://github.com/donniertf-hub/uk-mcp-fleet
+authentication:
+  type: none
+  provider: none
+  instructions: |
+    No authentication required for the free tool. Pro tools need a bearer token
+    from a Stripe subscription (see https://us-bank-check-mcp.donniertf.workers.dev/pricing.json).
+endpoints:
+  production: https://us-bank-check-mcp.donniertf.workers.dev/mcp
+capabilities:
+  - id: us-bank-check.free
+    name: Free check
+    description: Is this bank FDIC-insured, healthy and still open? Bank profiles, ROA/ROE, failures feed and state screens from FDIC BankFind
+tags:
+  - us
+  - open-data
+  - remote
