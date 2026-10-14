@@ -1,0 +1,27 @@
+id: jp-postal-lookup-mcp
+name: Japan Postal Code Lookup MCP
+category: data-analysis
+description: Resolve Japanese 〒 postcodes to prefecture, city and town
+long_description: |
+  Resolve Japanese 〒 postcodes to prefecture, city and town. Free postal_lookup (no key); Pro ¥900/mo; x402 USDC.
+  Part of the UK MCP data fleet: https://github.com/donniertf-hub/uk-mcp-fleet
+maintainer:
+  name: Donnie Morrison
+  github: donniertf-hub
+  website: https://github.com/donniertf-hub/uk-mcp-fleet
+authentication:
+  type: none
+  provider: none
+  instructions: |
+    No authentication required for the free tool. Pro tools need a bearer token
+    from a Stripe subscription (see https://jp-postal-lookup-mcp.donniertf.workers.dev/pricing.json).
+endpoints:
+  production: https://jp-postal-lookup-mcp.donniertf.workers.dev/mcp
+capabilities:
+  - id: jp-postal-lookup.free
+    name: Free check
+    description: Resolve Japanese 〒 postcodes to prefecture, city and town
+tags:
+  - japan
+  - open-data
+  - remote
