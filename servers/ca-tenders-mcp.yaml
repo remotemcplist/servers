@@ -1,0 +1,27 @@
+id: ca-tenders-mcp
+name: CanadaBuys Federal Tenders MCP
+category: data-analysis
+description: Open Government of Canada tenders from CanadaBuys
+long_description: |
+  Open Government of Canada tenders from CanadaBuys. Free tender_search (no key); Pro C$15/mo.
+  Part of the UK MCP data fleet: https://github.com/donniertf-hub/uk-mcp-fleet
+maintainer:
+  name: Donnie Morrison
+  github: donniertf-hub
+  website: https://github.com/donniertf-hub/uk-mcp-fleet
+authentication:
+  type: none
+  provider: none
+  instructions: |
+    No authentication required for the free tool. Pro tools need a bearer token
+    from a Stripe subscription (see https://ca-tenders-mcp.donniertf.workers.dev/pricing.json).
+endpoints:
+  production: https://ca-tenders-mcp.donniertf.workers.dev/mcp
+capabilities:
+  - id: ca-tenders.free
+    name: Free check
+    description: Open Government of Canada tenders from CanadaBuys
+tags:
+  - canada
+  - open-data
+  - remote
