@@ -1,0 +1,27 @@
+id: au-holidays-mcp
+name: Australia Public Holidays MCP
+category: data-analysis
+description: Australian national and state public holidays
+long_description: |
+  Australian national and state public holidays. Free next_holidays (no key); Pro A$9/mo; x402 USDC.
+  Part of the UK MCP data fleet: https://github.com/donniertf-hub/uk-mcp-fleet
+maintainer:
+  name: Donnie Morrison
+  github: donniertf-hub
+  website: https://github.com/donniertf-hub/uk-mcp-fleet
+authentication:
+  type: none
+  provider: none
+  instructions: |
+    No authentication required for the free tool. Pro tools need a bearer token
+    from a Stripe subscription (see https://au-holidays-mcp.donniertf.workers.dev/pricing.json).
+endpoints:
+  production: https://au-holidays-mcp.donniertf.workers.dev/mcp
+capabilities:
+  - id: au-holidays.free
+    name: Free check
+    description: Australian national and state public holidays
+tags:
+  - australia
+  - open-data
+  - remote
