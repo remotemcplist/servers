@@ -1,0 +1,27 @@
+id: uk-fuel-prices-mcp
+name: UK Fuel Price Finder MCP
+category: data-analysis
+description: Cheapest diesel and petrol near a UK postcode from retailers' open fuel price feeds
+long_description: |
+  Cheapest diesel and petrol near a UK postcode from retailers' open fuel price feeds. Free cheapest_fuel (no key); Pro £9/month adds 30-mile searches and multi-depot fleet savings reports.
+  Part of the UK MCP data fleet: https://github.com/donniertf-hub/uk-mcp-fleet
+maintainer:
+  name: Donnie Morrison
+  github: donniertf-hub
+  website: https://github.com/donniertf-hub/uk-mcp-fleet
+authentication:
+  type: none
+  provider: none
+  instructions: |
+    No authentication required for the free tool. Pro tools need a bearer token
+    from a Stripe subscription (see https://uk-fuel-prices-mcp.donniertf.workers.dev/pricing.json).
+endpoints:
+  production: https://uk-fuel-prices-mcp.donniertf.workers.dev/mcp
+capabilities:
+  - id: uk-fuel-prices.free
+    name: Free check
+    description: Cheapest diesel and petrol near a UK postcode from retailers' open fuel price feeds
+tags:
+  - uk
+  - open-data
+  - remote
