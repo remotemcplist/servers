@@ -1,0 +1,27 @@
+id: us-food-drug-recalls-mcp
+name: US FDA Recalls (Food, Drug, Device) MCP
+category: data-analysis
+description: FDA food, drug and medical-device recalls by keyword, class and state
+long_description: |
+  FDA food, drug and medical-device recalls by keyword, class and state. Free latest_recalls (no key); Pro $9/mo.
+  Part of the UK MCP data fleet: https://github.com/donniertf-hub/uk-mcp-fleet
+maintainer:
+  name: Donnie Morrison
+  github: donniertf-hub
+  website: https://github.com/donniertf-hub/uk-mcp-fleet
+authentication:
+  type: none
+  provider: none
+  instructions: |
+    No authentication required for the free tool. Pro tools need a bearer token
+    from a Stripe subscription (see https://us-food-drug-recalls-mcp.donniertf.workers.dev/pricing.json).
+endpoints:
+  production: https://us-food-drug-recalls-mcp.donniertf.workers.dev/mcp
+capabilities:
+  - id: us-food-drug-recalls.free
+    name: Free check
+    description: FDA food, drug and medical-device recalls by keyword, class and state
+tags:
+  - us
+  - open-data
+  - remote
