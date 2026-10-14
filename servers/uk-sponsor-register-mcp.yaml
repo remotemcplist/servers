@@ -1,0 +1,27 @@
+id: uk-sponsor-register-mcp
+name: UK Visa Sponsor Register MCP
+category: data-analysis
+description: Home Office register of licensed visa sponsors, refreshed daily (OGL)
+long_description: |
+  Home Office register of licensed visa sponsors, refreshed daily (OGL). Free sponsor_check (no key); Pro £15/month adds town/route lead lists, new & removed sponsors and B-rated employers.
+  Part of the UK MCP data fleet: https://github.com/donniertf-hub/uk-mcp-fleet
+maintainer:
+  name: Donnie Morrison
+  github: donniertf-hub
+  website: https://github.com/donniertf-hub/uk-mcp-fleet
+authentication:
+  type: none
+  provider: none
+  instructions: |
+    No authentication required for the free tool. Pro tools need a bearer token
+    from a Stripe subscription (see https://uk-sponsor-register-mcp.donniertf.workers.dev/pricing.json).
+endpoints:
+  production: https://uk-sponsor-register-mcp.donniertf.workers.dev/mcp
+capabilities:
+  - id: uk-sponsor-register.free
+    name: Free check
+    description: Home Office register of licensed visa sponsors, refreshed daily (OGL)
+tags:
+  - uk
+  - open-data
+  - remote
