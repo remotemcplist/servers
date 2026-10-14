@@ -1,0 +1,27 @@
+id: us-drug-shortages-mcp
+name: US Drug Shortages (FDA) MCP
+category: data-analysis
+description: Which drugs are in shortage right now? FDA shortage status, reasons and availability
+long_description: |
+  Which drugs are in shortage right now? FDA shortage status, reasons and availability. Free shortage_check (no key); Pro $9/mo.
+  Part of the UK MCP data fleet: https://github.com/donniertf-hub/uk-mcp-fleet
+maintainer:
+  name: Donnie Morrison
+  github: donniertf-hub
+  website: https://github.com/donniertf-hub/uk-mcp-fleet
+authentication:
+  type: none
+  provider: none
+  instructions: |
+    No authentication required for the free tool. Pro tools need a bearer token
+    from a Stripe subscription (see https://us-drug-shortages-mcp.donniertf.workers.dev/pricing.json).
+endpoints:
+  production: https://us-drug-shortages-mcp.donniertf.workers.dev/mcp
+capabilities:
+  - id: us-drug-shortages.free
+    name: Free check
+    description: Which drugs are in shortage right now? FDA shortage status, reasons and availability
+tags:
+  - us
+  - open-data
+  - remote
