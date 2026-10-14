@@ -1,0 +1,27 @@
+id: us-product-recalls-mcp
+name: US Consumer Product Recalls (CPSC) MCP
+category: data-analysis
+description: Is it recalled? US consumer product recalls from the CPSC
+long_description: |
+  Is it recalled? US consumer product recalls from the CPSC. Free product_recalls (no key); Pro $9/mo.
+  Part of the UK MCP data fleet: https://github.com/donniertf-hub/uk-mcp-fleet
+maintainer:
+  name: Donnie Morrison
+  github: donniertf-hub
+  website: https://github.com/donniertf-hub/uk-mcp-fleet
+authentication:
+  type: none
+  provider: none
+  instructions: |
+    No authentication required for the free tool. Pro tools need a bearer token
+    from a Stripe subscription (see https://us-product-recalls-mcp.donniertf.workers.dev/pricing.json).
+endpoints:
+  production: https://us-product-recalls-mcp.donniertf.workers.dev/mcp
+capabilities:
+  - id: us-product-recalls.free
+    name: Free check
+    description: Is it recalled? US consumer product recalls from the CPSC
+tags:
+  - us
+  - open-data
+  - remote
