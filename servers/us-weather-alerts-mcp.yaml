@@ -1,0 +1,27 @@
+id: us-weather-alerts-mcp
+name: US Severe Weather Alerts MCP
+category: data-analysis
+description: Active National Weather Service warnings for any US ZIP
+long_description: |
+  Active National Weather Service warnings for any US ZIP. Free weather_alerts (no key); Pro $9/mo.
+  Part of the UK MCP data fleet: https://github.com/donniertf-hub/uk-mcp-fleet
+maintainer:
+  name: Donnie Morrison
+  github: donniertf-hub
+  website: https://github.com/donniertf-hub/uk-mcp-fleet
+authentication:
+  type: none
+  provider: none
+  instructions: |
+    No authentication required for the free tool. Pro tools need a bearer token
+    from a Stripe subscription (see https://us-weather-alerts-mcp.donniertf.workers.dev/pricing.json).
+endpoints:
+  production: https://us-weather-alerts-mcp.donniertf.workers.dev/mcp
+capabilities:
+  - id: us-weather-alerts.free
+    name: Free check
+    description: Active National Weather Service warnings for any US ZIP
+tags:
+  - us
+  - open-data
+  - remote
