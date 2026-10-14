@@ -1,0 +1,27 @@
+id: prediction-rules-mcp
+name: Prediction Market Rule Check MCP
+category: data-analysis
+description: Risk-scores Polymarket and Kalshi settlement rules (public APIs) for resolver discretion, vague sources and cancellation/deadline traps
+long_description: |
+  Risk-scores Polymarket and Kalshi settlement rules (public APIs) for resolver discretion, vague sources and cancellation/deadline traps. Free rule_check (no key); Pro £12/month. Not financial advice.
+  Part of the UK MCP data fleet: https://github.com/donniertf-hub/uk-mcp-fleet
+maintainer:
+  name: Donnie Morrison
+  github: donniertf-hub
+  website: https://github.com/donniertf-hub/uk-mcp-fleet
+authentication:
+  type: none
+  provider: none
+  instructions: |
+    No authentication required for the free tool. Pro tools need a bearer token
+    from a Stripe subscription (see https://prediction-rules-mcp.donniertf.workers.dev/pricing.json).
+endpoints:
+  production: https://prediction-rules-mcp.donniertf.workers.dev/mcp
+capabilities:
+  - id: prediction-rules.free
+    name: Free check
+    description: Risk-scores Polymarket and Kalshi settlement rules (public APIs) for resolver discretion, vague sources and cancellation
+tags:
+  - uk
+  - open-data
+  - remote
