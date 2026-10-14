@@ -1,0 +1,27 @@
+id: us-sec-filings-mcp
+name: US SEC Filings Watch MCP
+category: data-analysis
+description: Latest 10-K, 10-Q and 8-K filings for any US-listed company, with 8-K red flags decoded
+long_description: |
+  Latest 10-K, 10-Q and 8-K filings for any US-listed company, with 8-K red flags decoded. Free latest_filings (no key); Pro $12/mo.
+  Part of the UK MCP data fleet: https://github.com/donniertf-hub/uk-mcp-fleet
+maintainer:
+  name: Donnie Morrison
+  github: donniertf-hub
+  website: https://github.com/donniertf-hub/uk-mcp-fleet
+authentication:
+  type: none
+  provider: none
+  instructions: |
+    No authentication required for the free tool. Pro tools need a bearer token
+    from a Stripe subscription (see https://us-sec-filings-mcp.donniertf.workers.dev/pricing.json).
+endpoints:
+  production: https://us-sec-filings-mcp.donniertf.workers.dev/mcp
+capabilities:
+  - id: us-sec-filings.free
+    name: Free check
+    description: Latest 10-K, 10-Q and 8-K filings for any US-listed company, with 8-K red flags decoded
+tags:
+  - us
+  - open-data
+  - remote
