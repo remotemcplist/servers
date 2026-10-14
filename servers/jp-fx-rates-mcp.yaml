@@ -1,0 +1,27 @@
+id: jp-fx-rates-mcp
+name: Japan FX Rates (JPY) MCP
+category: data-analysis
+description: JPY exchange rates and conversions
+long_description: |
+  JPY exchange rates and conversions. Free fx_rate (no key); Pro ¥1,200/mo; x402 USDC.
+  Part of the UK MCP data fleet: https://github.com/donniertf-hub/uk-mcp-fleet
+maintainer:
+  name: Donnie Morrison
+  github: donniertf-hub
+  website: https://github.com/donniertf-hub/uk-mcp-fleet
+authentication:
+  type: none
+  provider: none
+  instructions: |
+    No authentication required for the free tool. Pro tools need a bearer token
+    from a Stripe subscription (see https://jp-fx-rates-mcp.donniertf.workers.dev/pricing.json).
+endpoints:
+  production: https://jp-fx-rates-mcp.donniertf.workers.dev/mcp
+capabilities:
+  - id: jp-fx-rates.free
+    name: Free check
+    description: JPY exchange rates and conversions
+tags:
+  - japan
+  - open-data
+  - remote
