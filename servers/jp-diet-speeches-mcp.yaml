@@ -1,0 +1,27 @@
+id: jp-diet-speeches-mcp
+name: Japan Diet Speeches MCP
+category: data-analysis
+description: Search National Diet proceedings speeches
+long_description: |
+  Search National Diet proceedings speeches. Free speech_search (no key); Pro ¥1,500/mo; x402 USDC.
+  Part of the UK MCP data fleet: https://github.com/donniertf-hub/uk-mcp-fleet
+maintainer:
+  name: Donnie Morrison
+  github: donniertf-hub
+  website: https://github.com/donniertf-hub/uk-mcp-fleet
+authentication:
+  type: none
+  provider: none
+  instructions: |
+    No authentication required for the free tool. Pro tools need a bearer token
+    from a Stripe subscription (see https://jp-diet-speeches-mcp.donniertf.workers.dev/pricing.json).
+endpoints:
+  production: https://jp-diet-speeches-mcp.donniertf.workers.dev/mcp
+capabilities:
+  - id: jp-diet-speeches.free
+    name: Free check
+    description: Search National Diet proceedings speeches
+tags:
+  - japan
+  - open-data
+  - remote
