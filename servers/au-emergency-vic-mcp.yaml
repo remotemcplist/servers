@@ -1,0 +1,27 @@
+id: au-emergency-vic-mcp
+name: Australia Emergency Incidents (VIC) MCP
+category: data-analysis
+description: Emergency Victoria public incidents feed
+long_description: |
+  Emergency Victoria public incidents feed. Free incidents (no key); Pro A$15/mo; x402 USDC.
+  Part of the UK MCP data fleet: https://github.com/donniertf-hub/uk-mcp-fleet
+maintainer:
+  name: Donnie Morrison
+  github: donniertf-hub
+  website: https://github.com/donniertf-hub/uk-mcp-fleet
+authentication:
+  type: none
+  provider: none
+  instructions: |
+    No authentication required for the free tool. Pro tools need a bearer token
+    from a Stripe subscription (see https://au-emergency-vic-mcp.donniertf.workers.dev/pricing.json).
+endpoints:
+  production: https://au-emergency-vic-mcp.donniertf.workers.dev/mcp
+capabilities:
+  - id: au-emergency-vic.free
+    name: Free check
+    description: Emergency Victoria public incidents feed
+tags:
+  - australia
+  - open-data
+  - remote
