@@ -1,0 +1,27 @@
+id: us-business-calendar-mcp
+name: US Business Calendar MCP
+category: data-analysis
+description: US federal holidays, business-day maths, invoice due dates and IRS deadlines
+long_description: |
+  US federal holidays, business-day maths, invoice due dates and IRS deadlines. Free next_holidays (no key); Pro $9/mo.
+  Part of the UK MCP data fleet: https://github.com/donniertf-hub/uk-mcp-fleet
+maintainer:
+  name: Donnie Morrison
+  github: donniertf-hub
+  website: https://github.com/donniertf-hub/uk-mcp-fleet
+authentication:
+  type: none
+  provider: none
+  instructions: |
+    No authentication required for the free tool. Pro tools need a bearer token
+    from a Stripe subscription (see https://us-business-calendar-mcp.donniertf.workers.dev/pricing.json).
+endpoints:
+  production: https://us-business-calendar-mcp.donniertf.workers.dev/mcp
+capabilities:
+  - id: us-business-calendar.free
+    name: Free check
+    description: US federal holidays, business-day maths, invoice due dates and IRS deadlines
+tags:
+  - us
+  - open-data
+  - remote
