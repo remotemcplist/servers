@@ -1,0 +1,27 @@
+id: us-federal-grants-mcp
+name: US Federal Grants Finder MCP
+category: data-analysis
+description: Open and upcoming US federal grants for your keywords
+long_description: |
+  Open and upcoming US federal grants for your keywords. Free grant_search (no key); Pro $15/mo.
+  Part of the UK MCP data fleet: https://github.com/donniertf-hub/uk-mcp-fleet
+maintainer:
+  name: Donnie Morrison
+  github: donniertf-hub
+  website: https://github.com/donniertf-hub/uk-mcp-fleet
+authentication:
+  type: none
+  provider: none
+  instructions: |
+    No authentication required for the free tool. Pro tools need a bearer token
+    from a Stripe subscription (see https://us-federal-grants-mcp.donniertf.workers.dev/pricing.json).
+endpoints:
+  production: https://us-federal-grants-mcp.donniertf.workers.dev/mcp
+capabilities:
+  - id: us-federal-grants.free
+    name: Free check
+    description: Open and upcoming US federal grants for your keywords
+tags:
+  - us
+  - open-data
+  - remote
