@@ -1,0 +1,27 @@
+id: uk-energy-prices-mcp
+name: UK Electricity Price Slots MCP
+category: data-analysis
+description: Cheapest half-hour UK electricity prices (Agile Octopus public API) by postcode
+long_description: |
+  Cheapest half-hour UK electricity prices (Agile Octopus public API) by postcode. Free cheapest_slots (no key); Pro £9/month adds best N-hour windows for EV charging/heat pumps/batteries and export prices.
+  Part of the UK MCP data fleet: https://github.com/donniertf-hub/uk-mcp-fleet
+maintainer:
+  name: Donnie Morrison
+  github: donniertf-hub
+  website: https://github.com/donniertf-hub/uk-mcp-fleet
+authentication:
+  type: none
+  provider: none
+  instructions: |
+    No authentication required for the free tool. Pro tools need a bearer token
+    from a Stripe subscription (see https://uk-energy-prices-mcp.donniertf.workers.dev/pricing.json).
+endpoints:
+  production: https://uk-energy-prices-mcp.donniertf.workers.dev/mcp
+capabilities:
+  - id: uk-energy-prices.free
+    name: Free check
+    description: Cheapest half-hour UK electricity prices (Agile Octopus public API) by postcode
+tags:
+  - uk
+  - open-data
+  - remote
