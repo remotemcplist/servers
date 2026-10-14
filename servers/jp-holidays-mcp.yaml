@@ -1,0 +1,27 @@
+id: jp-holidays-mcp
+name: Japan Public Holidays MCP
+category: data-analysis
+description: Japanese national holidays calendar
+long_description: |
+  Japanese national holidays calendar. Free next_holidays (no key); Pro ¥900/mo; x402 USDC.
+  Part of the UK MCP data fleet: https://github.com/donniertf-hub/uk-mcp-fleet
+maintainer:
+  name: Donnie Morrison
+  github: donniertf-hub
+  website: https://github.com/donniertf-hub/uk-mcp-fleet
+authentication:
+  type: none
+  provider: none
+  instructions: |
+    No authentication required for the free tool. Pro tools need a bearer token
+    from a Stripe subscription (see https://jp-holidays-mcp.donniertf.workers.dev/pricing.json).
+endpoints:
+  production: https://jp-holidays-mcp.donniertf.workers.dev/mcp
+capabilities:
+  - id: jp-holidays.free
+    name: Free check
+    description: Japanese national holidays calendar
+tags:
+  - japan
+  - open-data
+  - remote
