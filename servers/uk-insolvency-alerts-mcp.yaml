@@ -1,0 +1,27 @@
+id: uk-insolvency-alerts-mcp
+name: UK Insolvency Alerts MCP
+category: data-analysis
+description: Winding-up petitions, liquidations and administrations from The Gazette for UK companies (OGL)
+long_description: |
+  Winding-up petitions, liquidations and administrations from The Gazette for UK companies (OGL). Free insolvency_check (no key); Pro £15/month adds 50-company watchlists, daily new petitions and area distress feeds via Stripe subscription + Bearer token.
+  Part of the UK MCP data fleet: https://github.com/donniertf-hub/uk-mcp-fleet
+maintainer:
+  name: Donnie Morrison
+  github: donniertf-hub
+  website: https://github.com/donniertf-hub/uk-mcp-fleet
+authentication:
+  type: none
+  provider: none
+  instructions: |
+    No authentication required for the free tool. Pro tools need a bearer token
+    from a Stripe subscription (see https://uk-insolvency-alerts-mcp.donniertf.workers.dev/pricing.json).
+endpoints:
+  production: https://uk-insolvency-alerts-mcp.donniertf.workers.dev/mcp
+capabilities:
+  - id: uk-insolvency-alerts.free
+    name: Free check
+    description: Winding-up petitions, liquidations and administrations from The Gazette for UK companies (OGL)
+tags:
+  - uk
+  - open-data
+  - remote
