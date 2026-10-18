@@ -1,0 +1,62 @@
+id: mysocial-mcp
+name: Mysocial
+category: data-analysis
+
+description: Social media intelligence for AI assistants, with connected content history, research, brand context and saved ideas through remote MCP.
+
+long_description: |
+  Mysocial gives creators and teams a connected workspace for content history,
+  research, ideas and brand context. Its hosted MCP server connects supported
+  tools to Claude, ChatGPT, Codex and other MCP-compatible clients using
+  Streamable HTTP and OAuth 2.1 with PKCE. No API key is required.
+  Free workspace tools and standard MCP are available; Content Memory archive
+  analysis and research depend on paid plan entitlements, starting at USD49/month.
+  Platform and permission coverage varies. Current pricing is available at
+  https://mysocial.io/pricing/ and setup documentation at https://mysocial.io/mcp/.
+  The public repository contains connector metadata, skills and setup helpers;
+  it is not a self-hosted standalone stdio server.
+
+maintainer:
+  name: Mysocial
+  github: mysocialio
+  website: https://mysocial.io/
+
+authentication:
+  type: oauth2
+  provider: mysocial
+  instructions: |
+    Add https://app.mysocial.io/mcp as a remote Streamable HTTP connector in a
+    compatible MCP client. Sign in to Mysocial and approve the connection.
+    OAuth 2.1, PKCE and dynamic client registration are supported.
+    No API key or manual application registration is required.
+
+endpoints:
+  production: https://app.mysocial.io/mcp
+
+capabilities:
+  - id: search_content
+    name: Search connected content
+    description: Search content available to the authorized Mysocial account, subject to plan and platform coverage.
+  - id: get_channel_analytics
+    name: Read channel analytics
+    description: Retrieve available analytics for channels accessible to the authorized account.
+  - id: get_brand_identity
+    name: Read brand context
+    description: Retrieve an accessible Brand Studio identity to inform research and drafts.
+  - id: save_content_idea
+    name: Save an idea
+    description: Save a content idea or draft in the authorized Mysocial workspace.
+
+tags:
+  - social-media
+  - content-research
+  - creators
+  - brand-context
+  - remote-mcp
+
+verification:
+  status: pending
+  tested_date: "2026-10-18T04:04:14.859066Z"
+  security_audit: false
+
+featured: false
