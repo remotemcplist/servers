@@ -1,0 +1,62 @@
+id: dreamtune
+name: Dreamtune
+category: ai-ml
+
+description: Access supported AI models, tools and GPU compute with one workspace API key and prepaid balance.
+
+long_description: |
+  Dreamtune's hosted MCP server connects agents to model and tool catalogs,
+  model runs, tool execution, GPU jobs and observability through one workspace.
+  It uses Streamable HTTP with a production Dreamtune API key supplied in the
+  X-Dreamtune-API-Key header. Each operation respects the key's permissions;
+  paid operations deduct credit from the workspace's prepaid balance.
+  Hosted GPU creation requires the caller's SSH public key. The server does
+  not provide browser OAuth login or store the caller's SSH private key.
+  Setup documentation: https://docs.dreamtunelabs.com/connect/mcp
+
+maintainer:
+  name: Dreamtune
+  github: yashbudhia
+  website: https://dreamtunelabs.com
+
+authentication:
+  type: api-key
+  provider: custom
+  instructions: |
+    1. Create an account at https://dreamtunelabs.com/signup/.
+    2. Create a production workspace key at https://dreamtunelabs.com/dashboard/api-keys/.
+    3. Give the key only the model, tool and compute permissions you need.
+    4. Configure Streamable HTTP at https://mcp.dreamtunelabs.com/mcp.
+    5. Supply the key in the X-Dreamtune-API-Key request header through protected client settings.
+    Paid operations require workspace credit. Never put the key in the URL or tool arguments.
+
+endpoints:
+  production: https://mcp.dreamtunelabs.com/mcp
+
+capabilities:
+  - id: models.run
+    name: Discover and run models
+    description: Browse supported models and run requests within the workspace key's permissions.
+  - id: tools.run
+    name: Discover and execute tools
+    description: Inspect supported tool schemas and execute selected tools from the workspace balance.
+  - id: compute.manage
+    name: Manage GPU compute
+    description: Inspect capacity, create GPU jobs with an SSH public key and review owned jobs.
+  - id: observability.read
+    name: Inspect usage and traces
+    description: Review permitted run records and observability data for the workspace.
+
+tags:
+  - ai-models
+  - developer-tools
+  - gpu
+  - observability
+  - mcp
+  - remote
+
+verification:
+  status: pending
+  security_audit: false
+
+featured: false
