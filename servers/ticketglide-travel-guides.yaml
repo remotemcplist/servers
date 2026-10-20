@@ -1,0 +1,44 @@
+id: ticketglide-travel-guides
+name: Ticketglide Ticketing Agent
+category: productivity
+description: TicketGlide all-in-one travel comparison and tickets, with guides and tailored search links for attractions, tours and day trips.
+long_description: |
+  TicketGlide is an all-in-one travel comparison and tickets platform for attractions, tours and day trips, operated by Mubboo LLC.
+  Its public, read-only MCP server lets assistants search published destination and attraction
+  guides, read guide content with canonical source URLs and factual check dates where present,
+  and create TicketGlide website search links. Content is available in English, French,
+  German and Spanish. Connect using Streamable HTTP; no account, API key or OAuth is required.
+  Documentation: https://ticketglide.com/mcp
+  Plan visits with published guides and continue to TicketGlide to explore experience options.
+maintainer:
+  name: Mubboo LLC
+  github: mubbooAI
+  website: https://ticketglide.com
+authentication:
+  type: none
+  instructions: Connect to https://ticketglide.com/api/mcp using Streamable HTTP. No credentials are required.
+endpoints:
+  production: https://ticketglide.com/api/mcp
+capabilities:
+  - id: search_guides
+    name: Search travel guides
+    description: Search published destination and attraction guides.
+  - id: read_guide
+    name: Read a travel guide
+    description: Read a guide with its canonical source URL and factual check dates where present.
+  - id: create_search_link
+    name: Create a travel search link
+    description: Generate a TicketGlide website search link for tours and day trips.
+tags:
+  - travel
+  - attractions
+  - tours
+  - day-trips
+  - guides
+  - read-only
+verification:
+  status: pending
+  tested_date: "2026-10-17T15:52:36Z"
+  security_audit: false
+featured: false
+
