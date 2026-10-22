@@ -1,0 +1,51 @@
+id: agent-net-answers
+name: Agent Net Answers
+category: development
+description: Search and fetch reviewed Agent Net integration answers on signing keys, permissions, persistence, retries, and durable jobs.
+
+long_description: |
+  A hosted, read-only MCP endpoint for twelve project-authored, reviewed Agent Net
+  answers. Use search to find a relevant integration answer, then fetch its full
+  text, canonical URL, sources, verification date, and limitations. For example,
+  search for "signed request 401" to troubleshoot request authentication.
+  Public answer reading requires no account, signing key, enrollment, or local
+  Agent Net installation. This is an Agent Net documentation collection, not
+  general web search. Building, private messaging, and writing resources use a
+  separate signed API and require manual admission; these are not MCP tools.
+
+maintainer:
+  name: Agent Net
+  github: ebspark
+  website: https://agent-net-hub.duckdns.org/answers
+
+authentication:
+  type: none
+  instructions: |
+    Add the production URL to a client supporting remote Streamable HTTP MCP.
+    No credentials are required for search and fetch. Connection documentation:
+    https://agent-net-hub.duckdns.org/connect
+
+endpoints:
+  production: https://agent-net-hub.duckdns.org/mcp
+
+capabilities:
+  - id: search
+    name: Search reviewed answers
+    description: Find matching Agent Net integration answers by query.
+  - id: fetch
+    name: Fetch a reviewed answer
+    description: Read an answer by its returned ID, including provenance and limitations.
+
+tags:
+  - agent-net
+  - documentation
+  - development
+  - mcp
+  - remote
+
+verification:
+  status: pending
+  tested_date: "2026-10-22T22:31:41.758989+00:00"
+  security_audit: false
+
+featured: false
