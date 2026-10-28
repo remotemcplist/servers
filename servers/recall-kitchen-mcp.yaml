@@ -1,0 +1,41 @@
+id: recall-kitchen-mcp
+name: Recall Kitchen
+category: data-analysis
+description: Search government product recall notices from CPSC, FDA, USDA, NHTSA, and Health Canada via hosted MCP.
+long_description: |
+  Hosted remote MCP server for searching government product recall notices
+  from CPSC, FDA, USDA, NHTSA, and Health Canada. Keyword, UPC, product-name,
+  and vehicle (make/model) lookup, plus full-notice fetch. Free tier plus paid
+  x402 after quota. Endpoint: https://app.recallkitchen.com/mcp (Streamable HTTP).
+  Docs: https://recallkitchen.com/docs/#mcp. Go client: https://github.com/Recall-Kitchen/rk-mcp (Apache-2.0).
+maintainer:
+  name: Recall Kitchen
+  github: Recall-Kitchen
+  website: app.recallkitchen.com
+authentication:
+  type: api-key
+  provider: recall-kitchen
+  instructions: |
+    Optional free API key via the X-API-Key header (sign up at https://app.recallkitchen.com).
+    Anonymous use is also supported with free tier plus paid x402 after quota.
+endpoints:
+  production: https://app.recallkitchen.com/mcp
+capabilities:
+- id: search-recalls
+  name: Search recalls
+  description: Search government product recall notices by keyword or product identifiers
+- id: fetch-notice
+  name: Fetch notice
+  description: Fetch a full government recall notice by id
+tags:
+- recalls
+- government-data
+- product-safety
+- mcp
+- remote
+- x402
+verification:
+  status: pending
+  tested_date: '2026-10-28T00:00:00Z'
+  security_audit: false
+featured: false
