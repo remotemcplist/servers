@@ -1,0 +1,47 @@
+id: gscmate-mcp
+name: GSCmate
+category: data-analysis
+description: Read-only Google Search Console analytics, properties, sitemaps, and URL inspection through a hosted OAuth 2.1 MCP endpoint
+long_description: >-
+  Hosted Streamable HTTP MCP service for read-only Google Search Console access.
+  Connect a compatible MCP client to https://gscmate.com/mcp and authorize a Google
+  account with OAuth. It provides account and property discovery, Search Analytics,
+  insights, sitemap metadata, and URL Inspection. Paid plans start at USD 19 per month.
+maintainer:
+  name: GSCmate Team
+  github: Fushey
+  website: https://gscmate.com
+authentication:
+  type: oauth2
+  provider: Google OAuth via GSCmate
+  instructions: >-
+    Connect to https://gscmate.com/mcp using a compatible Streamable HTTP MCP client.
+    Follow the Google authorization flow. Setup documentation is at
+    https://github.com/Fushey/gscmate-mcp-listing.
+endpoints:
+  production: https://gscmate.com/mcp
+capabilities:
+  - id: list-properties
+    name: List Properties
+    description: List Google Search Console accounts and authorized properties.
+  - id: search-analytics
+    name: Search Analytics
+    description: Query clicks, impressions, CTR, and average position by supported dimensions.
+  - id: sitemaps
+    name: Sitemaps
+    description: Read sitemap metadata and sitemap contents for authorized properties.
+  - id: url-inspection
+    name: URL Inspection
+    description: Read Google indexing and URL inspection information.
+tags:
+  - google-search-console
+  - seo
+  - analytics
+  - oauth
+  - read-only
+  - remote
+  - mcp
+verification:
+  status: pending
+  security_audit: false
+featured: false
