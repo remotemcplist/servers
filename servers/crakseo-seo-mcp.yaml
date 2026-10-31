@@ -1,0 +1,59 @@
+id: crakseo-seo-mcp
+name: SEO Tools MCP by CrakSEO
+category: data-analysis
+description: Live SEO data for AI agents - keyword research, Google and Bing SERPs, rank tracking, backlinks, site audits and AI search visibility
+long_description: |
+  Hosted remote MCP server (Streamable HTTP with OAuth sign-in) that gives AI agents live SEO data.
+  Agents can run keyword research with search volume, keyword difficulty and CPC; pull live Google and
+  Bing results with AI Overview sources and Google Maps rankings; check where a domain ranks on Google
+  and find competitor keyword gaps; analyze backlinks, referring domains and anchor text; audit pages for
+  technical and on-page SEO with Lighthouse; and check brand mentions in ChatGPT, Perplexity and Google
+  AI Overviews. Data calls use prepaid credits shown before each call; connecting and checking the
+  balance are free. Focused servers for single jobs and free Google Search Console and URL indexing
+  servers are listed at https://crakseo.com/mcp.
+maintainer:
+  name: CrakSEO
+  github: LoganOneal
+  website: crakseo.com
+authentication:
+  type: oauth2
+  provider: custom
+  instructions: |
+    1. Add https://crakseo.com/mcp/seo as a remote MCP server in your client
+    2. Sign in with your CrakSEO account when the OAuth window opens
+    3. Call get_api_credit_balance (free) to see per-call pricing before running data tools
+endpoints:
+  production: https://crakseo.com/mcp/seo
+capabilities:
+- id: keyword-research
+  name: Keyword Research
+  description: Search volume, keyword difficulty, CPC and keyword ideas
+- id: serp
+  name: Google and Bing SERPs
+  description: Live search results with SERP features, AI Overview sources and Google Maps rankings
+- id: rank-tracking
+  name: Rank Tracking
+  description: Where a domain ranks on Google, ranked keywords and competitor keyword gaps
+- id: backlinks
+  name: Backlinks
+  description: Backlinks, referring domains and anchor text for a domain or URL
+- id: site-audit
+  name: Site Audit
+  description: Technical and on-page SEO audit with Lighthouse and Core Web Vitals
+- id: ai-visibility
+  name: AI Search Visibility
+  description: Brand mentions in ChatGPT, Perplexity and Google AI Overviews
+tags:
+- seo
+- keyword-research
+- serp
+- backlinks
+- rank-tracking
+- site-audit
+- mcp
+- remote
+verification:
+  status: pending
+  tested_date: '2026-10-30T00:00:00Z'
+  security_audit: false
+featured: false
