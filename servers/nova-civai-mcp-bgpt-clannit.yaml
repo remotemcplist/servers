@@ -1,0 +1,30 @@
+id: nova-civai-mcp-bgpt-clannit
+name: Clannit MCP by Nova (CIVAI)
+category: developer-tools
+description: Create estate guest visit invites and read your Clannit notifications (including past invite codes and times).
+long_description: 'Clannit MCP by Nova (CIVAI) — Create estate guest visit invites and read your Clannit notifications (including past invite codes and times). Connect at https://nova.civai.co/mcp/agents/mcp-bgpt-clannit with a Nova API key. Registry co.civai.nova/mcp-bgpt-clannit. Listing: https://github.com/civai-technologies/mcp-bgpt-clannit-mcp-by-nova-civai.'
+maintainer:
+  name: Nova by CIVAI
+  github: civai-technologies
+  website: nova.civai.co
+authentication:
+  type: api-key
+  provider: nova-civai
+  instructions: 'Create a Nova API key at https://nova.civai.co/api-keys and pass Authorization: Bearer <key> to the Streamable HTTP MCP endpoint.'
+endpoints:
+  production: https://nova.civai.co/mcp/agents/mcp-bgpt-clannit
+capabilities:
+- id: mcp.tools
+  name: MCP tools
+  description: Catalog agent tools for mcp-bgpt-clannit via Streamable HTTP MCP.
+tags:
+- nova
+- civai
+- mcp
+- remote
+- mcp_bgpt_clannit
+verification:
+  status: pending
+  tested_date: '2026-11-02T09:26:03Z'
+  security_audit: false
+featured: false

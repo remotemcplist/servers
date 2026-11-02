@@ -1,0 +1,30 @@
+id: nova-civai-content-pipeline-agent
+name: Content Pipeline Agent by Nova (CIVAI)
+category: social-media
+description: I run the Content Pipeline for your Nova products — scan trends, expand seeds into opportunities, generate drafts, publish to your configured destination, and submit for indexing
+long_description: 'Content Pipeline Agent by Nova (CIVAI) — I run the Content Pipeline for your Nova products — scan trends, expand seeds into opportunities, generate drafts, publish to your configured destination, and submit for indexing Connect at https://nova.civai.co/mcp/agents/content-pipeline-agent with a Nova API key. Registry co.civai.nova/content-pipeline-agent. Listing: https://github.com/civai-technologies/content-pipeline-agent-mcp-by-nova-civai.'
+maintainer:
+  name: Nova by CIVAI
+  github: civai-technologies
+  website: nova.civai.co
+authentication:
+  type: api-key
+  provider: nova-civai
+  instructions: 'Create a Nova API key at https://nova.civai.co/api-keys and pass Authorization: Bearer <key> to the Streamable HTTP MCP endpoint.'
+endpoints:
+  production: https://nova.civai.co/mcp/agents/content-pipeline-agent
+capabilities:
+- id: mcp.tools
+  name: MCP tools
+  description: Catalog agent tools for content-pipeline-agent via Streamable HTTP MCP.
+tags:
+- nova
+- civai
+- mcp
+- remote
+- content_pipeline_agent
+verification:
+  status: pending
+  tested_date: '2026-11-02T09:26:03Z'
+  security_audit: false
+featured: false

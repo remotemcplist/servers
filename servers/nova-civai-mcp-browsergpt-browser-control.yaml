@@ -1,0 +1,30 @@
+id: nova-civai-mcp-browsergpt-browser-control
+name: Browser Control MCP by Nova (CIVAI)
+category: browser-automation
+description: Control your Chrome from chat: open websites, read what's on the page, click buttons, and fill in forms. Works with the BrowserGPT extension on your computer, or a cloud browser if you prefer.
+long_description: 'Browser Control MCP by Nova (CIVAI) — Control your Chrome from chat: open websites, read what's on the page, click buttons, and fill in forms. Works with the BrowserGPT extension on your computer, or a cloud browser if you prefer. Connect at https://nova.civai.co/mcp/agents/mcp-browsergpt-browser-control with a Nova API key. Registry co.civai.nova/mcp-browsergpt-browser-control. Listing: https://github.com/civai-technologies/mcp-browsergpt-browser-control-mcp-by-nova-civai.'
+maintainer:
+  name: Nova by CIVAI
+  github: civai-technologies
+  website: nova.civai.co
+authentication:
+  type: api-key
+  provider: nova-civai
+  instructions: 'Create a Nova API key at https://nova.civai.co/api-keys and pass Authorization: Bearer <key> to the Streamable HTTP MCP endpoint.'
+endpoints:
+  production: https://nova.civai.co/mcp/agents/mcp-browsergpt-browser-control
+capabilities:
+- id: mcp.tools
+  name: MCP tools
+  description: Catalog agent tools for mcp-browsergpt-browser-control via Streamable HTTP MCP.
+tags:
+- nova
+- civai
+- mcp
+- remote
+- mcp_browsergpt_browser_control
+verification:
+  status: pending
+  tested_date: '2026-11-02T09:26:03Z'
+  security_audit: false
+featured: false

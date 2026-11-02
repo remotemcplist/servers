@@ -1,0 +1,30 @@
+id: nova-civai-mcp-bgpt-jiji-recon
+name: Jiji Nigeria MCP by Nova (CIVAI)
+category: developer-tools
+description: Search and buy on Jiji Nigeria — browse listings, message sellers, and manage your ads.
+long_description: 'Jiji Nigeria MCP by Nova (CIVAI) — Search and buy on Jiji Nigeria — browse listings, message sellers, and manage your ads. Connect at https://nova.civai.co/mcp/agents/mcp-bgpt-jiji-recon with a Nova API key. Registry co.civai.nova/mcp-bgpt-jiji-recon. Listing: https://github.com/civai-technologies/mcp-bgpt-jiji-recon-mcp-by-nova-civai.'
+maintainer:
+  name: Nova by CIVAI
+  github: civai-technologies
+  website: nova.civai.co
+authentication:
+  type: api-key
+  provider: nova-civai
+  instructions: 'Create a Nova API key at https://nova.civai.co/api-keys and pass Authorization: Bearer <key> to the Streamable HTTP MCP endpoint.'
+endpoints:
+  production: https://nova.civai.co/mcp/agents/mcp-bgpt-jiji-recon
+capabilities:
+- id: mcp.tools
+  name: MCP tools
+  description: Catalog agent tools for mcp-bgpt-jiji-recon via Streamable HTTP MCP.
+tags:
+- nova
+- civai
+- mcp
+- remote
+- mcp_bgpt_jiji_recon
+verification:
+  status: pending
+  tested_date: '2026-11-02T09:26:03Z'
+  security_audit: false
+featured: false
