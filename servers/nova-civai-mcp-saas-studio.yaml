@@ -1,0 +1,30 @@
+id: nova-civai-mcp-saas-studio
+name: SaaS Studio by Nova (CIVAI)
+category: developer-tools
+description: Turn your website into plugins AI assistants can use. SaaS Studio records your product in a real browser, then you can finish setup, connect agents, and go live from chat or from studio.civai.co.
+long_description: 'SaaS Studio by Nova (CIVAI) — Turn your website into plugins AI assistants can use. SaaS Studio records your product in a real browser, then you can finish setup, connect agents, and go live from chat or from studio.civai.co. Connect at https://nova.civai.co/mcp/agents/mcp-saas_studio with a Nova API key. Registry co.civai.nova/mcp-saas_studio. Listing: https://github.com/civai-technologies/mcp-saas_studio-mcp-by-nova-civai.'
+maintainer:
+  name: Nova by CIVAI
+  github: civai-technologies
+  website: nova.civai.co
+authentication:
+  type: api-key
+  provider: nova-civai
+  instructions: 'Create a Nova API key at https://nova.civai.co/api-keys and pass Authorization: Bearer <key> to the Streamable HTTP MCP endpoint.'
+endpoints:
+  production: https://nova.civai.co/mcp/agents/mcp-saas_studio
+capabilities:
+- id: mcp.tools
+  name: MCP tools
+  description: Catalog agent tools for mcp-saas_studio via Streamable HTTP MCP.
+tags:
+- nova
+- civai
+- mcp
+- remote
+- mcp_saas_studio
+verification:
+  status: pending
+  tested_date: '2026-11-02T09:26:03Z'
+  security_audit: false
+featured: false
