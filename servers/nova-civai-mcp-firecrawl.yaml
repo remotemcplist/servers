@@ -1,0 +1,30 @@
+id: nova-civai-mcp-firecrawl
+name: Firecrawl by Nova (CIVAI)
+category: data-analysis
+description: Scrape, crawl, and search the web via Firecrawl’s official hosted MCP.
+long_description: 'Firecrawl by Nova (CIVAI) — Scrape, crawl, and search the web via Firecrawl’s official hosted MCP. Connect at https://nova.civai.co/mcp/agents/mcp-firecrawl with a Nova API key. Registry co.civai.nova/mcp-firecrawl. Listing: https://github.com/civai-technologies/mcp-firecrawl-mcp-by-nova-civai.'
+maintainer:
+  name: Nova by CIVAI
+  github: civai-technologies
+  website: nova.civai.co
+authentication:
+  type: api-key
+  provider: nova-civai
+  instructions: 'Create a Nova API key at https://nova.civai.co/api-keys and pass Authorization: Bearer <key> to the Streamable HTTP MCP endpoint.'
+endpoints:
+  production: https://nova.civai.co/mcp/agents/mcp-firecrawl
+capabilities:
+- id: mcp.tools
+  name: MCP tools
+  description: Catalog agent tools for mcp-firecrawl via Streamable HTTP MCP.
+tags:
+- nova
+- civai
+- mcp
+- remote
+- mcp_firecrawl
+verification:
+  status: pending
+  tested_date: '2026-11-02T09:26:03Z'
+  security_audit: false
+featured: false

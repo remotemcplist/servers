@@ -1,0 +1,30 @@
+id: nova-civai-mcp-bgpt-cardpeer
+name: Cardpeer MCP by Nova (CIVAI)
+category: developer-tools
+description: Find trading cards, compare listings, and check market prices.
+long_description: 'Cardpeer MCP by Nova (CIVAI) — Find trading cards, compare listings, and check market prices. Connect at https://nova.civai.co/mcp/agents/mcp-bgpt-cardpeer with a Nova API key. Registry co.civai.nova/mcp-bgpt-cardpeer. Listing: https://github.com/civai-technologies/mcp-bgpt-cardpeer-mcp-by-nova-civai.'
+maintainer:
+  name: Nova by CIVAI
+  github: civai-technologies
+  website: nova.civai.co
+authentication:
+  type: api-key
+  provider: nova-civai
+  instructions: 'Create a Nova API key at https://nova.civai.co/api-keys and pass Authorization: Bearer <key> to the Streamable HTTP MCP endpoint.'
+endpoints:
+  production: https://nova.civai.co/mcp/agents/mcp-bgpt-cardpeer
+capabilities:
+- id: mcp.tools
+  name: MCP tools
+  description: Catalog agent tools for mcp-bgpt-cardpeer via Streamable HTTP MCP.
+tags:
+- nova
+- civai
+- mcp
+- remote
+- mcp_bgpt_cardpeer
+verification:
+  status: pending
+  tested_date: '2026-11-02T09:26:03Z'
+  security_audit: false
+featured: false

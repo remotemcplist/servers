@@ -1,0 +1,30 @@
+id: nova-civai-mcp-linear
+name: Linear by Nova (CIVAI)
+category: developer-tools
+description: Issues, projects, cycles, and roadmaps via the official Linear hosted MCP server.
+long_description: 'Linear by Nova (CIVAI) — Issues, projects, cycles, and roadmaps via the official Linear hosted MCP server. Connect at https://nova.civai.co/mcp/agents/mcp-linear with a Nova API key. Registry co.civai.nova/mcp-linear. Listing: https://github.com/civai-technologies/mcp-linear-mcp-by-nova-civai.'
+maintainer:
+  name: Nova by CIVAI
+  github: civai-technologies
+  website: nova.civai.co
+authentication:
+  type: api-key
+  provider: nova-civai
+  instructions: 'Create a Nova API key at https://nova.civai.co/api-keys and pass Authorization: Bearer <key> to the Streamable HTTP MCP endpoint.'
+endpoints:
+  production: https://nova.civai.co/mcp/agents/mcp-linear
+capabilities:
+- id: mcp.tools
+  name: MCP tools
+  description: Catalog agent tools for mcp-linear via Streamable HTTP MCP.
+tags:
+- nova
+- civai
+- mcp
+- remote
+- mcp_linear
+verification:
+  status: pending
+  tested_date: '2026-11-02T09:26:03Z'
+  security_audit: false
+featured: false
