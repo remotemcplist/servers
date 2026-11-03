@@ -1,0 +1,47 @@
+id: adaptorch-mcp
+name: AdaptOrch MCP
+category: development
+description: Run coding-agent work through AdaptOrch's hosted control plane and get
+  back run status and artifact references
+long_description: "AdaptOrch MCP submits coding-agent tasks to the AdaptOrch hosted\
+  \ control plane and returns run\nstatus and artifact references. The open-source\
+  \ server is published on PyPI as adaptorch-mcp, self-hostable,\nand also reachable\
+  \ as a remote endpoint at https://adaptorch.com/mcp. It is documented in the\nofficial\
+  \ MCP registry as io.github.dmae97/adaptorch-mcp.\n"
+maintainer:
+  name: AdaptOrch
+  github: dmae97
+  website: https://adaptorch.com
+authentication:
+  type: api-key
+  provider: custom
+  instructions: '1. Sign up at https://adaptorch.com/app/signup for a free Starter
+    account
+
+    2. Create an API key in the dashboard
+
+    3. Pass it as ADAPTORCH_API_KEY (or Authorization: Bearer) in your MCP client
+
+    '
+endpoints:
+  production: https://adaptorch.com/mcp
+capabilities:
+- id: runs.submit
+  name: Submit Work
+  description: Submit a coding-agent task to the AdaptOrch control plane
+- id: runs.status
+  name: Run Status
+  description: Poll run state for a submitted task
+- id: artifacts.read
+  name: Artifact References
+  description: Read artifact references produced by a run
+tags:
+- coding-agents
+- verification
+- remote
+- development
+verification:
+  status: pending
+  tested_date: '2026-11-03T00:00:00Z'
+  security_audit: false
+featured: false
