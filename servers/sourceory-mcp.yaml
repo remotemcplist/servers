@@ -1,0 +1,58 @@
+id: sourceory-mcp
+name: Sourceory MCP Server
+category: security
+
+description: Cited Build America, Buy America (BABA) verdict for every line of a project bill of materials, from OMB and agency sources
+
+long_description: |
+  Sourceory is a Build America, Buy America (BABA) domestic-content calculator for federally funded projects.
+  The determine_baba tool takes a project bill of materials and a funding agency, and returns a verdict for every line:
+  compliant, non_compliant, waiver_eligible or insufficient_data. Each line carries a cited OMB or agency source.
+  get_thresholds and get_waivers return the cited thresholds and waiver categories behind those verdicts.
+  The ruleset covers the OMB baseline plus FHWA, the EPA State Revolving Funds and USDA Rural Development.
+  Results are deterministic: no model is involved, so identical input always returns an identical verdict.
+  Sourceory is not legal advice and not an official agency determination.
+
+maintainer:
+  name: Sourceory
+  github: maxbeech
+  website: https://www.sourceory.com
+
+authentication:
+  type: none
+  provider: none
+  instructions: |
+    No authentication is required. Add https://www.sourceory.com/api/mcp as a remote MCP server in your client.
+    No API key is needed. An optional key only raises the rate limit.
+
+endpoints:
+  production: https://www.sourceory.com/api/mcp
+
+capabilities:
+  - id: bom.determination
+    name: BABA Domestic-Content Determination
+    description: Verdict for each bill-of-materials line, by funding agency and as of an obligation date
+  - id: thresholds.lookup
+    name: Look Up BABA Thresholds
+    description: Cited domestic-content thresholds by funding agency and material category
+  - id: waivers.lookup
+    name: Look Up BABA Waivers
+    description: Cited waiver categories, including the de minimis 5% cap and the unreasonable cost 25% differential
+
+tags:
+  - build-america-buy-america
+  - baba
+  - domestic-content
+  - government-compliance
+  - procurement
+  - infrastructure
+  - bill-of-materials
+  - mcp
+  - remote
+
+verification:
+  status: pending
+  tested_date: "2026-11-04T00:00:00Z"
+  security_audit: false
+
+featured: false
