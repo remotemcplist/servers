@@ -1,0 +1,60 @@
+{
+  "id": "realtycrawl",
+  "name": "RealtyCrawl",
+  "category": "data-analysis",
+  "description": "Discover real estate capabilities and schemas, then retrieve source-linked observations with explicit credit budgets.",
+  "long_description": "RealtyCrawl exposes five tools over hosted Streamable HTTP: list_platforms, get_capabilities, list_endpoints, get_endpoint and call_endpoint. Metadata discovery is free. Data operations require an API key and credits; eligible accounts receive 500 signup credits once. Check current capabilities before execution: research, unavailable and documentation-backed beta entries are not verified live source coverage. The public Node.js stdio client is MIT licensed; the hosted backend is commercial.",
+  "maintainer": {
+    "name": "RealtyCrawl",
+    "github": "realtycrawl",
+    "website": "https://realtycrawl.dev"
+  },
+  "authentication": {
+    "type": "api-key",
+    "provider": "realtycrawl",
+    "instructions": "Create an account at https://realtycrawl.dev and obtain your own API key in the dashboard. Configure Authorization: Bearer YOUR_API_KEY in protected MCP client settings. Metadata is public; data calls require explicit credit budgets. Never share the actual key in a directory submission."
+  },
+  "endpoints": {
+    "production": "https://realtycrawl.dev/mcp"
+  },
+  "capabilities": [
+    {
+      "id": "list_platforms",
+      "name": "list_platforms",
+      "description": "List platform inventory"
+    },
+    {
+      "id": "get_capabilities",
+      "name": "get_capabilities",
+      "description": "Check current source-operation availability"
+    },
+    {
+      "id": "list_endpoints",
+      "name": "list_endpoints",
+      "description": "Discover endpoint identifiers"
+    },
+    {
+      "id": "get_endpoint",
+      "name": "get_endpoint",
+      "description": "Inspect one input schema"
+    },
+    {
+      "id": "call_endpoint",
+      "name": "call_endpoint",
+      "description": "Make one explicitly budgeted API call"
+    }
+  ],
+  "tags": [
+    "real-estate",
+    "data",
+    "research",
+    "mcp",
+    "streamable-http"
+  ],
+  "verification": {
+    "status": "unverified",
+    "tested_date": "2026-11-05T02:00:00Z",
+    "security_audit": false
+  },
+  "featured": false
+}
