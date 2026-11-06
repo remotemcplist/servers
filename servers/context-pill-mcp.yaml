@@ -1,0 +1,47 @@
+id: context-pill-mcp
+name: Context Pill
+category: ai-ml
+description: Daily checked AI releases feed with verification status, source trust scores and evidence links
+long_description: |
+  Context Pill gives coding agents a daily feed of AI releases, tools and techniques
+  from contextpill.com. Each item carries a verification status, a source trust score,
+  evidence links, why it matters and an optional try-this step. Ask what is new, or
+  check whether a launch, price change or rumor is real against the published-claim
+  ledger. Source trust starts neutral and moves as claims are re-checked 14 days after
+  publication. Streamable HTTP, read-only, stateless, no sign-in, no keys.
+maintainer:
+  name: Agnostify
+  github: agnostify
+  website: contextpill.com
+authentication:
+  type: none
+  provider: none
+  instructions: |
+    No authentication required. Add https://contextpill.com/mcp as a remote MCP
+    server (Streamable HTTP) in your client. Ask "What's new in AI today?" or
+    "Has Context Pill checked Claude spreadsheet?".
+endpoints:
+  production: https://contextpill.com/mcp
+capabilities:
+  - id: get_latest
+    name: Today's Context Pill drop
+    description: Returns today's checked AI items with verification status and evidence
+  - id: search_claims
+    name: Search published claims
+    description: Searches the ledger of published claims by 1 to 3 key words
+  - id: list_sources
+    name: Source trust scores
+    description: Lists sources with tier, trust score and LB10 lower bound
+tags:
+  - ai-ml
+  - news
+  - verification
+  - mcp
+  - remote
+  - read-only
+  - context-pill
+verification:
+  status: pending
+  tested_date: "2026-11-06T00:00:00Z"
+  security_audit: false
+featured: false
