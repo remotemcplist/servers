@@ -1,0 +1,43 @@
+id: jobspipe-mcp
+name: JobsPipe MCP
+category: data-analysis
+description: Search live job postings from 30+ ATS feeds and job boards via hosted MCP
+long_description: |
+  JobsPipe is a jobs-data API and hosted Model Context Protocol server for AI agents.
+  Search live job postings across 30+ ATS feeds and job boards, filter by role, location,
+  and company, and pull structured results into Claude, Cursor, or any MCP client.
+  Docs: https://docs.jobspipe.dev/ai-agents/mcp
+maintainer:
+  name: JobsPipe
+  github: jobspipe
+  website: jobspipe.dev
+authentication:
+  type: api-key
+  provider: jobspipe
+  instructions: |
+    1. Create an account at https://jobspipe.dev
+    2. Generate an API key from the dashboard
+    3. Pass it as a Bearer token to https://mcp.jobspipe.dev/mcp
+    A no-key demo endpoint is also available at https://jobspipe.dev/mcp
+endpoints:
+  production: https://mcp.jobspipe.dev/mcp
+capabilities:
+  - id: jobs.search
+    name: Search jobs
+    description: Search live job postings across ATS feeds and job boards
+  - id: jobs.filter
+    name: Filter jobs
+    description: Filter by role, location, company, and other criteria
+tags:
+  - jobs
+  - hiring
+  - ats
+  - career
+  - recruitment
+  - remote
+  - mcp
+verification:
+  status: pending
+  tested_date: "2026-11-06T00:00:00Z"
+  security_audit: false
+featured: false
