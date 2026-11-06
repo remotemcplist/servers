@@ -1,0 +1,59 @@
+id: freero-mcp
+name: Freero
+category: productivity
+description: Collaborative whiteboard your assistant can read and add to, with changes people review
+long_description: |
+  Freero is an open-source (MIT) collaborative online whiteboard for teams of people and AI
+  assistants. Its hosted MCP server lets Claude, ChatGPT, Cursor and other clients find the boards
+  a person can open, read a board as a structured outline with item ids, and add sticky notes,
+  themed clusters, task cards and kanbans, and diagrams (Mermaid flowcharts and sequence diagrams,
+  mind maps, org charts, charts). Freero lays everything out, so the model never picks coordinates.
+  By default a connection can only read boards and propose changes that people on the board accept
+  or reject; changing boards directly and commenting are permissions the person ticks on the
+  consent screen. Deleting needs explicit confirmation, and board text reaches the model marked as
+  untrusted content. It also links boards to Jira, Linear and GitHub issues.
+
+maintainer:
+  name: Freero
+  github: antonber
+  website: https://freero.app
+
+authentication:
+  type: oauth2
+  provider: custom
+  instructions: |
+    1. Add https://freero.app/mcp to your MCP client (Streamable HTTP).
+    2. The client registers itself (dynamic client registration) and opens Freero's sign-in page.
+    3. Sign in or create a free account at freero.app, then tick what the connection may do on the consent screen.
+    No API key is needed. Scripts can send a personal access token (Settings, API tokens) as a Bearer token instead.
+
+endpoints:
+  production: https://freero.app/mcp
+
+capabilities:
+  - id: boards.read
+    name: Read boards
+    description: Find boards and read them as an outline with item ids, or search what boards say
+  - id: boards.suggest
+    name: Propose changes
+    description: Propose notes, clusters, cards or diagrams that people on the board accept or reject
+  - id: boards.write
+    name: Add to boards
+    description: Create boards and add sticky notes, clusters, kanban cards and diagrams, laid out by Freero
+  - id: comments.write
+    name: Comment
+    description: Comment on boards and items, and reply in threads
+
+tags:
+  - whiteboard
+  - kanban
+  - diagrams
+  - collaboration
+  - productivity
+
+verification:
+  status: pending
+  tested_date: "2026-11-06T00:00:00Z"
+  security_audit: false
+
+featured: false
