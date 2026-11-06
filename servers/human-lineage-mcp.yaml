@@ -1,0 +1,61 @@
+id: human-lineage-mcp
+name: Human Lineage MCP Server
+category: data-analysis
+
+description: Search a public genealogical graph of historical people - profiles, relatives, family tree images and places.
+
+long_description: |
+  Public, keyless MCP server for the Human Lineage genealogical graph of historical people (50M+ profiles on the site).
+  Search persons and places, read profiles, list close relatives (parents, children, spouses) and render family tree images.
+  Only deceased persons are exposed; living people are not stored. Rate limit: 60 requests per minute per client.
+  The goal of Human Lineage is to connect all genealogical data sources in the world into one graph (currently Wikidata and WikiTree, more in progress).
+  Documentation: https://humanlineage.org/en/mcp
+
+maintainer:
+  name: Human Lineage
+  github: HumanLineage
+  website: humanlineage.org
+
+authentication:
+  type: none
+  provider: none
+  instructions: |
+    No credentials needed. Add the endpoint as a Streamable HTTP MCP server in your client.
+
+endpoints:
+  production: https://humanlineage.org/api/mcp
+
+capabilities:
+  - id: person.search
+    name: search_person
+    description: Search persons by name; returns matches with profile links
+  - id: person.get
+    name: get_person
+    description: Full person data by ID
+  - id: person.relatives
+    name: get_relatives
+    description: Close family (parents, children, spouses) as text
+  - id: person.family_image
+    name: get_family_image
+    description: Visual family tree card (image)
+  - id: place.search
+    name: search_place
+    description: Search places by name; returns matches with links
+  - id: place.get
+    name: get_place
+    description: Place details - hierarchy and number of linked persons
+
+tags:
+  - genealogy
+  - family-tree
+  - history
+  - wikidata
+  - mcp
+  - remote
+
+verification:
+  status: pending
+  tested_date: "2026-11-06T00:00:00Z"
+  security_audit: false
+
+featured: false
