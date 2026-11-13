@@ -1,0 +1,40 @@
+id: kling-ai-global
+name: Kling AI MCP (Global)
+category: ai-ml
+description: Official Kling AI remote MCP server for image and video generation with
+  Kling AI account OAuth.
+long_description: Connect a supported MCP client to the official global Kling AI MCP
+  service to create images and videos and check asynchronous task results. Sign in
+  with a Kling AI account through OAuth. Generation consumes eligible personal account
+  credits; see the official guide for current availability, pricing, and usage restrictions.
+maintainer:
+  name: Kling AI
+  github: klingai-tech
+  website: https://kling.ai
+authentication:
+  type: oauth2
+  provider: Kling AI
+  instructions: Configure the endpoint in a compatible MCP client, connect, and complete
+    the official Kling AI OAuth sign-in. See https://kling.ai/app/mcp/guide.
+endpoints:
+  production: https://kling.ai/mcp
+capabilities:
+- id: image.generate
+  name: Image generation
+  description: Create images using available Kling AI models.
+- id: video.generate
+  name: Video generation
+  description: Create videos using available Kling AI models.
+- id: task.query
+  name: Task status
+  description: Query asynchronous generation task status and results.
+tags:
+- kling-ai
+- image-generation
+- video-generation
+- mcp
+- remote
+verification:
+  status: pending
+  security_audit: false
+featured: false
