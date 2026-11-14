@@ -17,7 +17,7 @@ authentication:
   instructions: Configure the endpoint in a compatible MCP client, connect, and complete
     the official Kling AI OAuth sign-in. See https://kling.ai/app/mcp/guide.
 endpoints:
-  production: https://kling.ai/mcp
+  production: https://kling.ai/mcp/plugin
 capabilities:
 - id: image.generate
   name: Image generation
