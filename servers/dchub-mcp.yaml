@@ -2,15 +2,14 @@ id: dchub-mcp
 name: DC Hub
 category: data-analysis
 
-description: Data-center, power-grid, fiber & site-selection intelligence — a global data-center facility map (corroborated count pending), 92 MCP tools.
+description: Orchestration layer for data center and energy intelligence (start with execute_plan). Data Center Power Index (DCPI), power-grid, fiber and site-selection tools — 96 MCP tools. DCHUB_API_KEY is optional.
 long_description: |
-  DC Hub is a hosted Streamable HTTP MCP server for data-center and energy
-  infrastructure intelligence. Agents can search a global data-center facility map (corroborated count pending), query
-  power/grid/gas/fiber layers, score sites, and pull market/M&A context across
-  92 tools. Free tier works keyless; optional X-API-Key unlocks full data
-  (claim via the claim_free_key tool or https://dchub.cloud/connect). Paid plans:
-  dchub.cloud/pricing. Source: https://github.com/azmartone67/dchub-mcp-server. Official
-  registry name: cloud.dchub/mcp-server.
+  DC Hub is the orchestration layer for data center and energy intelligence:
+  start with execute_plan. Agents can query power, grid, gas and fiber layers,
+  score sites, and pull market context across 96 tools. Endpoint:
+  https://dchub.cloud/mcp (streamable HTTP). DCHUB_API_KEY is optional. Source:
+  https://github.com/azmartone67/dchub-mcp-server. Official registry name:
+  cloud.dchub/mcp-server.
 
 maintainer:
   name: DC Hub
@@ -21,9 +20,8 @@ authentication:
   type: none
   provider: none
   instructions: |
-    Free tier: connect with no auth to https://dchub.cloud/mcp
-    Optional full data: set header X-API-Key from https://dchub.cloud/connect
-    or by calling the claim_free_key tool.
+    DCHUB_API_KEY is optional. Connect with no auth to https://dchub.cloud/mcp,
+    or set header X-API-Key from https://dchub.cloud/connect.
 
 endpoints:
   production: https://dchub.cloud/mcp
