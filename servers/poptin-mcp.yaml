@@ -1,0 +1,54 @@
+id: poptin-mcp
+name: Poptin MCP
+category: communication
+description: Official Poptin MCP server for AI agents to analyze popup and email performance, prepare email campaigns, and manage audience segments.
+long_description: |
+  Poptin hosts this remote Streamable HTTP MCP server for marketing workflows.
+  Connect a compatible AI assistant through OAuth to analyze popup, form, and
+  email campaign performance, manage existing popups and forms, prepare email
+  campaigns, and organize audience segments and contact properties.
+  Sending or scheduling campaigns requires confirmation. Destructive operations
+  require an impact review and fresh approval. Account permissions and enabled
+  features apply. Creating popups or editing their visual design is not supported.
+  Documentation: https://developers.poptin.com/docs/mcp
+  Official repository: https://github.com/Poptin-LTD/Poptin-MCP
+maintainer:
+  name: Poptin
+  github: Poptin-LTD
+  website: https://www.poptin.com
+authentication:
+  type: oauth2
+  provider: poptin
+  instructions: |
+    Add https://mcp.popt.in/mcp in a client supporting Streamable HTTP and OAuth.
+    Sign in to Poptin, select an account or subaccount, and review and authorize access.
+    Each connection is tied to the authorized account. Poptin API keys cannot
+    authenticate this MCP connection. Never paste passwords or tokens into chat.
+endpoints:
+  production: https://mcp.popt.in/mcp
+capabilities:
+  - id: marketing.analytics
+    name: Marketing Analytics
+    description: Analyze popup, embedded-form, and email campaign performance.
+  - id: poptins.manage
+    name: Manage Existing Popups and Forms
+    description: Find, rename, pause, and resume existing popups and forms.
+  - id: email.campaigns
+    name: Email Campaign Preparation
+    description: Prepare campaigns, review audience and design, and send or schedule after confirmation.
+  - id: audience.segments
+    name: Audience Segmentation
+    description: Preview and save reusable audience segments.
+tags:
+  - marketing
+  - email
+  - popups
+  - forms
+  - segmentation
+  - ai-agents
+  - mcp
+  - remote
+verification:
+  status: pending
+  security_audit: false
+featured: false
