@@ -1,0 +1,50 @@
+id: stalkchain-data
+name: StalkChain Data
+category: data-analysis
+description: Research Solana wallets, token holders, social trader activity, and Hyperliquid markets through a hosted crypto data MCP server.
+long_description: |
+  StalkChain Data connects MCP clients to on-chain data and social trading research.
+  Look up public wallet activity and realized PnL, investigate token holders and early
+  buyers, and compare Hyperliquid funding rates and open interest. The directory
+  endpoint uses Streamable HTTP and OAuth. Research calls use account credits.
+  The connector does not place orders or sign blockchain transactions.
+
+maintainer:
+  name: StalkChain
+  github: StalkChain
+  website: https://stalkchain.com/mcp
+
+authentication:
+  type: oauth2
+  provider: custom
+  instructions: |
+    Add the production URL as a remote Streamable HTTP server in an OAuth-capable
+    MCP client. Sign in to StalkChain and approve the connection when prompted.
+    See https://github.com/StalkChain/fomo-mcp-api for client setup instructions.
+
+endpoints:
+  production: https://data.stalkchain.com/mcp/directory
+
+capabilities:
+  - id: wallet.research
+    name: Wallet research
+    description: Inspect public wallet activity, transfers, positions, and historical PnL.
+  - id: token.research
+    name: Token holder research
+    description: Review token holder concentrations, early buyers, and deployer history.
+  - id: perps.research
+    name: Hyperliquid market research
+    description: Compare market candles, funding rates, and open interest.
+
+tags:
+  - crypto
+  - onchain-analytics
+  - solana
+  - hyperliquid
+  - remote
+
+verification:
+  status: pending
+  security_audit: false
+
+featured: false
