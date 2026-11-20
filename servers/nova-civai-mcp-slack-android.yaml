@@ -1,7 +1,7 @@
 id: nova-civai-mcp-slack-android
 name: Slack MCP by Nova (CIVAI)
 category: communication
-description: Use Slack from chat: see channels, catch up on messages, post updates, and reply in threads in your signed-in workspace.
+description: 'Use Slack from chat: see channels, catch up on messages, post updates, and reply in threads in your signed-in workspace.'
 long_description: 'Slack MCP by Nova (CIVAI) — Use Slack from chat: see channels, catch up on messages, post updates, and reply in threads in your signed-in workspace. Connect at https://nova.civai.co/mcp/agents/mcp-slack_android with a Nova API key. Registry co.civai.nova/mcp-slack_android. Listing: https://github.com/civai-technologies/mcp-slack_android-mcp-by-nova-civai.'
 maintainer:
   name: Nova by CIVAI

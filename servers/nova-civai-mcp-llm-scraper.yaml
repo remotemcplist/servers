@@ -1,6 +1,6 @@
 id: nova-civai-mcp-llm-scraper
 name: LLM Scraper by Nova (CIVAI)
-category: browser-automation
+category: data-analysis
 description: Scrape websites by following links and extract structured data from natural language instructions.
 long_description: 'LLM Scraper by Nova (CIVAI) — Scrape websites by following links and extract structured data from natural language instructions. Connect at https://nova.civai.co/mcp/agents/mcp-llm-scraper with a Nova API key. Registry co.civai.nova/mcp-llm-scraper. Listing: https://github.com/civai-technologies/mcp-llm-scraper-mcp-by-nova-civai.'
 maintainer:
