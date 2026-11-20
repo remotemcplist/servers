@@ -1,5 +1,5 @@
 id: kling-ai-global
-name: Kling AI MCP (Global)
+name: Kling AI Global Plugin
 category: ai-ml
 description: Official Kling AI remote MCP server for image and video generation with
   Kling AI account OAuth.
