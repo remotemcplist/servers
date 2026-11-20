@@ -1,6 +1,6 @@
 id: nova-civai-mcp-android-developer
 name: Android Developer MCP by Nova (CIVAI)
-category: developer-tools
+category: development
 description: Ship a new Android app from chat. AI runs Google Play Console listings, screenshots, releases, uploads, and reviews.
 long_description: 'Android Developer MCP by Nova (CIVAI) — Ship a new Android app from chat. AI runs Google Play Console listings, screenshots, releases, uploads, and reviews. Connect at https://nova.civai.co/mcp/agents/mcp-android_developer with a Nova API key. Registry co.civai.nova/mcp-android_developer. Listing: https://github.com/civai-technologies/mcp-android_developer-mcp-by-nova-civai.'
 maintainer:

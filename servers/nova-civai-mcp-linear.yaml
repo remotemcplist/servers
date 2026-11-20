@@ -1,6 +1,6 @@
 id: nova-civai-mcp-linear
 name: Linear by Nova (CIVAI)
-category: developer-tools
+category: development
 description: Issues, projects, cycles, and roadmaps via the official Linear hosted MCP server.
 long_description: 'Linear by Nova (CIVAI) — Issues, projects, cycles, and roadmaps via the official Linear hosted MCP server. Connect at https://nova.civai.co/mcp/agents/mcp-linear with a Nova API key. Registry co.civai.nova/mcp-linear. Listing: https://github.com/civai-technologies/mcp-linear-mcp-by-nova-civai.'
 maintainer:

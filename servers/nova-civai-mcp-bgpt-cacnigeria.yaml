@@ -1,6 +1,6 @@
 id: nova-civai-mcp-bgpt-cacnigeria
 name: CAC Search MCP by Nova (CIVAI)
-category: developer-tools
+category: development
 description: Look up Nigerian companies on the Corporate Affairs Commission register.
 long_description: 'CAC Search MCP by Nova (CIVAI) — Look up Nigerian companies on the Corporate Affairs Commission register. Connect at https://nova.civai.co/mcp/agents/mcp-bgpt-cacnigeria with a Nova API key. Registry co.civai.nova/mcp-bgpt-cacnigeria. Listing: https://github.com/civai-technologies/mcp-bgpt-cacnigeria-mcp-by-nova-civai.'
 maintainer:

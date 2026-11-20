@@ -1,6 +1,6 @@
 id: nova-civai-mcp-bgpt-yarngpt
 name: YarnGPT MCP by Nova (CIVAI)
-category: developer-tools
+category: development
 description: Turn text into speech with Nigerian and African-accented voices.
 long_description: 'YarnGPT MCP by Nova (CIVAI) — Turn text into speech with Nigerian and African-accented voices. Connect at https://nova.civai.co/mcp/agents/mcp-bgpt-yarngpt with a Nova API key. Registry co.civai.nova/mcp-bgpt-yarngpt. Listing: https://github.com/civai-technologies/mcp-bgpt-yarngpt-mcp-by-nova-civai.'
 maintainer:

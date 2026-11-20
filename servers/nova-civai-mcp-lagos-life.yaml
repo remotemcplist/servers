@@ -1,7 +1,7 @@
 id: nova-civai-mcp-lagos-life
 name: Lagos Life by Nova (CIVAI)
-category: developer-tools
-description: Play Lagos Life from chat: sign in, see who is on the map, read and send Phone DMs, check daily rewards, and peek at the Forbes rich list — like having a friend help you in the game.
+category: development
+description: 'Play Lagos Life from chat: sign in, see who is on the map, read and send Phone DMs, check daily rewards, and peek at the Forbes rich list — like having a friend help you in the game.'
 long_description: 'Lagos Life by Nova (CIVAI) — Play Lagos Life from chat: sign in, see who is on the map, read and send Phone DMs, check daily rewards, and peek at the Forbes rich list — like having a friend help you in the game. Connect at https://nova.civai.co/mcp/agents/mcp-lagos_life with a Nova API key. Registry co.civai.nova/mcp-lagos_life. Listing: https://github.com/civai-technologies/mcp-lagos_life-mcp-by-nova-civai.'
 maintainer:
   name: Nova by CIVAI

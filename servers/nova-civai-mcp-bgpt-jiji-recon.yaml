@@ -1,6 +1,6 @@
 id: nova-civai-mcp-bgpt-jiji-recon
 name: Jiji Nigeria MCP by Nova (CIVAI)
-category: developer-tools
+category: development
 description: Search and buy on Jiji Nigeria — browse listings, message sellers, and manage your ads.
 long_description: 'Jiji Nigeria MCP by Nova (CIVAI) — Search and buy on Jiji Nigeria — browse listings, message sellers, and manage your ads. Connect at https://nova.civai.co/mcp/agents/mcp-bgpt-jiji-recon with a Nova API key. Registry co.civai.nova/mcp-bgpt-jiji-recon. Listing: https://github.com/civai-technologies/mcp-bgpt-jiji-recon-mcp-by-nova-civai.'
 maintainer:

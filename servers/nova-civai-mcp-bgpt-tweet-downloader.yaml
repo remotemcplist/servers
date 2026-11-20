@@ -1,6 +1,6 @@
 id: nova-civai-mcp-bgpt-tweet-downloader
 name: Tweet Downloader MCP by Nova (CIVAI)
-category: developer-tools
+category: development
 description: Get the text and download links from a public X post.
 long_description: 'Tweet Downloader MCP by Nova (CIVAI) — Get the text and download links from a public X post. Connect at https://nova.civai.co/mcp/agents/mcp-bgpt-tweet-downloader with a Nova API key. Registry co.civai.nova/mcp-bgpt-tweet-downloader. Listing: https://github.com/civai-technologies/mcp-bgpt-tweet-downloader-mcp-by-nova-civai.'
 maintainer:

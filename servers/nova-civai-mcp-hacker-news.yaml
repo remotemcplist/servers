@@ -1,7 +1,7 @@
 id: nova-civai-mcp-hacker-news
 name: Hacker News MCP by Nova (CIVAI)
-category: developer-tools
-description: Browse Hacker News from chat: top stories, search, read comment threads, and post or upvote when you are signed in.
+category: development
+description: 'Browse Hacker News from chat: top stories, search, read comment threads, and post or upvote when you are signed in.'
 long_description: 'Hacker News MCP by Nova (CIVAI) — Browse Hacker News from chat: top stories, search, read comment threads, and post or upvote when you are signed in. Connect at https://nova.civai.co/mcp/agents/mcp-hacker_news with a Nova API key. Registry co.civai.nova/mcp-hacker_news. Listing: https://github.com/civai-technologies/mcp-hacker_news-mcp-by-nova-civai.'
 maintainer:
   name: Nova by CIVAI

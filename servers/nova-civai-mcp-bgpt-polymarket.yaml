@@ -1,6 +1,6 @@
 id: nova-civai-mcp-bgpt-polymarket
 name: Polymarket MCP by Nova (CIVAI)
-category: developer-tools
+category: development
 description: Browse prediction markets, check odds, and follow big trades.
 long_description: 'Polymarket MCP by Nova (CIVAI) — Browse prediction markets, check odds, and follow big trades. Connect at https://nova.civai.co/mcp/agents/mcp-bgpt-polymarket with a Nova API key. Registry co.civai.nova/mcp-bgpt-polymarket. Listing: https://github.com/civai-technologies/mcp-bgpt-polymarket-mcp-by-nova-civai.'
 maintainer:

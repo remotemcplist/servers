@@ -1,6 +1,6 @@
 id: nova-civai-mcp-bgpt-pdf-generator
 name: PDF Generator MCP by Nova (CIVAI)
-category: developer-tools
+category: development
 description: Create PDF documents from your request. Preview the content first, then download when ready.
 long_description: 'PDF Generator MCP by Nova (CIVAI) — Create PDF documents from your request. Preview the content first, then download when ready. Connect at https://nova.civai.co/mcp/agents/mcp-bgpt-pdf-generator with a Nova API key. Registry co.civai.nova/mcp-bgpt-pdf-generator. Listing: https://github.com/civai-technologies/mcp-bgpt-pdf-generator-mcp-by-nova-civai.'
 maintainer:

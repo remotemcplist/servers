@@ -1,7 +1,7 @@
 id: nova-civai-mcp-juicyway
 name: Juicyway by Nova (CIVAI)
-category: developer-tools
-description: Manage your Juicyway business account from chat: check balances and movements, send bank payouts, view FX rates, and referrals — sign in once in the browser when prompted.
+category: development
+description: 'Manage your Juicyway business account from chat: check balances and movements, send bank payouts, view FX rates, and referrals — sign in once in the browser when prompted.'
 long_description: 'Juicyway by Nova (CIVAI) — Manage your Juicyway business account from chat: check balances and movements, send bank payouts, view FX rates, and referrals — sign in once in the browser when prompted. Connect at https://nova.civai.co/mcp/agents/mcp-juicyway with a Nova API key. Registry co.civai.nova/mcp-juicyway. Listing: https://github.com/civai-technologies/mcp-juicyway-mcp-by-nova-civai.'
 maintainer:
   name: Nova by CIVAI

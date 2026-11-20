@@ -1,6 +1,6 @@
 id: nova-civai-mcp-bgpt-giglogistics
 name: Gig Logistics MCP by Nova (CIVAI)
-category: developer-tools
+category: development
 description: Track your Gig Logistics parcels and shipments.
 long_description: 'Gig Logistics MCP by Nova (CIVAI) — Track your Gig Logistics parcels and shipments. Connect at https://nova.civai.co/mcp/agents/mcp-bgpt-giglogistics with a Nova API key. Registry co.civai.nova/mcp-bgpt-giglogistics. Listing: https://github.com/civai-technologies/mcp-bgpt-giglogistics-mcp-by-nova-civai.'
 maintainer:

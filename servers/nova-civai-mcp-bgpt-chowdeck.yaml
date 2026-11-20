@@ -1,7 +1,7 @@
 id: nova-civai-mcp-bgpt-chowdeck
 name: ChowDeck MCP by Nova (CIVAI)
-category: developer-tools
-description: Order food on ChowDeck: browse restaurants, set your delivery address, build a cart, and check out when you are ready.
+category: development
+description: 'Order food on ChowDeck: browse restaurants, set your delivery address, build a cart, and check out when you are ready.'
 long_description: 'ChowDeck MCP by Nova (CIVAI) — Order food on ChowDeck: browse restaurants, set your delivery address, build a cart, and check out when you are ready. Connect at https://nova.civai.co/mcp/agents/mcp-bgpt-chowdeck with a Nova API key. Registry co.civai.nova/mcp-bgpt-chowdeck. Listing: https://github.com/civai-technologies/mcp-bgpt-chowdeck-mcp-by-nova-civai.'
 maintainer:
   name: Nova by CIVAI

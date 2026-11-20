@@ -1,6 +1,6 @@
 id: nova-civai-mcp-bgpt-instagram-android
 name: Instagram Mobile MCP by Nova (CIVAI)
-category: developer-tools
+category: development
 description: Instagram Direct, profiles, search, posts, comments, and likes via mobile API replay.
 long_description: 'Instagram Mobile MCP by Nova (CIVAI) — Instagram Direct, profiles, search, posts, comments, and likes via mobile API replay. Connect at https://nova.civai.co/mcp/agents/mcp-bgpt-instagram-android with a Nova API key. Registry co.civai.nova/mcp-bgpt-instagram-android. Listing: https://github.com/civai-technologies/mcp-bgpt-instagram-android-mcp-by-nova-civai.'
 maintainer:

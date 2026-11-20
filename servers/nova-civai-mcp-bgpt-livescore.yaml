@@ -1,6 +1,6 @@
 id: nova-civai-mcp-bgpt-livescore
 name: LiveScore MCP by Nova (CIVAI)
-category: developer-tools
+category: development
 description: Live football scores, fixtures, teams, and players.
 long_description: 'LiveScore MCP by Nova (CIVAI) — Live football scores, fixtures, teams, and players. Connect at https://nova.civai.co/mcp/agents/mcp-bgpt-livescore with a Nova API key. Registry co.civai.nova/mcp-bgpt-livescore. Listing: https://github.com/civai-technologies/mcp-bgpt-livescore-mcp-by-nova-civai.'
 maintainer:

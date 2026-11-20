@@ -1,8 +1,8 @@
 id: nova-civai-mcp-browsergpt-browser-control
 name: Browser Control MCP by Nova (CIVAI)
-category: browser-automation
-description: Control your Chrome from chat: open websites, read what's on the page, click buttons, and fill in forms. Works with the BrowserGPT extension on your computer, or a cloud browser if you prefer.
-long_description: 'Browser Control MCP by Nova (CIVAI) — Control your Chrome from chat: open websites, read what's on the page, click buttons, and fill in forms. Works with the BrowserGPT extension on your computer, or a cloud browser if you prefer. Connect at https://nova.civai.co/mcp/agents/mcp-browsergpt-browser-control with a Nova API key. Registry co.civai.nova/mcp-browsergpt-browser-control. Listing: https://github.com/civai-technologies/mcp-browsergpt-browser-control-mcp-by-nova-civai.'
+category: data-analysis
+description: 'Control your Chrome from chat: open websites, read what''s on the page, click buttons, and fill in forms. Works with the BrowserGPT extension on your computer, or a cloud browser if you prefer.'
+long_description: 'Browser Control MCP by Nova (CIVAI) — Control your Chrome from chat: open websites, read what''s on the page, click buttons, and fill in forms. Works with the BrowserGPT extension on your computer, or a cloud browser if you prefer. Connect at https://nova.civai.co/mcp/agents/mcp-browsergpt-browser-control with a Nova API key. Registry co.civai.nova/mcp-browsergpt-browser-control. Listing: https://github.com/civai-technologies/mcp-browsergpt-browser-control-mcp-by-nova-civai.'
 maintainer:
   name: Nova by CIVAI
   github: civai-technologies

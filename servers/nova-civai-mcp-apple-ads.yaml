@@ -1,7 +1,7 @@
 id: nova-civai-mcp-apple-ads
 name: Apple Search Ads MCP by Nova (CIVAI)
-category: developer-tools
-description: Manage Apple Search Ads from chat: sign in with Apple ID, check notifications, and pull campaign performance without opening the Ads console for every question.
+category: development
+description: 'Manage Apple Search Ads from chat: sign in with Apple ID, check notifications, and pull campaign performance without opening the Ads console for every question.'
 long_description: 'Apple Search Ads MCP by Nova (CIVAI) — Manage Apple Search Ads from chat: sign in with Apple ID, check notifications, and pull campaign performance without opening the Ads console for every question. Connect at https://nova.civai.co/mcp/agents/mcp-apple_ads with a Nova API key. Registry co.civai.nova/mcp-apple_ads. Listing: https://github.com/civai-technologies/mcp-apple_ads-mcp-by-nova-civai.'
 maintainer:
   name: Nova by CIVAI
