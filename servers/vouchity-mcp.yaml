@@ -1,0 +1,44 @@
+id: vouchity-mcp
+name: Vouchity MCP Server
+category: security
+description: Trust Score from 0 to 100 for MCP servers, built from public GitHub and npm data, to check before you install one
+long_description: |
+  Vouchity reads the official MCP registry and gives every server a Trust Score from 0 to 100, built from public GitHub and npm data. A signal that cannot be checked is left out rather than guessed. A remote server that declares no authentication gets a risk flag. The hosted MCP endpoint needs no login, so an agent can ask whether a server is safe to install before it connects. Scores are automated, not a security audit, so treat them as a starting point.
+
+maintainer:
+  name: Vouchity
+  github: maxbeech
+  website: vouchity.com
+
+authentication:
+  type: none
+  provider: none
+  instructions: |
+    No login or API key is needed. Add https://www.vouchity.com/api/mcp as a remote MCP server in your client.
+
+endpoints:
+  production: https://www.vouchity.com/api/mcp
+
+capabilities:
+  - id: search.servers
+    name: Search Servers
+    description: Search the Vouchity registry for MCP servers by keyword, category or minimum Trust Score
+  - id: trust.score
+    name: Get Trust Score
+    description: Get the full 0 to 100 Trust Score for one MCP server, with its signals, risk flags and source repository
+  - id: safety.check
+    name: Check Server Safety
+    description: Plain-English answer to whether an MCP server is safe to install, matched by name, repo URL or package
+
+tags:
+  - security
+  - trust-score
+  - mcp
+  - remote
+
+verification:
+  status: pending
+  tested_date: '2026-11-26T00:00:00Z'
+  security_audit: false
+
+featured: false
