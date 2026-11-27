@@ -1,0 +1,55 @@
+id: iforgot
+name: iForgot
+category: productivity
+
+description: Search the posts you liked and saved on social apps from Claude, ChatGPT or any MCP client. Read only, OAuth sign-in
+
+long_description: |
+  iForgot keeps the posts you liked and saved on social apps in one private library, older ones too. You connect your accounts once in the iForgot iPhone app, then add this server to your MCP client.
+  Ask what recipe you saved for tonight or which places you bookmarked for the weekend and your agent answers from your own saves. Search works by meaning in any language and can filter by app, date, likes or saves.
+  The server is read only. It searches the library, reads one post in full and shows the posts your agent picked as one card.
+
+maintainer:
+  name: iForgot
+  github: iforgot-labs
+  website: https://iforgot.ai/?s=remotemcplist
+
+authentication:
+  type: oauth2
+  provider: custom
+  instructions: |
+    1. Get iForgot on the App Store and connect at least one social account in the app
+    2. Add https://mcp.iforgot.ai/mcp to your MCP client
+    3. Sign in with your iForgot account when the client opens the browser
+    The server supports dynamic client registration, so there is no API key and no client setup.
+
+endpoints:
+  production: https://mcp.iforgot.ai/mcp
+
+capabilities:
+  - id: posts.search
+    name: Search saved posts
+    description: Find posts you liked or saved by meaning, app, date or tag
+  - id: posts.fetch
+    name: Read a post
+    description: Read one saved post in full
+  - id: posts.show
+    name: Show posts
+    description: Show the posts your agent picked as one card
+
+tags:
+  - memory
+  - bookmarks
+  - social-media
+  - likes
+  - rednote
+  - douyin
+  - remote
+  - oauth
+
+verification:
+  status: pending
+  tested_date: "2026-11-17T00:00:00Z"
+  security_audit: false
+
+featured: false
